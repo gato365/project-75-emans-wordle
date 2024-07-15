@@ -5,17 +5,14 @@ To effectively manage your project on Jira, it's essential to structure your tas
 ### Epics and Corresponding Tasks
 
 #### Epic 1: Project Setup
-- **Task 1.1:** [X] Set up the Django project environment.
-- **Task 1.2:** [X] Configure virtual environments for Python to manage dependencies.
-- **Task 1.3:** [X] Establish version control with Git and link the repository to Jira.
+- **Task 1.1:**  Set up the Django project environment.
+- **Task 1.2:** Configure virtual environments for Python to manage dependencies.
+- **Task 1.3:** [Establish version control with Git and link the repository to Jira.
 
 #### Epic 2: Database Configuration
 - **Task 2.1:** Design the database schema for game data, user profiles, and game history.
 
-    - Option 1: Do what you need to get to the MVP
-        - User Model
-            - Login
-            - Get to Home page
+
     - Option 2: All models (Epic 3)
         - User Model
         - Game Model
@@ -87,3 +84,5 @@ To effectively manage your project on Jira, it's essential to structure your tas
 - **Feedback Loop:** Implement a feedback mechanism after each sprint to incorporate learnings and improvements.
 
 Each task in your Jira should be clearly defined with acceptance criteria, estimated hours, assigned team member(s), and necessary tags or labels for easy tracking. This structured approach will help ensure that all project facets are addressed methodically and efficiently.
+
+
