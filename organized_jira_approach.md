@@ -4,12 +4,12 @@ To align your new MVP-focused epics with a detailed breakdown of tasks and sprin
 
 #### Epic 1: Deploy App and Let User Login [X-written in Jira]
 - **Task 1.1:** Establish version control with Git (Create a GitHub Repo).  [DONE]
-- **Task 1.2:** Specify All technologies and tools to be used for the project 
-- **Task 1.3:** Initialize Django project environment. 
-- **Task 1.4:** Configure Django settings based on what you know for initial deployment. Within Settings.py, ask ChatGPT for idease. 
+- **Task 1.2:** Specify all technologies and tools to be used for the project  [DONE]
+- **Task 1.3:** Initialize Django project environment.  [DONE]
+- **Task 1.4:** Configure Django settings based on what you know for initial deployment. Within Settings.py, ask ChatGPT for ideas. 
 - **Task 1.5:** Implement basic user registration and login pages. 
 - **Task 1.6:** Set up user session management. 
-- **Task 1.7:** Integrate third-party authentication (e.g., Google OAuth). 
+- **Task 1.7:** Integrate third-party authentication (e.g., Google OAuth & Microsoft). 
 
 #### Epic 2: Let User Play a Game [X-written in Jira]
 - **Task 2.1:** Develop the basic game logic to generate Wordle challenges. 
