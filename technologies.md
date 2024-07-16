@@ -1,0 +1,50 @@
+Here's a more organized version of your list:
+
+---
+
+## All Technologies
+
+### Cloud
+- Azure
+
+### Frontend
+- Django
+- HTML
+- CSS
+
+### Backend
+- Django
+- Python
+
+### Database
+- SQLite
+
+### Version Control
+- Git
+
+### CI/CD
+- To be determined
+
+### Testing
+- To be determined (Maybe Django Testing Framework)
+
+### Analytics (cause what I used to)
+- dplyr & ggplot2
+- R Shiny
+
+### Coding IDE
+- VS Code
+
+### Project Management
+- Jira
+
+### Communication
+- Slack
+
+### Other Tools (To be determined)
+- Azure DevOps
+- Docker
+- Kubernetes
+- Azure Pipelines
+- Azure Boards
+- Azure Repos
