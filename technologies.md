@@ -1,7 +1,3 @@
-Here's a more organized version of your list:
-
----
-
 ## All Technologies
 
 ### Cloud
@@ -19,14 +15,10 @@ Here's a more organized version of your list:
 ### Database
 - SQLite
 
-### Version Control
+### Version Control & Platform
 - Git
+- GitHub
 
-### CI/CD
-- To be determined
-
-### Testing
-- To be determined (Maybe Django Testing Framework)
 
 ### Analytics (cause what I used to)
 - dplyr & ggplot2
@@ -48,3 +40,5 @@ Here's a more organized version of your list:
 - Azure Pipelines
 - Azure Boards
 - Azure Repos
+ CI/CD - To be determined
+ Testing - To be determined (Maybe Django Testing Framework)
