@@ -121,6 +121,10 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+
+
+## --------- All added by me ---------------
+
 ## Custom settings for media files
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/profile_pics')
 MEDIA_URL = '/media/profile_pics/'
@@ -135,3 +139,5 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap4'
 
 
+LOGIN_REDIRECT_URL = 'profile'
+LOGIN_URL = 'profile'
