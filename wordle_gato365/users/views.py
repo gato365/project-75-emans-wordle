@@ -47,5 +47,6 @@ def profile(request):
 def home(request):
     return render(request, 'users/base.html')
 
-# def profile(request):
-#     return render(request, 'users/profile.html')
+
+def about(request):
+    return render(request, 'users/about.html')
