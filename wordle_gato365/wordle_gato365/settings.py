@@ -122,8 +122,8 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 ## Custom settings for media files
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/profile_pics')
+MEDIA_URL = '/media/profile_pics/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
