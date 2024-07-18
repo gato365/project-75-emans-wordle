@@ -3,8 +3,19 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm
+from django.contrib.auth.views import LogoutView
+from django.urls import reverse_lazy
+
 
 # Create your views here.
+
+
+class CustomLogoutView(LogoutView):
+    next_page = reverse_lazy('login')
+
+    def dispatch(self, request, *args, **kwargs):
+        messages.add_message(request, messages.INFO, 'You just logged out.')
+        return super().dispatch(request, *args, **kwargs)
 
 
 def register(request):
