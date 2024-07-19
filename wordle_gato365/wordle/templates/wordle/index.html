@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Clone</title>
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+    <div id="game">
+        <h1>Wordle Clone</h1>
+        <!-- Turn off auto text  -->
+        <input type="text" id="guessInput" maxlength="5" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+        <button onclick="submitGuess()">Guess</button>
+        <div id="attemptsLeft"></div>
+        <div id="attemptedWords"></div> <!-- New div for attempted words -->
+        <div id="feedback"></div>
+        <div id="attemptsLeft"></div>
+    </div>
+    <script src="/assets/javascript.js"></script>
+</body>
+</html>

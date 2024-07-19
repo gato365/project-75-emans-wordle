@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'wordle.apps.WordleConfig',
     'users.apps.UsersConfig',
     'django.contrib.admin',
     'django.contrib.auth',
