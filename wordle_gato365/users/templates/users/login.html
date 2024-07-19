@@ -24,6 +24,16 @@
         </form>
         <div class="border-top pt-3">
             <small class="text-muted">
+        
+        <div>Login with Google Account</div>
+        {% load static %}
+        {% load socialaccount %}
+        <a href="{% url 'socialaccount_login' 'google' %}">Login with Google</a>
+        </small>
+        </div>
+
+        <div class="border-top pt-3">
+            <small class="text-muted">
                 Need An Account? <a class="ml-2" href="#">Sign Up</a>
             </small>
         </div>
