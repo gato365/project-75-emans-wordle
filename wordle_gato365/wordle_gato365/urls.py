@@ -19,7 +19,8 @@ from django.urls import path, include
 from users import views as user_views
 from django.contrib.auth import views as auth_views
 from wordle import views as wordle_views
-
+from django.conf import settings
+from django.conf.urls.static import static 
 
 urlpatterns = [
     path('', user_views.home),
@@ -33,4 +34,4 @@ urlpatterns = [
     path('wordle/', wordle_views.wordle_game, name='wordle'),
     path('logout/', user_views.CustomLogoutView.as_view(), name='logout')
    
-]
+]  + static(settings.STATIC_URL)
