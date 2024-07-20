@@ -1,7 +1,7 @@
 let answer;
 // Fetch the text file located one directory up
 
-fetch('../five_letter_words.txt')
+fetch('five_letter_words.txt')
   .then(response => response.text()) // Convert the response to text
   .then(text => {
     const words = text.split('\n'); // Split the text into an array of words
