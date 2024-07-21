@@ -62,5 +62,3 @@ def home(request):
 def about(request):
     return render(request, 'users/about.html')
 
-def game(request):
-    return render(request, 'wordle/game.html')
