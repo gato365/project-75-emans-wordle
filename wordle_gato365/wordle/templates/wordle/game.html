@@ -1,5 +1,10 @@
 {% extends "users/base.html" %}
+
+{% load static %}
+
 {% block game_content %}
+
+
 
 <style> 
     body {
@@ -37,10 +42,7 @@
         color: gray;
     }
     
-
-
 </style>
-
 
 
 
@@ -50,7 +52,7 @@
         <h1>Wordle Clone</h1>
         
         <input type="text" id="guessInput" maxlength="5" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
-        <button onclistck="submitGuess()">Guess</button>
+        <button onclick="submitGuess()">Guess</button>
         <div id="attemptsLeft"></div>
         <div id="attemptedWords"></div> 
         <div id="feedback"></div>
@@ -58,26 +60,11 @@
     </div>
     
 
-
-
-
 <script>
     let answer;
-    // Fetch the text file located one directory up
-    
-     fetch('five_letter_words.txt')
-      .then(response => response.text()) 
-      .then(text => {
-        const words = text.split('\n'); 
-        const randomIndex = Math.floor(Math.random() * words.length);
-        answer = words[randomIndex].trim(); 
-        console.log(answer); 
-      })
-      .catch(error => console.error('Error:', error)); 
-    
     
     let attempts = 6;
-    //answer = "hello"
+    answer = "hello"
     
     function submitGuess() {
         let guess = document.getElementById('guessInput').value.toLowerCase();
@@ -137,8 +124,7 @@
             submitGuess();
         }
     });
-    
-
+        
 
 
 </script>
