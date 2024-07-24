@@ -11,6 +11,7 @@
 ### Backend
 - Django
 - Python
+- JavaScript
 
 ### Database
 - SQLite
