@@ -62,3 +62,5 @@ def home(request):
 def about(request):
     return render(request, 'users/about.html')
 
+def leaderboardlist(request):
+    return render(request, 'users/leaderboardlist.html')
