@@ -9,6 +9,24 @@ from django.urls import reverse_lazy
 
 # Create your views here.
 
+def leaderboardlist(request):
+    leaderboard_data = []
+    for i in range(1, 11):
+        player_data = {
+            'rank': i,
+            'player': f'Player {i}',
+            'games_played': 10 + i,
+            'games_won': 8 + i,
+            'win_percentage': (8 + i) / (10 + i) * 100,
+            'average_guesses': 4 + (i % 3),
+            'best_word': f'Word{i}'
+        }
+        leaderboard_data.append(player_data)
+    
+    context = {
+        'leaderboard_data': leaderboard_data
+    }
+    return render(request, 'users/leaderboardlist.html', context)
 
 class CustomLogoutView(LogoutView):
     next_page = reverse_lazy('login')
@@ -52,6 +70,9 @@ def profile(request):
     }
 
     return render(request, 'users/profile.html',context)
+
+
+
 
 
 
