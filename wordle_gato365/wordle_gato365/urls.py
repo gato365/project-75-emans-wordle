@@ -27,6 +27,7 @@ urlpatterns = [
     path('home/', user_views.home, name='home'),
     path('about/', user_views.about, name='about'),
     path('leaderboardlist/',user_views.leaderboardlist, name='leaderboardlist'),
+    path('stats/',user_views.stats, name='stats'),
     path('register/', user_views.register, name='register'),
     path('admin/', admin.site.urls),
     path('profile/', user_views.profile, name='profile'),

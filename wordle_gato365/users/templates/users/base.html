@@ -23,11 +23,28 @@
           <a class="navbaFr-brand mr-4" href="{% url 'home' %}">Wordle Game</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="navbarToggle">
+            
+            
+            {% if user.is_authenticated %}
+            <div class="navbar-nav mr-auto">
+              <a class="nav-item nav-link" href="{% url 'stats' %}">STATs</a>
+              <a class="nav-item nav-link" href="{% url 'about' %}">About</a>
+              <a class="nav-item nav-link" href="{% url 'leaderboardlist' %}">Play Game</a>
+            </div>
+
+
+            {% else %}
+
             <div class="navbar-nav mr-auto">
               <a class="nav-item nav-link" href="{% url 'home' %}">Home</a>
               <a class="nav-item nav-link" href="{% url 'about' %}">About</a>
               <a class="nav-item nav-link" href="{% url 'leaderboardlist' %}">Leadership</a>
             </div>
+
+            {% endif %}
+
+
+
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
               {% if user.is_authenticated %}

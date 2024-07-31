@@ -85,3 +85,8 @@ def about(request):
 
 def leaderboardlist(request):
     return render(request, 'users/leaderboardlist.html')
+
+
+
+def stats(request):
+    return render(request, 'users/stats.html')
