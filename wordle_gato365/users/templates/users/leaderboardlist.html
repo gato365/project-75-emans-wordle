@@ -1,7 +1,35 @@
 {% extends "users/base.html" %}
 
-{% block content %}
-
-HEYYYYY
-
+{% block content1 %}
+<div class="container">
+    <h2>Fake Wordle Leaderboard</h2>
+    <p>This is a fake leaderboard for demonstration purposes.</p>
+    <pre>{{ leaderboard_data }}</pre> <!-- Debugging output -->
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Player</th>
+                <th>Games Played</th>
+                <th>Games Won</th>
+                <th>Win Percentage</th>
+                <th>Average Guesses</th>
+                <th>Best Word</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for player in leaderboard_data %}
+            <tr>
+                <td>{{ player.rank }}</td>
+                <td>{{ player.player }}</td>
+                <td>{{ player.games_played }}</td>
+                <td>{{ player.games_won }}</td>
+                <td>{{ player.win_percentage|floatformat:2 }}%</td>
+                <td>{{ player.average_guesses }}</td>
+                <td>{{ player.best_word }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
 {% endblock %}

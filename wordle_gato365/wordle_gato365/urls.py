@@ -25,14 +25,12 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('', user_views.home),
     path('home/', user_views.home, name='home'),
-    path('admin/', admin.site.urls),
     path('about/', user_views.about, name='about'),
-    path('profile/', user_views.profile, name='profile'),
-    path('register/', user_views.register, name='register'),
     path('leaderboardlist/',user_views.leaderboardlist, name='leaderboardlist'),
-    
+    path('register/', user_views.register, name='register'),
+    path('admin/', admin.site.urls),
+    path('profile/', user_views.profile, name='profile'),
     path('accounts/', include('allauth.urls')),
-
     path('login/', auth_views.LoginView.as_view(template_name = 'users/login.html'), name='login'),
     path('wordle/', wordle_views.wordle_game, name='wordle'),
     path('game/', wordle_views.game, name='wordle'),
