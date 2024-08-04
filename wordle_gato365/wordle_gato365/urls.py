@@ -33,8 +33,7 @@ urlpatterns = [
     path('profile/', user_views.profile, name='profile'),
     path('accounts/', include('allauth.urls')),
     path('login/', auth_views.LoginView.as_view(template_name = 'users/login.html'), name='login'),
-    path('wordle/', wordle_views.wordle_game, name='wordle'),
-    path('game/', wordle_views.game, name='wordle'),
+    path('game/', wordle_views.game, name='game'),
     path('logout/', user_views.CustomLogoutView.as_view(), name='logout')
    
 ]  + static(settings.STATIC_URL)
