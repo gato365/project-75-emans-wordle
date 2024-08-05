@@ -1,6 +1,6 @@
 ### Static File Management
-- [ ] Ensure static files for the game are stored in an appropriate directory (1).
-- [ ] Separate CSS and JS files to be stored and managed independently.
+- [X] Ensure static files for the game are stored in an appropriate directory (1).
+- [X] Separate CSS and JS files to be stored and managed independently.
 
 ### Database Integration and Management
 - [ ] Implement a list of words to load correctly and stored in the database (2).

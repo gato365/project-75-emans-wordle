@@ -1,7 +1,7 @@
 let answer;
 // Fetch the text file located one directory up
 
-fetch('five_letter_words.txt')
+fetch('/static/wordle/js/five_letter_words.txt')
   .then(response => response.text()) // Convert the response to text
   .then(text => {
     const words = text.split('\n'); // Split the text into an array of words
@@ -13,7 +13,7 @@ fetch('five_letter_words.txt')
 
 
 let attempts = 6;
-// answer = "hello"
+// answer = "apple"; // Hardcoded answer for testing purposes
 
 function submitGuess() {
     let guess = document.getElementById('guessInput').value.toLowerCase();
@@ -33,7 +33,8 @@ function submitGuess() {
 
      // Update the attempted words display
      let attemptedWordsDiv = document.getElementById('attemptedWords');
-     attemptedWordsDiv.textContent += guess + "\n"; // Append the new guess to the list of attempted words
+     
+     attemptedWordsDiv.innerHTML += guess + "<br>"; // Append the new guess to the list of attempted words with a line break
 
     // First pass to assign green tiles
     for (let i = 0; i < 5; i++) {
@@ -53,7 +54,8 @@ function submitGuess() {
         }
     }
 
-    document.getElementById('feedback').textContent += feedback + "\n";
+    document.getElementById('feedback').innerHTML += feedback + "<br>"; // Add feedback with line break
+    
     attempts -= 1;
     document.getElementById('attemptsLeft').textContent = `You have ${attempts} attempts left.`;
 
