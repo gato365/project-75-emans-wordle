@@ -1,0 +1,1 @@
+web: python wordle_gato365/manage.py runserver 
