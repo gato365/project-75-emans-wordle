@@ -154,10 +154,10 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'wordle','static')
 
  # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'wordle','static'),  # Adjust this path if your static directory is elsewhere
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'wordle','static'),  # Adjust this path if your static directory is elsewhere
    
-]
+# ]
 
 print(STATICFILES_DIRS)
 
