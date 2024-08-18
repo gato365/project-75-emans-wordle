@@ -159,7 +159,7 @@ STATIC_URL = '/static/'
    
 # ]
 
-print(STATICFILES_DIRS)
+
 
 ## --------- All added by me ---------------
 
