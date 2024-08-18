@@ -4,3 +4,4 @@ django-crispy-forms==2.2
 python-dotenv==1.0.0
 crispy-bootstrap4==2024.1
 mysqlclient==2.2.4
+Pillow==9.3.0
