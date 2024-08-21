@@ -104,6 +104,8 @@ SITE_ID = 1
 
 
 ## Change the database to MySQL
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
