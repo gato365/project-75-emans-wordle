@@ -12,10 +12,14 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import os
+import dj_database_url
+from dotenv import load_dotenv
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-from dotenv import load_dotenv
+
+
 
 load_dotenv()
 # Quick-start development settings - unsuitable for production
@@ -106,15 +110,20 @@ SITE_ID = 1
 ## Change the database to MySQL
 
 
+# DATABASES = {
+    
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': os.getenv('DB_NAME', 'your_default_db_name'),
+#         'USER': os.getenv('DB_USER', 'your_default_db_user'),
+#         'PASSWORD': os.getenv('DB_PASSWORD', 'your_default_db_password'),
+#         'HOST': os.getenv('DB_HOST', 'localhost'),
+#         'PORT': os.getenv('DB_PORT', '3306'),
+#     }
+# }
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.getenv('DB_NAME', 'your_default_db_name'),
-        'USER': os.getenv('DB_USER', 'your_default_db_user'),
-        'PASSWORD': os.getenv('DB_PASSWORD', 'your_default_db_password'),
-        'HOST': os.getenv('DB_HOST', 'localhost'),
-        'PORT': os.getenv('DB_PORT', '3306'),
-    }
+    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
 }
 
 
