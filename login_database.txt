@@ -1,0 +1,75 @@
+gato365: Provide instructions on how to loginto my sql and using command line like using 'root' then check on the users in the localhost server.
+
+GitHub Copilot: To log into MySQL using the command line as the `root` user and check the users in the localhost server, follow these steps:
+
+### Step-by-Step Instructions
+
+1. **Open Command Prompt:**
+   - On Windows, press `Win + R`, type `cmd`, and press `Enter`.
+
+2. **Log into MySQL:**
+   - Type the following command and press `Enter`. You will be prompted to enter the root password.
+     ```sh
+     mysql -u root -p
+     ```
+   - Enter the root password when prompted.
+
+3. **Switch to the `mysql` Database:**
+   - Once logged in, switch to the `mysql` database, which contains the user information.
+     ```sql
+     USE mysql;
+     ```
+
+4. **Check the Users:**
+   - To see the list of users, run the following SQL query:
+     ```sql
+     SELECT User, Host FROM user;
+     ```
+
+### Example Session
+
+Here's what a typical session might look like:
+
+```sh
+
+
+C
+
+:\Users\YourUsername>mysql -u root -p
+Enter password: ********
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 10
+Server version: 8.0.23 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2021, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> USE mysql;
+Database changed
+
+mysql> SELECT User, Host FROM user;
++------------------+-----------+
+| User             | Host      |
++------------------+-----------+
+| root             | localhost |
+| mysql.session    | localhost |
+| mysql.sys        | localhost |
+| debian-sys-maint | localhost |
++------------------+-----------+
+4 rows in set (0.00 sec)
+
+mysql>
+```
+
+### Notes
+
+- Ensure MySQL server is running before attempting to log in.
+- If you encounter any issues with permissions or access, you may need to check your MySQL configuration or user privileges.
+- For security reasons, avoid using the `root` user for regular database operations. Create a new user with appropriate privileges for your tasks.
+
+Similar code found with 2 license types
