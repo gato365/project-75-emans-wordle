@@ -29,9 +29,18 @@ load_dotenv()
 SECRET_KEY = 'django-insecure-6g9e3!e_&!vif@5i^hktv^+lq-y&-=xv-^brjcakq8-f-if4qu'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+## 1a) Currently commented out
+# DEBUG = True
+
+
+## 1b) Currently in use
+DEBUG = 'RENDER' not in os.environ
 
 ALLOWED_HOSTS = []
+
+RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
+if RENDER_EXTERNAL_HOSTNAME:
+    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
 
 # Application definition
@@ -57,6 +66,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'wordle_gato365.no_cache_middleware.NoCacheMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware', 
     'allauth.account.middleware.AccountMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -161,7 +171,18 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'wordle','static')
+
+## 2a) Currently commented out
+# STATIC_ROOT = os.path.join(BASE_DIR, 'wordle','static')
+
+## 2b) Currently in use
+if not DEBUG:
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+
+
+
 
  # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
