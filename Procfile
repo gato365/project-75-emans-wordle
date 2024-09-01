@@ -1,1 +1,1 @@
-web: gunicorn wordle_gato365/wordle_gato365/wsgi.py
+web: gunicorn wordle_gato365/wordle_gato365/wsgi.py:application
