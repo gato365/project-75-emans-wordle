@@ -20,3 +20,5 @@ bin-release/
 login_information.md
 Lib
 Scripts
+
+wordle_gato365/wordle/static/**/*
