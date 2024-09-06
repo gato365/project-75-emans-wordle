@@ -9,9 +9,22 @@ https://docs.djangoproject.com/en/5.0/howto/deployment/wsgi/
 
 import os
 
-from django.core.wsgi import get_wsgi_application
+## Begin 1: Logging Information
+import logging 
+logger = logging.getLogger(__name__)
+## End 1: Logging Information
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'wordle_gato365.settings')
+## Begin 2: Logging Information
+logger.debug("Setting DJANGO_SETTINGS_MODULE")
+## End 2: Logging Information
+
+
+from django.core.wsgi import get_wsgi_application
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'wordle_gato365.wordle_gato365.settings')
+
+## Begin 3: Logging Information
+logger.debug("Getting WSGI application")
+## End 3: Logging Information
 
 application = get_wsgi_application()
 
