@@ -1,3 +1,17 @@
+
+When adding new tables:
+ 1) Deploy 
+ 2) heroku run python wordle_gato365/manage.py migrate --app wordle-app-2024
+
+
+Next steps:
+Create a tables
+
+Login using Cal poly Google Oauth
+.env both 
+(Any new data Source)
+
+
 ## All Technologies
 
 ### Cloud
