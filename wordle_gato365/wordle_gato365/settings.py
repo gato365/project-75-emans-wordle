@@ -117,25 +117,24 @@ SITE_ID = 1
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 
-
-## Change the database to MySQL
-
-
-# DATABASES = {
-    
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': os.getenv('DB_NAME', 'your_default_db_name'),
-#         'USER': os.getenv('DB_USER', 'your_default_db_user'),
-#         'PASSWORD': os.getenv('DB_PASSWORD', 'your_default_db_password'),
-#         'HOST': os.getenv('DB_HOST', 'localhost'),
-#         'PORT': os.getenv('DB_PORT', '3306'),
-#     }
-# }
-
-DATABASES = {
-    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
-}
+# Check if the environment variable 'DATABASE_URL' is set
+if os.getenv('DATABASE_URL'):
+    # Use the remote database configuration
+    DATABASES = {
+        'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
+    }
+else:
+    # Use the local database configuration
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': os.getenv('DB_NAME', 'your_default_db_name'),
+            'USER': os.getenv('DB_USER', 'your_default_db_user'),
+            'PASSWORD': os.getenv('DB_PASSWORD', 'your_default_db_password'),
+            'HOST': os.getenv('DB_HOST', 'localhost'),
+            'PORT': os.getenv('DB_PORT', '3306'),
+        }
+    }
 
 
 # Password validation
