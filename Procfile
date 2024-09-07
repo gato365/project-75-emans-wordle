@@ -1,1 +1,1 @@
-web: gunicorn --chdir ./wordle_gato365/wordle_gato365 wordle_gato365.wsgi:application
+web: gunicorn --chdir ./wordle_gato365 wordle_gato365.wsgi:application
