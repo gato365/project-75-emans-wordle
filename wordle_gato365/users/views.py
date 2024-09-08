@@ -77,7 +77,11 @@ def profile(request):
 
 
 def home(request):
-    return render(request, 'users/home.html')
+    context = {
+        'title': 'Home Page',
+        # Add other context variables here
+    }
+    return render(request, 'users/home.html', context)
 
 
 def about(request):
