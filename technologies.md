@@ -2,7 +2,7 @@
 When adding new tables:
  1) Deploy 
  2) heroku run python wordle_gato365/manage.py migrate --app wordle-app-2024
-3) python wordle_gato365/manage.py runserver 8000 > server.log 2>&1 to save output into a file
+
 
 Next steps:
 Create a tables
