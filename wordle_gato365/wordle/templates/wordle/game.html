@@ -9,17 +9,21 @@
 <link href = "{% static 'wordle/css/styles.css' %}" rel = "stylesheet">  
 
 
+<body onload="startTimer()">
     <div id="game">
-        <br>
-        <h1>Wordle Clone</h1>
-        
-        <input type="text" id="guessInput" maxlength="5" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
-        <button onclick="submitGuess()">Guess</button>
-        <div id="attemptsLeft"></div>
-        <div id="attemptedWords"></div> 
+        <h1>WURDZ</h1>
+        <button id="startButton">Start Game</button>
+        <button id="restartButton" style="display: none;">Restart Game</button>
+        <input type="text" id="guessInput" style="display: none;" placeholder="Enter your guess" maxlength="5" autocomplete="off" autocorrect="off" autocapitalize="off"
+        spellcheck="false">
+        <button id="submitGuessButton" style="display: none;" onclick="submitGuess()">Submit Guess</button>
         <div id="feedback"></div>
         <div id="attemptsLeft"></div>
+        <div id="attemptedWords"></div>
+        <textarea id="sessionInfo" class="styled-textarea" readonly></textarea>
+
     </div>
+
     
 
     <script src="{% static 'wordle/js/scripts.js' %}"></script>
