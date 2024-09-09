@@ -3610,3 +3610,1875 @@ django.template.base.VariableDoesNotExist: Failed lookup for key [title] in [{'T
 "GET /register/ HTTP/1.1" 200 2214
 File C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\templates\wordle\game.html previous mtime: 1725910903.7947843, current mtime: 1725911402.5863352
 C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\templates\wordle\game.html notified as changed. Signal results: [(<function template_changed at 0x0000021C09864D60>, True), (<function translation_file_changed at 0x0000021C0AA84D60>, None)].
+Exception while resolving variable 'title' in template 'users/register.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'RequestContext' has no attribute 'title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [title] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x0000021C0CAAFB00>>, 'request': <WSGIRequest: GET '/register/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x0000021C0CB42E80>>, 'perms': PermWrapper(<SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x0000021C0CB42E80>>), 'messages': <FallbackStorage: request=<WSGIRequest: GET '/register/'>>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <UserRegisterForm bound=False, valid=Unknown, fields=(username;email;password1;password2)>}]
+"GET /register/ HTTP/1.1" 200 2214
+File C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\templates\users\base.html previous mtime: 1725802446.421344, current mtime: 1725911801.4217546
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\templates\users\base.html notified as changed. Signal results: [(<function template_changed at 0x0000021C09864D60>, True), (<function translation_file_changed at 0x0000021C0AA84D60>, None)].
+File C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\templates\users\register.html previous mtime: 1725843971.9628863, current mtime: 1725911809.9396305
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\templates\users\register.html notified as changed. Signal results: [(<function template_changed at 0x0000021C09864D60>, True), (<function translation_file_changed at 0x0000021C0AA84D60>, None)].
+File C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\templates\users\register.html previous mtime: 1725911809.9396305, current mtime: 1725911811.5473266
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\templates\users\register.html notified as changed. Signal results: [(<function template_changed at 0x0000021C09864D60>, True), (<function translation_file_changed at 0x0000021C0AA84D60>, None)].
+"GET /home/ HTTP/1.1" 200 2693
+Exception while resolving variable 'title' in template 'users/about.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'RequestContext' has no attribute 'title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [title] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x0000021C0B250EA0>>, 'request': <WSGIRequest: GET '/about/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x0000021C0B392B60>>, 'perms': PermWrapper(<SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x0000021C0B392B60>>), 'messages': <FallbackStorage: request=<WSGIRequest: GET '/about/'>>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}]
+"GET /about/ HTTP/1.1" 200 3136
+Exception while resolving variable 'title' in template 'users/leaderboardlist.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'RequestContext' has no attribute 'title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [title] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x0000021C0CB43600>>, 'request': <WSGIRequest: GET '/leaderboardlist/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x0000021C0B250EA0>>, 'perms': PermWrapper(<SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x0000021C0B250EA0>>), 'messages': <FallbackStorage: request=<WSGIRequest: GET '/leaderboardlist/'>>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}]
+Exception while resolving variable 'leaderboard_data' in template 'users/leaderboardlist.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'leaderboard_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'RequestContext' has no attribute 'leaderboard_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'leaderboard_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [leaderboard_data] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x0000021C0CB43600>>, 'request': <WSGIRequest: GET '/leaderboardlist/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x0000021C0B8E3ED0>>, 'perms': PermWrapper(<SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x0000021C0B8E3ED0>>), 'messages': <FallbackStorage: request=<WSGIRequest: GET '/leaderboardlist/'>>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'block': <Block Node: content1. Contents: [<TextNode: '\n<div class="container">\n'>, <Variable Node: leaderboard_data>, <TextNode: '</pre> <!-- Debugging out'>, <ForNode: for player in leaderboard_data, tail_len: 15>, <TextNode: '\n        </tbody>\n    </t'>]>}]
+Exception while resolving variable 'leaderboard_data' in template 'users/leaderboardlist.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'leaderboard_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'RequestContext' has no attribute 'leaderboard_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'leaderboard_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [leaderboard_data] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x0000021C0CB43600>>, 'request': <WSGIRequest: GET '/leaderboardlist/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x0000021C0B8E3ED0>>, 'perms': PermWrapper(<SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x0000021C0B8E3ED0>>), 'messages': <FallbackStorage: request=<WSGIRequest: GET '/leaderboardlist/'>>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'block': <Block Node: content1. Contents: [<TextNode: '\n<div class="container">\n'>, <Variable Node: leaderboard_data>, <TextNode: '</pre> <!-- Debugging out'>, <ForNode: for player in leaderboard_data, tail_len: 15>, <TextNode: '\n        </tbody>\n    </t'>]>}, {}]
+"GET /leaderboardlist/ HTTP/1.1" 200 2803
+Exception while resolving variable 'title' in template 'users/login.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'RequestContext' has no attribute 'title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [title] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x0000021C0B250EA0>>, 'request': <WSGIRequest: GET '/login/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x0000021C0B392B60>>, 'perms': PermWrapper(<SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x0000021C0B392B60>>), 'messages': <FallbackStorage: request=<WSGIRequest: GET '/login/'>>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <AuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'view': <django.contrib.auth.views.LoginView object at 0x0000021C0B3BDF90>, 'next': '', 'site': <Site: example.com>, 'site_name': 'example.com'}]
+Exception while resolving variable 'include_media' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'include_media'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'include_media'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'include_media'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [include_media] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <AuthenticationForm bound=False, valid=Unknown, fields=(username;password)>}]
+Exception while resolving variable 'tag' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [tag] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <AuthenticationForm bound=False, valid=False, fields=(username;password)>}, {'forloop': {'parentloop': {}, 'counter0': 0, 'counter': 1, 'revcounter': 2, 'revcounter0': 1, 'first': True, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B91DED0>}, {}]
+Exception while resolving variable 'form_class' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [form_class] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <AuthenticationForm bound=False, valid=False, fields=(username;password)>}, {'forloop': {'parentloop': {}, 'counter0': 0, 'counter': 1, 'revcounter': 2, 'revcounter0': 1, 'first': True, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B91DED0>}, {}]
+Exception while resolving variable 'wrapper_class' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'wrapper_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'wrapper_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'wrapper_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [wrapper_class] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <AuthenticationForm bound=False, valid=False, fields=(username;password)>}, {'forloop': {'parentloop': {}, 'counter0': 0, 'counter': 1, 'revcounter': 2, 'revcounter0': 1, 'first': True, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B91DED0>}, {}]
+Exception while resolving variable 'form_class' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [form_class] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <AuthenticationForm bound=False, valid=False, fields=(username;password)>}, {'forloop': {'parentloop': {}, 'counter0': 0, 'counter': 1, 'revcounter': 2, 'revcounter0': 1, 'first': True, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B91DED0>}, {}]
+Exception while resolving variable 'help_text_inline' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [help_text_inline] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <AuthenticationForm bound=False, valid=False, fields=(username;password)>}, {'forloop': {'parentloop': {}, 'counter0': 0, 'counter': 1, 'revcounter': 2, 'revcounter0': 1, 'first': True, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B91DED0>}, {}, {}]
+Exception while resolving variable 'error_text_inline' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'error_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'error_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'error_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [error_text_inline] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <AuthenticationForm bound=False, valid=False, fields=(username;password)>}, {'forloop': {'parentloop': {}, 'counter0': 0, 'counter': 1, 'revcounter': 2, 'revcounter0': 1, 'first': True, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B91DED0>}, {}, {}]
+Exception while resolving variable 'help_text_inline' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [help_text_inline] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <AuthenticationForm bound=False, valid=False, fields=(username;password)>}, {'forloop': {'parentloop': {}, 'counter0': 0, 'counter': 1, 'revcounter': 2, 'revcounter0': 1, 'first': True, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B91DED0>}, {}, {}]
+Exception while resolving variable 'tag' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [tag] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <AuthenticationForm bound=False, valid=False, fields=(username;password)>}, {'forloop': {'parentloop': {}, 'counter0': 0, 'counter': 1, 'revcounter': 2, 'revcounter0': 1, 'first': True, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B91DED0>}, {}]
+Exception while resolving variable 'tag' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [tag] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <AuthenticationForm bound=False, valid=False, fields=(username;password)>}, {'forloop': {'parentloop': {}, 'counter0': 1, 'counter': 2, 'revcounter': 1, 'revcounter0': 0, 'first': False, 'last': True}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B91D450>}, {}]
+Exception while resolving variable 'form_class' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [form_class] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <AuthenticationForm bound=False, valid=False, fields=(username;password)>}, {'forloop': {'parentloop': {}, 'counter0': 1, 'counter': 2, 'revcounter': 1, 'revcounter0': 0, 'first': False, 'last': True}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B91D450>}, {}]
+Exception while resolving variable 'wrapper_class' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'wrapper_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'wrapper_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'wrapper_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [wrapper_class] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <AuthenticationForm bound=False, valid=False, fields=(username;password)>}, {'forloop': {'parentloop': {}, 'counter0': 1, 'counter': 2, 'revcounter': 1, 'revcounter0': 0, 'first': False, 'last': True}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B91D450>}, {}]
+Exception while resolving variable 'form_class' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [form_class] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <AuthenticationForm bound=False, valid=False, fields=(username;password)>}, {'forloop': {'parentloop': {}, 'counter0': 1, 'counter': 2, 'revcounter': 1, 'revcounter0': 0, 'first': False, 'last': True}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B91D450>}, {}]
+Exception while resolving variable 'help_text_inline' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [help_text_inline] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <AuthenticationForm bound=False, valid=False, fields=(username;password)>}, {'forloop': {'parentloop': {}, 'counter0': 1, 'counter': 2, 'revcounter': 1, 'revcounter0': 0, 'first': False, 'last': True}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B91D450>}, {}, {}]
+Exception while resolving variable 'error_text_inline' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'error_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'error_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'error_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [error_text_inline] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <AuthenticationForm bound=False, valid=False, fields=(username;password)>}, {'forloop': {'parentloop': {}, 'counter0': 1, 'counter': 2, 'revcounter': 1, 'revcounter0': 0, 'first': False, 'last': True}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B91D450>}, {}, {}]
+Exception while resolving variable 'help_text_inline' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [help_text_inline] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <AuthenticationForm bound=False, valid=False, fields=(username;password)>}, {'forloop': {'parentloop': {}, 'counter0': 1, 'counter': 2, 'revcounter': 1, 'revcounter0': 0, 'first': False, 'last': True}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B91D450>}, {}, {}]
+Exception while resolving variable 'tag' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [tag] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <AuthenticationForm bound=False, valid=False, fields=(username;password)>}, {'forloop': {'parentloop': {}, 'counter0': 1, 'counter': 2, 'revcounter': 1, 'revcounter0': 0, 'first': False, 'last': True}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B91D450>}, {}]
+"GET /login/ HTTP/1.1" 200 3768
+Exception while resolving variable 'title' in template 'users/register.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'RequestContext' has no attribute 'title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [title] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x0000021C0B82BB00>>, 'request': <WSGIRequest: GET '/register/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x0000021C0B250EA0>>, 'perms': PermWrapper(<SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x0000021C0B250EA0>>), 'messages': <FallbackStorage: request=<WSGIRequest: GET '/register/'>>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <UserRegisterForm bound=False, valid=Unknown, fields=(username;email;password1;password2)>}]
+Exception while resolving variable 'include_media' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'include_media'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'include_media'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'include_media'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [include_media] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=Unknown, fields=(username;email;password1;password2)>}]
+Exception while resolving variable 'tag' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [tag] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 0, 'counter': 1, 'revcounter': 4, 'revcounter0': 3, 'first': True, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B915D90>}, {}]
+Exception while resolving variable 'form_class' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [form_class] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 0, 'counter': 1, 'revcounter': 4, 'revcounter0': 3, 'first': True, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B915D90>}, {}]
+Exception while resolving variable 'wrapper_class' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'wrapper_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'wrapper_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'wrapper_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [wrapper_class] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 0, 'counter': 1, 'revcounter': 4, 'revcounter0': 3, 'first': True, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B915D90>}, {}]
+Exception while resolving variable 'form_class' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [form_class] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 0, 'counter': 1, 'revcounter': 4, 'revcounter0': 3, 'first': True, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B915D90>}, {}]
+Exception while resolving variable 'help_text_inline' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [help_text_inline] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 0, 'counter': 1, 'revcounter': 4, 'revcounter0': 3, 'first': True, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B915D90>}, {}, {}]
+Exception while resolving variable 'error_text_inline' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'error_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'error_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'error_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [error_text_inline] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 0, 'counter': 1, 'revcounter': 4, 'revcounter0': 3, 'first': True, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B915D90>}, {}, {}]
+Exception while resolving variable 'help_text_inline' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [help_text_inline] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 0, 'counter': 1, 'revcounter': 4, 'revcounter0': 3, 'first': True, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B915D90>}, {}, {}]
+Exception while resolving variable 'help_text_inline' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [help_text_inline] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 0, 'counter': 1, 'revcounter': 4, 'revcounter0': 3, 'first': True, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B915D90>}, {}, {}, {}]
+Exception while resolving variable 'tag' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [tag] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 0, 'counter': 1, 'revcounter': 4, 'revcounter0': 3, 'first': True, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B915D90>}, {}]
+Exception while resolving variable 'tag' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [tag] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 1, 'counter': 2, 'revcounter': 3, 'revcounter0': 2, 'first': False, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B9164D0>}, {}]
+Exception while resolving variable 'form_class' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [form_class] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 1, 'counter': 2, 'revcounter': 3, 'revcounter0': 2, 'first': False, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B9164D0>}, {}]
+Exception while resolving variable 'wrapper_class' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'wrapper_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'wrapper_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'wrapper_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [wrapper_class] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 1, 'counter': 2, 'revcounter': 3, 'revcounter0': 2, 'first': False, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B9164D0>}, {}]
+Exception while resolving variable 'form_class' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [form_class] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 1, 'counter': 2, 'revcounter': 3, 'revcounter0': 2, 'first': False, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B9164D0>}, {}]
+Exception while resolving variable 'help_text_inline' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [help_text_inline] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 1, 'counter': 2, 'revcounter': 3, 'revcounter0': 2, 'first': False, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B9164D0>}, {}, {}]
+Exception while resolving variable 'error_text_inline' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'error_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'error_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'error_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [error_text_inline] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 1, 'counter': 2, 'revcounter': 3, 'revcounter0': 2, 'first': False, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B9164D0>}, {}, {}]
+Exception while resolving variable 'help_text_inline' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [help_text_inline] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 1, 'counter': 2, 'revcounter': 3, 'revcounter0': 2, 'first': False, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B9164D0>}, {}, {}]
+Exception while resolving variable 'tag' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [tag] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 1, 'counter': 2, 'revcounter': 3, 'revcounter0': 2, 'first': False, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B9164D0>}, {}]
+Exception while resolving variable 'tag' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [tag] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 2, 'counter': 3, 'revcounter': 2, 'revcounter0': 1, 'first': False, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B914B50>}, {}]
+Exception while resolving variable 'form_class' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [form_class] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 2, 'counter': 3, 'revcounter': 2, 'revcounter0': 1, 'first': False, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B914B50>}, {}]
+Exception while resolving variable 'wrapper_class' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'wrapper_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'wrapper_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'wrapper_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [wrapper_class] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 2, 'counter': 3, 'revcounter': 2, 'revcounter0': 1, 'first': False, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B914B50>}, {}]
+Exception while resolving variable 'form_class' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [form_class] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 2, 'counter': 3, 'revcounter': 2, 'revcounter0': 1, 'first': False, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B914B50>}, {}]
+Exception while resolving variable 'help_text_inline' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [help_text_inline] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 2, 'counter': 3, 'revcounter': 2, 'revcounter0': 1, 'first': False, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B914B50>}, {}, {}]
+Exception while resolving variable 'error_text_inline' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'error_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'error_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'error_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [error_text_inline] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 2, 'counter': 3, 'revcounter': 2, 'revcounter0': 1, 'first': False, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B914B50>}, {}, {}]
+Exception while resolving variable 'help_text_inline' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [help_text_inline] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 2, 'counter': 3, 'revcounter': 2, 'revcounter0': 1, 'first': False, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B914B50>}, {}, {}]
+Exception while resolving variable 'help_text_inline' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [help_text_inline] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 2, 'counter': 3, 'revcounter': 2, 'revcounter0': 1, 'first': False, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B914B50>}, {}, {}, {}]
+Exception while resolving variable 'tag' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [tag] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 2, 'counter': 3, 'revcounter': 2, 'revcounter0': 1, 'first': False, 'last': False}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B914B50>}, {}]
+Exception while resolving variable 'tag' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [tag] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 3, 'counter': 4, 'revcounter': 1, 'revcounter0': 0, 'first': False, 'last': True}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B91D750>}, {}]
+Exception while resolving variable 'form_class' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [form_class] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 3, 'counter': 4, 'revcounter': 1, 'revcounter0': 0, 'first': False, 'last': True}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B91D750>}, {}]
+Exception while resolving variable 'wrapper_class' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'wrapper_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'wrapper_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'wrapper_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [wrapper_class] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 3, 'counter': 4, 'revcounter': 1, 'revcounter0': 0, 'first': False, 'last': True}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B91D750>}, {}]
+Exception while resolving variable 'form_class' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'form_class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [form_class] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 3, 'counter': 4, 'revcounter': 1, 'revcounter0': 0, 'first': False, 'last': True}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B91D750>}, {}]
+Exception while resolving variable 'help_text_inline' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [help_text_inline] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 3, 'counter': 4, 'revcounter': 1, 'revcounter0': 0, 'first': False, 'last': True}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B91D750>}, {}, {}]
+Exception while resolving variable 'error_text_inline' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'error_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'error_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'error_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [error_text_inline] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 3, 'counter': 4, 'revcounter': 1, 'revcounter0': 0, 'first': False, 'last': True}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B91D750>}, {}, {}]
+Exception while resolving variable 'help_text_inline' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [help_text_inline] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 3, 'counter': 4, 'revcounter': 1, 'revcounter0': 0, 'first': False, 'last': True}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B91D750>}, {}, {}]
+Exception while resolving variable 'help_text_inline' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'help_text_inline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [help_text_inline] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 3, 'counter': 4, 'revcounter': 1, 'revcounter0': 0, 'first': False, 'last': True}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B91D750>}, {}, {}, {}]
+Exception while resolving variable 'tag' in template 'bootstrap4/uni_form.html'.
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'tag'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [tag] in [{'True': True, 'False': False, 'None': None}, {'field_class': '', 'field_template': 'bootstrap4/field.html', 'form_show_errors': True, 'form_show_labels': True, 'label_class': '', 'form': <UserRegisterForm bound=False, valid=False, fields=(username;email;password1;password2)>}, {'forloop': {'parentloop': {}, 'counter0': 3, 'counter': 4, 'revcounter': 1, 'revcounter0': 0, 'first': False, 'last': True}, 'field': <django.forms.boundfield.BoundField object at 0x0000021C0B91D750>}, {}]
+"GET /register/ HTTP/1.1" 200 4878
