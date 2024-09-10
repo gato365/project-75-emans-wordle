@@ -15,7 +15,7 @@ Login using Cal poly Google Oauth
 ## All Technologies
 
 ### Cloud
-- Azure
+- Heroku
 
 ### Frontend
 - Django
@@ -28,7 +28,7 @@ Login using Cal poly Google Oauth
 - JavaScript
 
 ### Database
-- SQLite
+- MySQL
 
 ### Version Control & Platform
 - Git
@@ -43,17 +43,11 @@ Login using Cal poly Google Oauth
 - VS Code
 
 ### Project Management
-- Jira
+- Jira (postponed)
 
 ### Communication
 - Slack
 
 ### Other Tools (To be determined)
-- Azure DevOps
-- Docker
-- Kubernetes
-- Azure Pipelines
-- Azure Boards
-- Azure Repos
  CI/CD - To be determined
  Testing - To be determined (Maybe Django Testing Framework)
