@@ -1,15 +1,21 @@
 
 
 
+
+let attemptsList = [];
+let currentWordIndex = 0;
+let attempts = 6;
+let startTime, endTime;
+
+
+
+
+
 let words = [
   "beach", "coast", "horse", "learn",
   "nudge", "fiber", "mayor", "ghost",
   "lapel", "frack", "audio", "uncap"
 ];
-let attemptsList = [];
-let currentWordIndex = 0;
-let attempts = 6;
-let startTime, endTime;
 
 document.getElementById('startButton').addEventListener('click', startGame);
 document.getElementById('restartButton').addEventListener('click', restartGame);
@@ -22,6 +28,7 @@ document.getElementById('guessInput').addEventListener('keypress', function(even
 document.getElementById('guessInput').addEventListener('input', function() {
   this.value = this.value.toLowerCase();
 });
+
 
 document.addEventListener('DOMContentLoaded', function () {
   let displayElement = document.getElementById('feedback');
@@ -40,25 +47,67 @@ function shuffleWords() {
 words = words.map(word => word.toLowerCase());
 shuffleWords();
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function startGame() {
-  console.log("Lets see what happens here");
-  attempts = 6;
-  attemptsList = [];
-  currentWordIndex = Math.floor(Math.random() * words.length);
+  fetch('/game/', {
+    method: 'POST',
+    headers: {
+      'X-CSRFToken': getCookie('csrftoken'),
+      'Content-Type': 'application/json'
+    }
+  })
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+    if (data.status === 'success') {
+      attempts = 6;
+      attemptsList = [];
+      currentWordIndex = Math.floor(Math.random() * words.length);
 
-  document.getElementById('startButton').style.display = 'none';
-  document.getElementById('guessInput').style.display = 'block';
-  document.getElementById('submitGuessButton').style.display = 'block';
+      document.getElementById('startButton').style.display = 'none';
+      document.getElementById('guessInput').style.display = 'block';
+      document.getElementById('submitGuessButton').style.display = 'block';
 
-  document.getElementById('sessionInfo').value = '';
-  document.getElementById('attemptsLeft').textContent = `You have ${attempts} attempts left.`;
-  document.getElementById('attemptedWords').innerHTML = '';
-  document.getElementById('feedback').innerHTML = '';
+      document.getElementById('sessionInfo').value = '';
+      document.getElementById('attemptsLeft').textContent = `You have ${attempts} attempts left.`;
+      document.getElementById('attemptedWords').innerHTML = '';
+      document.getElementById('feedback').innerHTML = '';
 
-  document.getElementById('guessInput').disabled = false;
+      document.getElementById('guessInput').disabled = false;
   
-  startTimer();
+      startTimer();
+    } else {
+      throw new Error('Game initialization failed');
+    }
+  }).catch(error => {
+    console.error('There was a problem with the fetch operation:', error);
+    // Display error to user
+    document.getElementById('feedback').innerHTML = 'Failed to start game. Please try again.';
+  });
 }
+
 
 function restartGame() {
   document.getElementById('restartButton').style.display = 'none';
@@ -233,4 +282,20 @@ function endTimer() {
     endTime = new Date();
     let timeDiff = (endTime - startTime) / 1000;
     return Math.round(timeDiff);
+}
+
+
+function getCookie(name) {
+  let cookieValue = null;
+  if (document.cookie && document.cookie !== '') {
+    const cookies = document.cookie.split(';');
+    for (let i = 0; i < cookies.length; i++) {
+      const cookie = cookies[i].trim();
+      if (cookie.substring(0, name.length + 1) === (name + '=')) {
+        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+        break;
+      }
+    }
+  }
+  return cookieValue;
 }

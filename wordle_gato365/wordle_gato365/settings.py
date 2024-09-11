@@ -45,7 +45,7 @@ if RENDER_EXTERNAL_HOSTNAME:
 
 
 ## Custom user model
-AUTH_USER_MODEL = 'users.CustomUser'
+# AUTH_USER_MODEL = 'users.CustomUser'
 
 
 # Application definition
