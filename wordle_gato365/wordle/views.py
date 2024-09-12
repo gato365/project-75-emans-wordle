@@ -20,11 +20,7 @@ def game_view(request):
         }
         return render(request, 'wordle/game.html', context)
     elif request.method == "POST":
-        # Here you can add any game initialization logic
-        return JsonResponse({
-            'status': 'success',
-            'message': 'Game started successfully'
-        })
+        return start_game(request)
 
 
 
@@ -34,6 +30,8 @@ def game_view(request):
 def start_game(request):
     """Start a new game."""
     word = Word.objects.order_by('?').first()
+    if not word:
+        return JsonResponse({'error': 'No words available'}, status=400)   
     game = Game.objects.create(user=request.user, word=word, status='active')
     return JsonResponse({
         'game_id': game.id,

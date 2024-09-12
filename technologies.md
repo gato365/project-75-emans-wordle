@@ -1,7 +1,4 @@
 
-When adding new tables:
- 1) Deploy 
- 2) heroku run python wordle_gato365/manage.py migrate --app wordle-app-2024
 
 
 Next steps:

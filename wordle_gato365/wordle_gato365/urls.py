@@ -27,13 +27,15 @@ urlpatterns = [
     path('home/', user_views.home, name='home'),
     path('about/', user_views.about, name='about'),
     path('leaderboardlist/',user_views.leaderboardlist, name='leaderboardlist'),
+
     path('stats/',user_views.stats, name='stats'),
     path('register/', user_views.register, name='register'),
     path('admin/', admin.site.urls),
     path('profile/', user_views.profile, name='profile'),
     path('accounts/', include('allauth.urls')),
     path('login/', auth_views.LoginView.as_view(template_name = 'users/login.html'), name='login'),
-    # path('game/', wordle_views.game, name='game'),
+    
+    path('start_game/', wordle_views.start_game, name='start_game'),
     path('game/', wordle_views.game_view, name='game'),
     path('logout/', user_views.CustomLogoutView.as_view(), name='logout')
    
