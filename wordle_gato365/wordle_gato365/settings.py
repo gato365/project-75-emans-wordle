@@ -218,6 +218,7 @@ LOGIN_URL = 'profile'
 
 
 ## Logging settings
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -225,14 +226,23 @@ LOGGING = {
         'console': {
             'class': 'logging.StreamHandler',
         },
+        'file': {
+            'class': 'logging.FileHandler',
+            'filename': 'debug.log',
+        },
+    },
+    'root': {
+        'handlers': ['console', 'file'],
+        'level': 'DEBUG',
     },
     'loggers': {
         'django': {
-            'handlers': ['console'],
-            'level': 'DEBUG',  # Set this to 'INFO' for less verbose output after debugging
+            'handlers': ['console', 'file'],
+            'level': os.getenv('DJANGO_LOG_LEVEL', 'INFO'),
+            'propagate': False,
         },
-        'wordle_gato365': {  # Assuming 'wordle_gato365' is your Django project name
-            'handlers': ['console'],
+        'wordle': {  # replace with your app name
+            'handlers': ['console', 'file'],
             'level': 'DEBUG',
             'propagate': False,
         },

@@ -37,6 +37,7 @@ urlpatterns = [
     
     path('start_game/', wordle_views.start_game, name='start_game'),
     path('game/', wordle_views.game_view, name='game'),
+    path('submit_guess/', wordle_views.submit_guess, name='submit_guess'),
     path('logout/', user_views.CustomLogoutView.as_view(), name='logout')
    
 ]  + static(settings.STATIC_URL)

@@ -88,82 +88,34 @@ async function startGame() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function restartGame() {
-  document.getElementById('restartButton').style.display = 'none';
-  document.getElementById('startButton').style.display = 'block';
+  // Hide/Show Elements
+  document.getElementById('restartButton').style.display = 'none'; // Hide the restart button
+  document.getElementById('startButton').style.display = 'block'; // Show the start button
+  document.getElementById('guessInput').style.display = 'none'; // Hide the guess input field
+  document.getElementById('submitGuessButton').style.display = 'none'; // Hide the submit guess button
+  document.getElementById('sessionInfo').style.display = 'none'; // Hide the session info
   
-  document.getElementById('guessInput').style.display = 'none';
-  document.getElementById('submitGuessButton').style.display = 'none';
-  document.getElementById('sessionInfo').style.display = 'none';
-  document.getElementById('feedback').innerHTML = '';
-  document.getElementById('attemptsLeft').textContent = '';
-  document.getElementById('attemptedWords').innerHTML = '';
-}
+  // Reset/Initialize Values
+  document.getElementById('feedback').innerHTML = ''; // Clear the feedback
+  document.getElementById('attemptsLeft').textContent = ''; // Clear the attempts left text
+  document.getElementById('attemptedWords').innerHTML = ''; // Clear the attempted words
+  }
+  
+  
+  
 
 
 
 
 
 
-function submitGuess() {
+
+
+
+
+
+function submitGuessOLD() {
   let guess = document.getElementById('guessInput').value.toLowerCase();
 
   if (guess.length !== 5) {
@@ -201,7 +153,7 @@ function submitGuess() {
   }
 }
 
-function endGame(isWin) {
+function endGameOLD(isWin) {
   document.getElementById('guessInput').disabled = true;
   showSessionInfo();
   updateSessionInfo(attempts, attemptsList);
@@ -214,78 +166,7 @@ function endGame(isWin) {
   }
 }
 
-
-function submitGuessNEW() {
-  let guess = document.getElementById('guessInput').value.toLowerCase();
-
-  if (guess.length !== 5) {
-    alert("Please enter a 5-letter word.");
-    return;
-  }
-
-  fetch('/game/', {
-    method: 'POST',
-    headers: {
-      'X-CSRFToken': getCookie('csrftoken'),
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      game_id: currentGameId,
-      guess: guess
-    })
-  })
-  .then(response => response.json())
-  .then(data => {
-
-
-
-    calculateAndDisplayFeedback(data.feedback);
-    attempts = data.attempts_left;
-    document.getElementById('attemptsLeft').textContent = `You have ${attempts} attempts left.`;
-
-    attemptsList.push(guess);
-    document.getElementById('guessInput').value = '';
-
-    if (data.game_over) {
-      endGame(data.is_win, data.correct_word);
-    }
-  });
-}
-
-
-
-// function endGameNEW(isWin, correctWord) {
-//   document.getElementById('guessInput').disabled = true;
-//   showSessionInfo();
-//   updateSessionInfo(attempts, attemptsList);
-//   document.getElementById('restartButton').style.display = 'block';
-  
-//   if (isWin) {
-//     alert("Congratulations! You've guessed the word correctly!");
-//   } else {
-//     alert(`You've run out of attempts! The correct word was ${correctWord}.`);
-//   }
-
-//   updateLeaderboard();
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function calculateAndDisplayFeedback(guess, answer) {
+function calculateAndDisplayFeedbackOLD(guess, answer) {
   let feedback = Array(5).fill('⬛');
   let letterCounts = {};
   let displayElement = document.getElementById('feedback');
@@ -317,6 +198,101 @@ function calculateAndDisplayFeedback(guess, answer) {
   htmlContent += '</div>';
   displayElement.innerHTML += `${htmlContent}<br/>`;
 }
+
+
+
+// Begin Work on the following section:
+
+
+async function submitGuess() {
+
+  try {
+  let guess = document.getElementById('guessInput').value.toLowerCase();
+
+  if (guess.length !== 5) {
+    alert("Please enter a 5-letter word.");
+    return;
+  }
+
+  const response = await fetch('/submit_guess/', {  // Note the change in URL
+    method: 'POST',
+    headers: {
+        'X-CSRFToken': getCookie('csrftoken'),
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+        game_id: currentGameId,
+        guess: guess,
+    })
+});
+
+  if (!response.ok) {
+    throw new Error('Network response was not ok');
+  }
+
+
+  console.log('The guess: ', guess);
+
+  const data = await response.json();
+  console.log('this is Data:', data);
+ 
+
+    // calculateAndDisplayFeedback(data.feedback);
+    // attempts = data.attempts_left;
+    // document.getElementById('attemptsLeft').textContent = `You have ${attempts} attempts left.`;
+
+    // attemptsList.push(guess);
+    // document.getElementById('guessInput').value = '';
+
+    // if (data.game_over) {
+    //   endGame(data.is_win, data.correct_word);
+    // }
+ 
+
+} catch (error) {
+  console.error('There was a problem submitting the guess:', error);
+}
+}
+
+
+
+function endGame(isWin, correctWord) {
+  document.getElementById('guessInput').disabled = true;
+  showSessionInfo();
+  updateSessionInfo(attempts, attemptsList);
+  document.getElementById('restartButton').style.display = 'block';
+  
+  if (isWin) {
+    alert("Congratulations! You've guessed the word correctly!");
+  } else {
+    alert(`You've run out of attempts! The correct word was ${correctWord}.`);
+  }
+
+  updateLeaderboard();
+}
+
+
+
+
+function calculateAndDisplayFeedbackNEW(feedback) {
+  let displayElement = document.getElementById('feedback');
+  let htmlContent = '<div class="attempt-box">';
+
+  feedback.forEach(item => {
+    let colorClass = (item.result === 'correct' ? 'green' : (item.result === 'present' ? 'yellow' : 'gray'));
+    htmlContent += `<span class="letter-box ${colorClass}">${item.letter}</span>`;
+  });
+
+  htmlContent += '</div>';
+  displayElement.innerHTML += `${htmlContent}<br/>`;
+}
+
+
+
+// End of the section to work on
+
+
+
 
 
 
@@ -373,18 +349,7 @@ function getCookie(name) {
 
 
 
-// function calculateAndDisplayFeedbackNEW(feedback) {
-//   let displayElement = document.getElementById('feedback');
-//   let htmlContent = '<div class="attempt-box">';
 
-//   feedback.forEach(item => {
-//     let colorClass = (item.result === 'correct' ? 'green' : (item.result === 'present' ? 'yellow' : 'gray'));
-//     htmlContent += `<span class="letter-box ${colorClass}">${item.letter}</span>`;
-//   });
-
-//   htmlContent += '</div>';
-//   displayElement.innerHTML += `${htmlContent}<br/>`;
-// }
 
 
 // function getUserId() {

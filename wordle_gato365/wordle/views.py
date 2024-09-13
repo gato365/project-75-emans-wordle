@@ -7,6 +7,8 @@ from django.views.decorators.csrf import ensure_csrf_cookie
 from .models import Game, Word, Guess, GuessDetail, Leaderboard
 import random
 import json
+import logging
+logger = logging.getLogger(__name__)
 
 
 
@@ -57,6 +59,9 @@ def submit_guess(request):
         return JsonResponse({'error': 'Game is not active'}, status=400)
     
     correct_word = game.word.word
+    
+
+    logger.debug(f"Game {game_id}: Correct word is {correct_word}, guess is {guess_word}")
     feedback = []
     
     for i, letter in enumerate(guess_word):

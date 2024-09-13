@@ -1,12 +1,5 @@
 Watching for file changes with StatReloader
-Performing system checks...
-
-System check identified no issues (0 silenced).
-September 13, 2024 - 06:36:34
-Django version 5.0.6, using settings 'wordle_gato365.settings'
-Starting development server at http://127.0.0.1:8000/
-Quit the server with CTRL-BREAK.
-
+Watching for file changes with StatReloader
 "GET / HTTP/1.1" 200 2980
 "GET /game/ HTTP/1.1" 200 3353
 "GET /static/wordle/js/scripts.js HTTP/1.1" 304 0
