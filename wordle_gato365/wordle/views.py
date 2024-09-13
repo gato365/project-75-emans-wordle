@@ -5,6 +5,7 @@ from django.views.decorators.http import require_http_methods
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.csrf import ensure_csrf_cookie
 from .models import Game, Word, Guess, GuessDetail, Leaderboard
+from collections import Counter
 import random
 import json
 import logging
@@ -62,16 +63,27 @@ def submit_guess(request):
     
 
     logger.debug(f"Game {game_id}: Correct word is {correct_word}, guess is {guess_word}")
-    feedback = []
+    feedback = [{'letter': letter, 'result': 'absent'} for letter in guess_word]
     
+
+
+    # Count the occurrences of each letter in the correct word and the guess
+    correct_letter_counts = Counter(correct_word)
+    guess_letter_counts = Counter(guess_word)
+    
+    # First pass: Mark correct letters
     for i, letter in enumerate(guess_word):
         if letter == correct_word[i]:
-            result = 'correct'
-        elif letter in correct_word:
-            result = 'present'
-        else:
-            result = 'absent'
-        feedback.append({'letter': letter, 'result': result})
+            feedback[i]['result'] = 'correct'
+            correct_letter_counts[letter] -= 1
+            guess_letter_counts[letter] -= 1
+    
+    # Second pass: Mark present letters
+    for i, letter in enumerate(guess_word):
+        if feedback[i]['result'] == 'absent' and correct_letter_counts[letter] > 0:
+            feedback[i]['result'] = 'present'
+            correct_letter_counts[letter] -= 1
+            guess_letter_counts[letter] -= 1
     
     guess = Guess.objects.create(
         game=game,
@@ -100,8 +112,8 @@ def submit_guess(request):
     
     game.save()
     
-    if game_over:
-        update_leaderboard(request.user, is_win)
+    # if game_over:
+    #     update_leaderboard(request.user, is_win)
     
     return JsonResponse({
         'feedback': feedback,

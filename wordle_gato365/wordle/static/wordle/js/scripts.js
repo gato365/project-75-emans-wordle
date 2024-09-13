@@ -231,22 +231,28 @@ async function submitGuess() {
   }
 
 
-  console.log('The guess: ', guess);
+  
 
   const data = await response.json();
   console.log('this is Data:', data);
- 
+  
+  
+  
+  console.log('this is data.feedback:', data.feedback);
+  
+  calculateAndDisplayFeedback(data.feedback);
 
-    // calculateAndDisplayFeedback(data.feedback);
-    // attempts = data.attempts_left;
-    // document.getElementById('attemptsLeft').textContent = `You have ${attempts} attempts left.`;
 
-    // attemptsList.push(guess);
-    // document.getElementById('guessInput').value = '';
 
-    // if (data.game_over) {
-    //   endGame(data.is_win, data.correct_word);
-    // }
+    attempts = data.attempts_left;
+    document.getElementById('attemptsLeft').textContent = `You have ${attempts} attempts left.`;
+
+    attemptsList.push(guess);
+    document.getElementById('guessInput').value = '';
+
+    if (data.game_over) {
+      endGame(data.is_win, data.correct_word);
+    }
  
 
 } catch (error) {
@@ -274,7 +280,7 @@ function endGame(isWin, correctWord) {
 
 
 
-function calculateAndDisplayFeedbackNEW(feedback) {
+function calculateAndDisplayFeedback(feedback) {
   let displayElement = document.getElementById('feedback');
   let htmlContent = '<div class="attempt-box">';
 
