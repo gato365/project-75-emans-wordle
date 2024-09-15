@@ -14,6 +14,5 @@ class Command(BaseCommand):
             reader = csv.reader(file)
             for row in reader:
                 word = row[0]
-                length = int(row[1])
-                Word.objects.create(word=word, length=length)
+                Word.objects.create(word=word)
                 self.stdout.write(self.style.SUCCESS(f'Successfully added word: {word}'))

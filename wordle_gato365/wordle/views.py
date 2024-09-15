@@ -4,9 +4,8 @@ from django.views.decorators.http import require_POST
 from django.views.decorators.http import require_http_methods
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.csrf import ensure_csrf_cookie
-from .models import Game, Word, Guess, GuessDetail, Leaderboard
+from .models import Game, Word, Guess
 from collections import Counter
-import random
 import json
 import logging
 logger = logging.getLogger(__name__)
@@ -32,14 +31,16 @@ def game_view(request):
 @login_required
 def start_game(request):
     """Start a new game."""
-    word = Word.objects.order_by('?').first()
+    
+    # word = Word.objects.order_by('?').first()
+    ## select a word from the database that is the first word in the database
+    word = Word.objects.first()
     if not word:
         return JsonResponse({'error': 'No words available'}, status=400)   
     game = Game.objects.create(user=request.user, word=word, status='active')
     return JsonResponse({
         'game_id': game.id,
-        'attempts_left': 6,
-        'word_length': word.length
+        'attempts_left': 6
     })
 
 
@@ -91,13 +92,7 @@ def submit_guess(request):
         sequence_number=game.guess_set.count() + 1
     )
     
-    for i, f in enumerate(feedback):
-        GuessDetail.objects.create(
-            guess=guess,
-            position=i,
-            letter=f['letter'],
-            result=f['result']
-        )
+  
     
     game_over = False
     is_win = False
@@ -112,8 +107,7 @@ def submit_guess(request):
     
     game.save()
     
-    # if game_over:
-    #     update_leaderboard(request.user, is_win)
+
     
     return JsonResponse({
         'feedback': feedback,
@@ -122,36 +116,6 @@ def submit_guess(request):
         'is_win': is_win,
         'correct_word': correct_word if game_over else None
     })
-
-@login_required
-def get_leaderboard(request):
-    """Retrieve leaderboard data."""
-    leaderboard = Leaderboard.objects.order_by('-score')[:10]
-    data = [{'username': entry.user.username, 'score': entry.score} for entry in leaderboard]
-    return JsonResponse({'leaderboard': data})
-
-def update_leaderboard(user, is_win):
-    """Update the leaderboard after a game."""
-    score_change = 1 if is_win else -1
-    leaderboard_entry, created = Leaderboard.objects.get_or_create(user=user)
-    leaderboard_entry.score += score_change
-    leaderboard_entry.save()
-
-@login_required
-@require_POST
-def update_settings(request):
-    """Update user settings."""
-    data = json.loads(request.body)
-    setting_type = data.get('setting_type')
-    value = data.get('value')
-    
-    Setting.objects.update_or_create(
-        user=request.user,
-        setting_type=setting_type,
-        defaults={'value': value}
-    )
-    
-    return JsonResponse({'status': 'success'})
 
 
 

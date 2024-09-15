@@ -332,3 +332,556 @@ Game 29: Correct word is learn, guess is happy
 "POST /submit_guess/ HTTP/1.1" 200 279
 Game 29: Correct word is learn, guess is learn
 "POST /submit_guess/ HTTP/1.1" 200 284
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /game/ HTTP/1.1" 200 3355
+"GET /static/wordle/js/scripts.js HTTP/1.1" 304 0
+"POST /game/ HTTP/1.1" 200 53
+Game 30: Correct word is beach, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 30: Correct word is beach, guess is beach
+"POST /submit_guess/ HTTP/1.1" 200 284
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /game/ HTTP/1.1" 200 3355
+"POST /game/ HTTP/1.1" 200 53
+Game 31: Correct word is horse, guess is gamer
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 31: Correct word is horse, guess is horse
+"POST /submit_guess/ HTTP/1.1" 200 284
+"GET /game/ HTTP/1.1" 200 3355
+"GET /static/wordle/css/styles.css HTTP/1.1" 200 3086
+"GET /static/wordle/js/scripts.js HTTP/1.1" 200 10464
+"GET /static/users/main.css HTTP/1.1" 200 1373
+"GET /static/users/favicon.ico HTTP/1.1" 200 1150
+"POST /game/ HTTP/1.1" 200 53
+Game 32: Correct word is ghost, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 279
+Game 32: Correct word is ghost, guess is ghost
+"POST /submit_guess/ HTTP/1.1" 200 284
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle_gato365\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle_gato365\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle_gato365\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /game/ HTTP/1.1" 200 3355
+"GET /static/wordle/css/styles.css HTTP/1.1" 200 3086
+"GET /static/users/main.css HTTP/1.1" 200 1373
+"GET /static/wordle/js/scripts.js HTTP/1.1" 200 11163
+"GET /static/users/favicon.ico HTTP/1.1" 200 1150
+"POST /game/ HTTP/1.1" 200 53
+Game 33: Correct word is learn, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 279
+Game 33: Correct word is learn, guess is learn
+"POST /submit_guess/ HTTP/1.1" 200 284
+"GET /get_player_stats/ HTTP/1.1" 200 47
+"GET /game/ HTTP/1.1" 200 3355
+"GET /static/wordle/js/scripts.js HTTP/1.1" 200 11481
+"POST /game/ HTTP/1.1" 200 53
+Game 34: Correct word is ghost, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 279
+Game 34: Correct word is ghost, guess is ghost
+"POST /submit_guess/ HTTP/1.1" 200 284
+"GET /get_player_stats/ HTTP/1.1" 200 47
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2980
+"GET /static/users/main.css HTTP/1.1" 200 1373
+"POST /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 3854
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /login/ HTTP/1.1" 302 0
+"GET /profile/ HTTP/1.1" 200 4252
+"GET /game/ HTTP/1.1" 200 3355
+"GET /static/wordle/js/scripts.js HTTP/1.1" 304 0
+"GET /static/wordle/css/styles.css HTTP/1.1" 200 3086
+"POST /game/ HTTP/1.1" 200 53
+Game 35: Correct word is uncap, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 35: Correct word is uncap, guess is uncap
+"POST /submit_guess/ HTTP/1.1" 200 284
+"GET /get_player_stats/ HTTP/1.1" 200 47
+"POST /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 3854
+"GET /login/ HTTP/1.1" 200 3768
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /login/ HTTP/1.1" 302 0
+"GET /profile/ HTTP/1.1" 200 4244
+"GET /game/ HTTP/1.1" 200 3355
+"POST /game/ HTTP/1.1" 200 53
+Game 36: Correct word is ghost, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 279
+Game 36: Correct word is ghost, guess is ghost
+"POST /submit_guess/ HTTP/1.1" 200 284
+"GET /get_player_stats/ HTTP/1.1" 200 47
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2980
+"GET / HTTP/1.1" 200 2980
+"GET /game/ HTTP/1.1" 200 3355
+"POST /game/ HTTP/1.1" 200 53
+Game 37: Correct word is nudge, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 278
+Game 37: Correct word is nudge, guess is horse
+"POST /submit_guess/ HTTP/1.1" 200 279
+Game 37: Correct word is nudge, guess is uncap
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 37: Correct word is nudge, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 278
+Game 37: Correct word is nudge, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 278
+Game 37: Correct word is nudge, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 280
+Not Found: /get_player_stats/
+"GET /get_player_stats/ HTTP/1.1" 404 3844
+"GET /game/ HTTP/1.1" 200 3355
+"GET /static/users/favicon.ico HTTP/1.1" 304 0
+"POST /game/ HTTP/1.1" 200 53
+Game 38: Correct word is uncap, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 38: Correct word is uncap, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 38: Correct word is uncap, guess is uncap
+"POST /submit_guess/ HTTP/1.1" 200 284
+Not Found: /get_player_stats/
+"GET /get_player_stats/ HTTP/1.1" 404 3844
+"GET /game/ HTTP/1.1" 200 3355
+"POST /game/ HTTP/1.1" 200 53
+Game 39: Correct word is learn, guess is lapel
+"POST /submit_guess/ HTTP/1.1" 200 281
+Game 39: Correct word is learn, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 279
+Game 39: Correct word is learn, guess is hoser
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 39: Correct word is learn, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 279
+Game 39: Correct word is learn, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 279
+Game 39: Correct word is learn, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 281
+Not Found: /get_player_stats/
+"GET /get_player_stats/ HTTP/1.1" 404 3844
+Watching for file changes with StatReloader
+"GET /game/ HTTP/1.1" 200 3355
+"GET /static/users/favicon.ico HTTP/1.1" 200 1150
+"GET / HTTP/1.1" 200 2980
+"GET /game/ HTTP/1.1" 200 3355
+"POST /game/ HTTP/1.1" 200 53
+Game 40: Correct word is ghost, guess is horse
+"POST /submit_guess/ HTTP/1.1" 200 281
+Game 40: Correct word is ghost, guess is horse
+"POST /submit_guess/ HTTP/1.1" 200 281
+Game 40: Correct word is ghost, guess is horse
+"POST /submit_guess/ HTTP/1.1" 200 281
+Game 40: Correct word is ghost, guess is lapel
+"POST /submit_guess/ HTTP/1.1" 200 278
+Game 40: Correct word is ghost, guess is ghost
+"POST /submit_guess/ HTTP/1.1" 200 284
+Not Found: /get_player_stats/
+"GET /get_player_stats/ HTTP/1.1" 404 3844
+"GET /game/ HTTP/1.1" 200 3355
+"GET /static/users/main.css HTTP/1.1" 200 1373
+"GET /static/wordle/css/styles.css HTTP/1.1" 200 3086
+"GET /static/wordle/js/scripts.js HTTP/1.1" 200 10427
+"GET /static/users/favicon.ico HTTP/1.1" 200 1150
+"POST /game/ HTTP/1.1" 200 53
+Game 41: Correct word is audio, guess is coast
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 41: Correct word is audio, guess is ghost
+"POST /submit_guess/ HTTP/1.1" 200 279
+Game 41: Correct word is audio, guess is horse
+"POST /submit_guess/ HTTP/1.1" 200 279
+Game 41: Correct word is audio, guess is coast
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 41: Correct word is audio, guess is coast
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 41: Correct word is audio, guess is coast
+"POST /submit_guess/ HTTP/1.1" 200 282
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2980
+"GET / HTTP/1.1" 200 2980
+"GET /game/ HTTP/1.1" 200 3355
+"GET /static/wordle/js/scripts.js HTTP/1.1" 200 10439
+"POST /game/ HTTP/1.1" 200 53
+Game 42: Correct word is beach, guess is hoper
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 42: Correct word is beach, guess is horse
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 42: Correct word is beach, guess is lapel
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 42: Correct word is beach, guess is coast
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 42: Correct word is beach, guess is learn
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 42: Correct word is beach, guess is ghost
+"POST /submit_guess/ HTTP/1.1" 200 281
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2980
+"GET /game/ HTTP/1.1" 200 3355
+"GET /static/wordle/css/styles.css HTTP/1.1" 304 0
+"GET /static/wordle/js/scripts.js HTTP/1.1" 200 7409
+Internal Server Error: /game/
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\views\decorators\http.py", line 64, in inner
+    return func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py", line 25, in game_view
+    return start_game(request)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py", line 44, in start_game
+    'word_length': word.length
+                   ^^^^^^^^^^^
+AttributeError: 'Word' object has no attribute 'length'
+"POST /game/ HTTP/1.1" 500 109321
+Internal Server Error: /game/
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\views\decorators\http.py", line 64, in inner
+    return func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py", line 25, in game_view
+    return start_game(request)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py", line 44, in start_game
+    'word_length': word.length
+                   ^^^^^^^^^^^
+AttributeError: 'Word' object has no attribute 'length'
+"POST /game/ HTTP/1.1" 500 109321
+"GET /game/ HTTP/1.1" 200 3355
+"GET /static/wordle/js/scripts.js HTTP/1.1" 200 7363
+"GET /static/users/favicon.ico HTTP/1.1" 200 1150
+Internal Server Error: /game/
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\views\decorators\http.py", line 64, in inner
+    return func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py", line 25, in game_view
+    return start_game(request)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py", line 44, in start_game
+    'word_length': word.length
+                   ^^^^^^^^^^^
+AttributeError: 'Word' object has no attribute 'length'
+"POST /game/ HTTP/1.1" 500 109321
+"GET /game/ HTTP/1.1" 200 3355
+"GET /static/wordle/js/scripts.js HTTP/1.1" 200 7399
+Internal Server Error: /game/
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\views\decorators\http.py", line 64, in inner
+    return func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py", line 25, in game_view
+    return start_game(request)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py", line 44, in start_game
+    'word_length': word.length
+                   ^^^^^^^^^^^
+AttributeError: 'Word' object has no attribute 'length'
+"POST /game/ HTTP/1.1" 500 109321
+Internal Server Error: /game/
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\views\decorators\http.py", line 64, in inner
+    return func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py", line 25, in game_view
+    return start_game(request)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py", line 44, in start_game
+    'word_length': word.length
+                   ^^^^^^^^^^^
+AttributeError: 'Word' object has no attribute 'length'
+"POST /game/ HTTP/1.1" 500 109321
+Internal Server Error: /game/
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\views\decorators\http.py", line 64, in inner
+    return func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py", line 25, in game_view
+    return start_game(request)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py", line 44, in start_game
+    'word_length': word.length
+                   ^^^^^^^^^^^
+AttributeError: 'Word' object has no attribute 'length'
+"POST /game/ HTTP/1.1" 500 109321
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2980
+"GET /game/ HTTP/1.1" 200 3355
+"GET /static/wordle/js/scripts.js HTTP/1.1" 200 7010
+Internal Server Error: /game/
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\views\decorators\http.py", line 64, in inner
+    return func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py", line 25, in game_view
+    return start_game(request)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py", line 44, in start_game
+    'word_length': word.length
+                   ^^^^^^^^^^^
+AttributeError: 'Word' object has no attribute 'length'
+"POST /game/ HTTP/1.1" 500 109321
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /game/ HTTP/1.1" 200 3355
+"GET /static/wordle/js/scripts.js HTTP/1.1" 304 0
+"POST /game/ HTTP/1.1" 200 35
+Game 50: Correct word is beach, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 50: Correct word is beach, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 50: Correct word is beach, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 50: Correct word is beach, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 50: Correct word is beach, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 50: Correct word is beach, guess is uncap
+"POST /submit_guess/ HTTP/1.1" 200 282
+"POST /game/ HTTP/1.1" 200 35
+"GET /game/ HTTP/1.1" 200 3355
+"GET /static/wordle/js/scripts.js HTTP/1.1" 200 6999
+"POST /game/ HTTP/1.1" 200 35
+Game 52: Correct word is beach, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 52: Correct word is beach, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 52: Correct word is beach, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 52: Correct word is beach, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 52: Correct word is beach, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 52: Correct word is beach, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 282
+"GET /game/ HTTP/1.1" 200 3355
+Watching for file changes with StatReloader

@@ -36,6 +36,8 @@ urlpatterns = [
     path('login/', auth_views.LoginView.as_view(template_name = 'users/login.html'), name='login'),
     
     path('start_game/', wordle_views.start_game, name='start_game'),
+
+
     path('game/', wordle_views.game_view, name='game'),
     path('submit_guess/', wordle_views.submit_guess, name='submit_guess'),
     path('logout/', user_views.CustomLogoutView.as_view(), name='logout')

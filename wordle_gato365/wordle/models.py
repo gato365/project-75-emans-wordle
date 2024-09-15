@@ -7,9 +7,12 @@ class Game(models.Model):
     word = models.ForeignKey('Word', on_delete=models.CASCADE)
     status = models.CharField(max_length=10)
 
+    date = models.DateField(auto_now_add=True)
+
 class Word(models.Model):
     word = models.CharField(max_length=255)
-    length = models.IntegerField()
+    date_used = models.DateField(null=True) 
+    
 
     def __str__(self):
         return self.word
@@ -19,18 +22,3 @@ class Guess(models.Model):
     guess_word = models.CharField(max_length=255)
     sequence_number = models.IntegerField()
 
-class GuessDetail(models.Model):
-    guess = models.ForeignKey(Guess, on_delete=models.CASCADE)
-    position = models.IntegerField()
-    letter = models.CharField(max_length=1)
-    result = models.CharField(max_length=50)
-
-class Leaderboard(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    score = models.IntegerField()
-    date = models.DateField(auto_now_add=True)
-
-class Setting(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    setting_type = models.CharField(max_length=100)
-    value = models.CharField(max_length=255)
