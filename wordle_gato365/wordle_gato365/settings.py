@@ -30,11 +30,11 @@ SECRET_KEY = 'django-insecure-6g9e3!e_&!vif@5i^hktv^+lq-y&-=xv-^brjcakq8-f-if4qu
 
 # SECURITY WARNING: don't run with debug turned on in production!
 ## 1a) Currently commented out
-# DEBUG = True
+DEBUG = True
 
 
 ## 1b) Currently in use
-DEBUG = 'RENDER' not in os.environ
+# DEBUG = 'RENDER' not in os.environ
 
 ALLOWED_HOSTS = ['wordle-app-2024-4c250a9e97a3.herokuapp.com', 'localhost', '127.0.0.1']
 

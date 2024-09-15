@@ -28,7 +28,7 @@ def game_view(request):
 
 
 
-@login_required
+
 def start_game(request):
     """Start a new game."""
     
