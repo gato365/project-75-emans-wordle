@@ -910,3 +910,42 @@ Game 56: Correct word is beach, guess is happy
 Game 56: Correct word is beach, guess is beach
 "POST /submit_guess/ HTTP/1.1" 200 284
 "POST /game/ HTTP/1.1" 200 35
+"GET /game/ HTTP/1.1" 200 3355
+"GET /static/wordle/js/scripts.js HTTP/1.1" 200 6685
+"POST /game/ HTTP/1.1" 200 35
+Game 58: Correct word is beach, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 58: Correct word is beach, guess is beach
+"POST /submit_guess/ HTTP/1.1" 200 284
+"POST /game/ HTTP/1.1" 200 35
+Game 59: Correct word is beach, guess is crane
+"POST /submit_guess/ HTTP/1.1" 200 281
+Game 59: Correct word is beach, guess is beach
+"POST /submit_guess/ HTTP/1.1" 200 284
+"POST /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 3854
+"GET /register/ HTTP/1.1" 200 4878
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /register/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 3894
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /login/ HTTP/1.1" 302 0
+"GET /profile/ HTTP/1.1" 200 4246
+"GET /game/ HTTP/1.1" 200 3355
+"GET /static/wordle/js/scripts.js HTTP/1.1" 304 0
+"POST /game/ HTTP/1.1" 200 35
+Game 60: Correct word is beach, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 60: Correct word is beach, guess is gorte
+"POST /submit_guess/ HTTP/1.1" 200 279
+Game 60: Correct word is beach, guess is reach
+"POST /submit_guess/ HTTP/1.1" 200 282
+Game 60: Correct word is beach, guess is beach
+"POST /submit_guess/ HTTP/1.1" 200 284
