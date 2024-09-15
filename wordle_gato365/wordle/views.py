@@ -4,7 +4,7 @@ from django.views.decorators.http import require_POST
 from django.views.decorators.http import require_http_methods
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.csrf import ensure_csrf_cookie
-from .models import Game, Word, Guess
+from .models import Game, Word, Guess, GuessTime
 from collections import Counter
 import json
 import logging
@@ -36,8 +36,9 @@ def start_game(request):
     ## select a word from the database that is the first word in the database
     word = Word.objects.first()
     if not word:
+        logger.debug(f'No words available')
         return JsonResponse({'error': 'No words available'}, status=400)   
-    game = Game.objects.create(user=request.user, word=word, status='active')
+    game = Game.objects.create(user=request.user, word=word, status='active', time_played=0)
     return JsonResponse({
         'game_id': game.id,
         'attempts_left': 6
@@ -54,6 +55,7 @@ def submit_guess(request):
     data = json.loads(request.body)
     game_id = data.get('game_id')
     guess_word = data.get('guess')
+    time_taken = data.get('time_taken')
     
     game = get_object_or_404(Game, id=game_id, user=request.user)
     
@@ -91,6 +93,14 @@ def submit_guess(request):
         guess_word=guess_word,
         sequence_number=game.guess_set.count() + 1
     )
+
+    GuessTime.objects.create(
+        guess=guess,
+        time_taken=time_taken
+    )
+    
+    game.time_played += time_taken
+    game.save()
     
   
     
@@ -119,4 +129,38 @@ def submit_guess(request):
 
 
 
+@login_required
+@require_POST
+def update_guess_times(request):
+    data = json.loads(request.body)
+    game_id = data.get('game_id')
+    guess_times = data.get('guess_times')
+    
+    game = get_object_or_404(Game, id=game_id, user=request.user)
+    guesses = game.guess_set.all().order_by('sequence_number')
+    
+    for guess, time_taken in zip(guesses, guess_times):
+        GuessTime.objects.update_or_create(
+            guess=guess,
+            defaults={'time_taken': time_taken}
+        )
+    
+    game.time_played = sum(guess_times)
+    game.save()
+    
+    return JsonResponse({'status': 'success'})
+
+
+@login_required
+@require_POST
+def update_game_time(request):
+    data = json.loads(request.body)
+    game_id = data.get('game_id')
+    time_taken = data.get('time_taken')
+    
+    game = get_object_or_404(Game, id=game_id, user=request.user)
+    game.time_played = time_taken
+    game.save()
+    
+    return JsonResponse({'status': 'success'})
 

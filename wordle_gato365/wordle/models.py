@@ -6,8 +6,8 @@ class Game(models.Model):
     date = models.DateField(auto_now_add=True)
     word = models.ForeignKey('Word', on_delete=models.CASCADE)
     status = models.CharField(max_length=10)
-
-    date = models.DateField(auto_now_add=True)
+    ## amount of time the game has been played
+    time_played = models.IntegerField(default=0)
 
 class Word(models.Model):
     word = models.CharField(max_length=255)
@@ -22,3 +22,6 @@ class Guess(models.Model):
     guess_word = models.CharField(max_length=255)
     sequence_number = models.IntegerField()
 
+class GuessTime(models.Model):
+    guess = models.OneToOneField(Guess, on_delete=models.CASCADE, related_name='time')
+    time_taken = models.FloatField()  # Time in secon

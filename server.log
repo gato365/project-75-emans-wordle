@@ -2,45 +2,7 @@ Watching for file changes with StatReloader
 Performing system checks...
 
 System check identified no issues (0 silenced).
-September 15, 2024 - 09:13:04
-Django version 5.0.6, using settings 'wordle_gato365.settings'
-Starting development server at http://127.0.0.1:8000/
-Quit the server with CTRL-BREAK.
-
-"GET /login/ HTTP/1.1" 200 3771
-"GET /static/users/main.css HTTP/1.1" 200 1373
-"GET /static/users/favicon.ico HTTP/1.1" 200 1150
-"POST /login/ HTTP/1.1" 200 3965
-"POST /login/ HTTP/1.1" 200 3965
-"POST /login/ HTTP/1.1" 200 3965
-"POST /login/ HTTP/1.1" 200 3965
-STREAM b'IHDR' 16 13
-STREAM b'eXIf' 41 68
-STREAM b'IDAT' 121 65536
-"POST /login/ HTTP/1.1" 302 0
-"GET /profile/ HTTP/1.1" 200 4247
-"GET /game/ HTTP/1.1" 200 3358
-"GET /static/wordle/js/scripts.js HTTP/1.1" 200 6685
-"GET /static/wordle/css/styles.css HTTP/1.1" 200 3086
-"POST /game/ HTTP/1.1" 200 35
-"GET /game/ HTTP/1.1" 200 3358
-"POST /game/ HTTP/1.1" 200 35
-C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle_gato365\settings.py changed, reloading.
-Watching for file changes with StatReloader
-Performing system checks...
-
-System check identified no issues (0 silenced).
-September 15, 2024 - 09:17:23
-Django version 5.0.6, using settings 'wordle_gato365.settings'
-Starting development server at http://127.0.0.1:8000/
-Quit the server with CTRL-BREAK.
-
-C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle_gato365\settings.py changed, reloading.
-Watching for file changes with StatReloader
-Performing system checks...
-
-System check identified no issues (0 silenced).
-September 15, 2024 - 09:17:26
+September 15, 2024 - 15:14:44
 Django version 5.0.6, using settings 'wordle_gato365.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CTRL-BREAK.

@@ -8,6 +8,8 @@ let attempts = 6;
 let startTime, endTime;
 let currentGameId = null;
 let correctWord = '';
+let guessStartTime;
+let guessTimes = [];
 
 
 
@@ -67,6 +69,8 @@ async function startGame() {
 
     // Start Timer
     startTimer();
+    guessStartTime = new Date();
+    guessTimes = [];
   } catch (error) {
     console.error('There was a problem starting the game:', error);
   }
@@ -108,6 +112,10 @@ function restartGame() {
 
 
 async function submitGuess() {
+  let currentTime = new Date();
+  let timeTaken = (currentTime - guessStartTime) / 1000; // Time in seconds
+  guessTimes.push(timeTaken);
+  guessStartTime = new Date(); // Reset for next guess
 
   try {
     let guess = document.getElementById('guessInput').value.toLowerCase();
@@ -126,6 +134,7 @@ async function submitGuess() {
       body: JSON.stringify({
         game_id: currentGameId,
         guess: guess,
+        time_taken: timeTaken
       })
     });
 
@@ -153,10 +162,14 @@ async function submitGuess() {
     attemptsList.push(guess);
     document.getElementById('guessInput').value = '';
 
+   
+
+
+
+
     if (data.game_over) {
       endGame(data.is_win, data.correct_word);
-    }
-
+  }
 
   } catch (error) {
     console.error('There was a problem submitting the guess:', error);
@@ -166,20 +179,27 @@ async function submitGuess() {
 
 
 function endGame(isWin, correctWord) {
+  let timeTaken = endTimer();
+  
   document.getElementById('guessInput').disabled = true;
+  
   showSessionInfo();
-  updateSessionInfo(attempts, attemptsList);
+
+  updateSessionInfo(attempts, attemptsList, timeTaken);
+
   document.getElementById('restartButton').style.display = 'block';
 
   if (isWin) {
-    alert("Congratulations! You've guessed the word correctly!");
+      alert(`Game over! You've guessed the word correctly in ${timeTaken} seconds!`);
   } else {
-    alert(`You've run out of attempts! The correct word was ${correctWord}.`);
+      alert(`Game over! You've run out of attempts. The correct word was ${correctWord}. Time taken: ${timeTaken} seconds.`);
   }
 
-
+  // Send the game time to the server
+  sendGameTimeToServer(timeTaken);
+  // Send all guess times to the server
+  sendGuessTimesToServer(guessTimes);
 }
-
 
 function calculateAndDisplayFeedback(feedback) {
   let displayElement = document.getElementById('feedback');
@@ -195,33 +215,65 @@ function calculateAndDisplayFeedback(feedback) {
 }
 
 
-
-// End of the section to work on
-
-
-
-
-async function updateSessionInfo(attemptsLeft, attemptsList) {
-
+async function sendGuessTimesToServer(guessTimes) {
   try {
-
-
-
-
-    let sessionInfo = document.getElementById('sessionInfo');
-    let currentTime = new Date();
-    let timeTaken = endTimer();
-    let attemptsStr = attemptsList.join(', ');
-    
-
-
-
-    sessionInfo.value += `Word: ${correctWord} - Attempts: ${6 - attemptsLeft} - Date: ${currentTime.toLocaleDateString()} - Time: ${currentTime.toLocaleTimeString()} - Duration: ${timeTaken} seconds - Sequence Number: ${currentWordIndex + 1} - Guesses: [${attemptsStr}]\n---\n`;
+      const response = await fetch('/update_guess_times/', {
+          method: 'POST',
+          headers: {
+              'X-CSRFToken': getCookie('csrftoken'),
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+              game_id: currentGameId,
+              guess_times: guessTimes
+          })
+      });
+      if (!response.ok) {
+          throw new Error('Network response was not ok');
+      }
+      const data = await response.json();
+      console.log('Guess times updated:', data);
   } catch (error) {
-    console.error('There was a problem updating the session info:', error);
+      console.error('There was a problem updating the guess times:', error);
   }
 }
 
+async function sendGameTimeToServer(timeTaken) {
+  try {
+      const response = await fetch('/update_game_time/', {
+          method: 'POST',
+          headers: {
+              'X-CSRFToken': getCookie('csrftoken'),
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+              game_id: currentGameId,
+              time_taken: timeTaken
+          })
+      });
+      if (!response.ok) {
+          throw new Error('Network response was not ok');
+      }
+      const data = await response.json();
+      console.log('Game time updated:', data);
+  } catch (error) {
+      console.error('There was a problem updating the game time:', error);
+  }
+}
+
+
+
+async function updateSessionInfo(attemptsLeft, attemptsList, timeTaken) {
+  try {
+      let sessionInfo = document.getElementById('sessionInfo');
+      let currentTime = new Date();
+      let attemptsStr = attemptsList.join(', ');
+      
+      sessionInfo.value += `Word: ${correctWord} - Attempts: ${6 - attemptsLeft} - Date: ${currentTime.toLocaleDateString()} - Time: ${currentTime.toLocaleTimeString()} - Duration: ${timeTaken} seconds - Sequence Number: ${currentWordIndex + 1} - Guesses: [${attemptsStr}]\n---\n`;
+  } catch (error) {
+      console.error('There was a problem updating the session info:', error);
+  }
+}
 
 
 
@@ -230,14 +282,25 @@ function showSessionInfo() {
   document.getElementById('sessionInfo').style.display = 'block';
 }
 
+
+
+
+
+function updateGameTime() {
+  let currentTime = new Date();
+  totalGameTime = (currentTime - startTime) / 1000; // Time in seconds
+  document.getElementById('gameTime').textContent = `Time: ${Math.round(totalGameTime)} seconds`;
+}
 function startTimer() {
   startTime = new Date();
+  gameTimer = setInterval(updateGameTime, 1000); // Update time every second
 }
 
 function endTimer() {
+  clearInterval(gameTimer);
   endTime = new Date();
-  let timeDiff = (endTime - startTime) / 1000;
-  return Math.round(timeDiff);
+  totalGameTime = (endTime - startTime) / 1000; // Time in seconds
+  return Math.round(totalGameTime);
 }
 
 
