@@ -1,0 +1,34 @@
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2024 - 08:34:34
+Django version 5.0.6, using settings 'wordle_gato365.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+"POST /game/ HTTP/1.1" 200 35
+"GET /game/ HTTP/1.1" 200 3355
+"GET /static/wordle/js/scripts.js HTTP/1.1" 200 6640
+"POST /game/ HTTP/1.1" 200 35
+Game 54: Correct word is beach, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 54: Correct word is beach, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 54: Correct word is beach, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 54: Correct word is beach, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 54: Correct word is beach, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 54: Correct word is beach, guess is beach
+"POST /submit_guess/ HTTP/1.1" 200 284
+"POST /game/ HTTP/1.1" 200 35
+"GET /game/ HTTP/1.1" 200 3355
+"GET /static/wordle/js/scripts.js HTTP/1.1" 200 6645
+"POST /game/ HTTP/1.1" 200 35
+Game 56: Correct word is beach, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 56: Correct word is beach, guess is beach
+"POST /submit_guess/ HTTP/1.1" 200 284
+"POST /game/ HTTP/1.1" 200 35
