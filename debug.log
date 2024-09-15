@@ -327,3 +327,8 @@ C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\v
 Watching for file changes with StatReloader
 "GET /game/ HTTP/1.1" 200 3355
 "GET /static/wordle/js/scripts.js HTTP/1.1" 304 0
+"POST /game/ HTTP/1.1" 200 53
+Game 29: Correct word is learn, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 279
+Game 29: Correct word is learn, guess is learn
+"POST /submit_guess/ HTTP/1.1" 200 284
