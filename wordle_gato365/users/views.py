@@ -5,7 +5,7 @@ from django.contrib.auth.decorators import login_required
 from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm
 from django.contrib.auth.views import LogoutView
 from django.urls import reverse_lazy
-from django.db.models import Avg, Count
+from django.db.models import Avg, Count, Sum
 from wordle.models import Game, Guess, GuessTime
 
 # Create your views here.
@@ -98,50 +98,30 @@ def stats(request):
 
 
 
+
+
+
+
 @login_required
 def general_game_history(request):
-    return render(request, 'users/game_history.html')
-
-@login_required
-def badges(request):
-    # This will be implemented later
-    return render(request, 'users/badges.html')
-
-@login_required
-def summary_of_all_games(request):
-    games = Game.objects.filter(user=request.user)
-
-
-
-
+    user = request.user
+    games = Game.objects.filter(user=user)
 
     summary = {
         'total_games': games.count(),
         'games_won': games.filter(status='won').count(),
-        'average_guesses': Guess.objects.filter(game__user=request.user).values('game').annotate(guess_count=Count('id')).aggregate(Avg('guess_count'))['guess_count__avg'],
+        'average_guesses': Guess.objects.filter(game__user=user).values('game').annotate(guess_count=Count('id')).aggregate(Avg('guess_count'))['guess_count__avg'],
         'total_time_played': games.aggregate(Sum('time_played'))['time_played__sum'],
         'average_time_per_game': games.aggregate(Avg('time_played'))['time_played__avg'],
     }
+
     if summary['total_games'] > 0:
         win_rate = (summary['games_won'] / summary['total_games']) * 100
     else:
         win_rate = 0
 
-    context = {
-        'summary': summary,
-        'win_rate': win_rate,
-    }
-    return render(request, 'users/summary_of_all_games.html', context)
-
-
-
-
-@login_required
-def all_games_played(request):
-    games = Game.objects.filter(user=request.user).order_by('-date')
-    
     game_data = []
-    for game in games:
+    for game in games.order_by('-date'):
         guesses = Guess.objects.filter(game=game)
         guess_times = GuessTime.objects.filter(guess__game=game)
         
@@ -153,9 +133,26 @@ def all_games_played(request):
             'avg_time_per_guess': guess_times.aggregate(Avg('time_taken'))['time_taken__avg'] or 0,
             'total_time': game.time_played
         })
-    
+
     context = {
+        'summary': summary,
+        'win_rate': win_rate,
+        'user': user,
         'game_data': game_data
     }
     
-    return render(request, 'users/all_games_played.html', context)
+    return render(request, 'users/game_history.html', context)
+
+@login_required
+def badges(request):
+    # This will be implemented later
+    return render(request, 'users/badges.html')
+
+# You can keep these separate views if needed, or remove them if not used
+@login_required
+def summary_of_all_games(request):
+    return general_game_history(request)
+
+@login_required
+def all_games_played(request):
+    return general_game_history(request)

@@ -2351,3 +2351,54 @@ Game 68: Correct word is beach, guess is beach
 "GET /game-history/ HTTP/1.1" 200 4874
 "GET /game-history/ HTTP/1.1" 200 4874
 "GET /static/users/favicon.ico HTTP/1.1" 304 0
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /game-history/ HTTP/1.1" 200 4870
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /game-history/ HTTP/1.1" 200 4870
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 3031
+"GET /game-history/ HTTP/1.1" 200 4870
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /game-history/ HTTP/1.1" 200 10598
+"GET /game/ HTTP/1.1" 200 3456
+"GET /game-history/ HTTP/1.1" 200 10598
+"GET /game-history/ HTTP/1.1" 200 26909
+"GET /game-history/ HTTP/1.1" 200 18857
+"GET /game/ HTTP/1.1" 200 3456
+"POST /game/ HTTP/1.1" 200 35
+Game 69: Correct word is beach, guess is shots
+"POST /submit_guess/ HTTP/1.1" 200 279
+Game 69: Correct word is beach, guess is ghost
+"POST /submit_guess/ HTTP/1.1" 200 279
+Game 69: Correct word is beach, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 69: Correct word is beach, guess is total
+"POST /submit_guess/ HTTP/1.1" 200 279
+Game 69: Correct word is beach, guess is beach
+"POST /submit_guess/ HTTP/1.1" 200 284
+"POST /update_game_time/ HTTP/1.1" 200 21
+"POST /update_guess_times/ HTTP/1.1" 200 21
+"GET /game-history/ HTTP/1.1" 200 19281
+"GET /about/ HTTP/1.1" 200 3474
+"GET /home/ HTTP/1.1" 200 3031
+"GET /game-history/ HTTP/1.1" 200 19281

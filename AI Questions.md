@@ -72,3 +72,75 @@ a) I know I need to modify the urls.py to have more paths.
 b) I know the views.py within users need 3 more functions: general, badges, summary_of_all_games, and all_games_played (already done)[is this correct]
 c) I will need to have 3 more html pages in the templates directory: badges.html, summary_of_all_games.html, and all_games_played.html
 d) I would like to have a empty badge page that I will work on soon.
+---------------------------------------------------------------------------------------------------------
+
+Question 4:
+Thank you but my user name is showing up but none of the games in their respective table. How do I manage this issue?
+- I think the issue is in the views in that it is not getting the games for the user correctly. Here is the relevant code:
+```python
+
+from django.db.models import Avg, Count, Sum
+from wordle.models import Game, Guess, GuessTime
+
+@login_required
+def general_game_history(request):
+    return render(request, 'users/game_history.html')
+
+@login_required
+def badges(request):
+    # This will be implemented later
+    return render(request, 'users/badges.html')
+
+@login_required
+def summary_of_all_games(request):
+    user = request.user
+    games = Game.objects.filter(user=request.user)
+
+    summary = {
+        'total_games': games.count(),
+        'games_won': games.filter(status='won').count(),
+        'average_guesses': Guess.objects.filter(game__user=request.user).values('game').annotate(guess_count=Count('id')).aggregate(Avg('guess_count'))['guess_count__avg'],
+        'total_time_played': games.aggregate(Sum('time_played'))['time_played__sum'],
+        'average_time_per_game': games.aggregate(Avg('time_played'))['time_played__avg'],
+    }
+    if summary['total_games'] > 0:
+        win_rate = (summary['games_won'] / summary['total_games']) * 100
+    else:
+        win_rate = 0
+
+    context = {
+        'summary': summary,
+        'win_rate': win_rate,
+        'user': user
+    }
+    return render(request, 'users/summary_of_all_games.html', context)
+
+
+
+
+@login_required
+def all_games_played(request):
+    games = Game.objects.filter(user=request.user).order_by('-date')
+    
+    game_data = []
+    for game in games:
+        guesses = Guess.objects.filter(game=game)
+        guess_times = GuessTime.objects.filter(guess__game=game)
+        
+        game_data.append({
+            'date': game.date,
+            'word': game.word.word,
+            'num_guesses': guesses.count(),
+            'won': game.status == 'won',
+            'avg_time_per_guess': guess_times.aggregate(Avg('time_taken'))['time_taken__avg'] or 0,
+            'total_time': game.time_played
+        })
+    
+    context = {
+        'game_data': game_data
+    }
+    
+    return render(request, 'users/all_games_played.html', context)
+
+```
+
