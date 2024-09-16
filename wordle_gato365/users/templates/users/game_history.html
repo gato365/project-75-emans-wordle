@@ -1,38 +1,47 @@
 {% extends "users/base.html" %}
 
-{% block content_history %}
-<h2>Game History</h2>
+{% load static %}
 
-{% if game_data %}
-    <table>
-        <thead>
-            <tr>
-                <th>Date</th>
-                <th>Word</th>
-                <th>Status</th>
-                <th>Time Played</th>
-                <th>Guesses</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for game in game_data %}
-            <tr>
-                <td>{{ game.date }}</td>
-                <td>{{ game.word }}</td>
-                <td>{{ game.status }}</td>
-                <td>{{ game.time_played }} seconds</td>
-                <td>
-                    <ul>
-                    {% for guess in game.guesses %}
-                        <li>{{ guess.word }} ({{ guess.time_taken|default:"N/A" }} seconds)</li>
+{% block content_history %}
+<div class="container mt-5">
+    <h2 class="mb-4">Game History</h2>
+    {% if game_data %}
+        <div class="table-responsive">
+            <table class="table table-hover table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Date</th>
+                        <th>Word</th>
+                        <th>Number of Guesses</th>
+                        <th>Result</th>
+                        <th>Avg Time per Guess</th>
+                        <th>Total Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for game in game_data %}
+                    <tr>
+                        <td>{{ game.date|date:"M d, Y" }}</td>
+                        <td>{{ game.word }}</td>
+                        <td>{{ game.num_guesses }}</td>
+                        <td>
+                            {% if game.won %}
+                                <span class="badge badge-success">Won</span>
+                            {% else %}
+                                <span class="badge badge-danger">Lost</span>
+                            {% endif %}
+                        </td>
+                        <td>{{ game.avg_time_per_guess|floatformat:2 }} seconds</td>
+                        <td>{{ game.total_time }} seconds</td>
+                    </tr>
                     {% endfor %}
-                    </ul>
-                </td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-{% else %}
-    <p>No game history available.</p>
-{% endif %} 
+                </tbody>
+            </table>
+        </div>
+    {% else %}
+        <div class="alert alert-info" role="alert">
+            No game history available.
+        </div>
+    {% endif %}
+</div>
 {% endblock content_history %}

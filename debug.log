@@ -2090,3 +2090,20 @@ Traceback (most recent call last):
 django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 38: 'endblock', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
 "GET /game_history/ HTTP/1.1" 500 206158
 "GET /game_history/ HTTP/1.1" 200 3451
+Watching for file changes with StatReloader
+"GET /login/ HTTP/1.1" 200 4090
+"POST /login/ HTTP/1.1" 200 4284
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /login/ HTTP/1.1" 302 0
+"GET /profile/ HTTP/1.1" 200 4279
+"GET /game_history/ HTTP/1.1" 200 17347
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /game_history/ HTTP/1.1" 200 17930
+"GET /static/users/favicon.ico HTTP/1.1" 304 0

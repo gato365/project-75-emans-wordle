@@ -14,4 +14,48 @@ Issue 2: How is the views in my user directory connected to the game history htm
 Please address my issues and critique my understanding. Thank you.
 
 ---------------------------------------------------------------------------------------------------------
+Question 2:
+a) Regarding my game history issue, it worked. I have the table history that has the following columns:
+ - Date	
+ - Word	
+ - Status	
+ - Time Played	
+ - Guesses
 
+b) I would like to change it to be the following:
+ - Date	
+ - Word	
+ - Number of Guesses
+ - If Did you win	
+ - Average time per guess	
+ - Total time on guess
+
+c) My models look like this:
+```python
+class Game(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    date = models.DateField(auto_now_add=True)
+    word = models.ForeignKey('Word', on_delete=models.CASCADE)
+    status = models.CharField(max_length=10)
+    ## amount of time the game has been played
+    time_played = models.IntegerField(default=0)
+
+class Word(models.Model):
+    word = models.CharField(max_length=255)
+    date_used = models.DateField(null=True) 
+    
+
+    def __str__(self):
+        return self.word
+
+class Guess(models.Model):
+    game = models.ForeignKey(Game, on_delete=models.CASCADE)
+    guess_word = models.CharField(max_length=255)
+    sequence_number = models.IntegerField()
+
+class GuessTime(models.Model):
+    guess = models.OneToOneField(Guess, on_delete=models.CASCADE, related_name='time')
+    time_taken = models.FloatField()  # Time in secon
+```
+
+I also want to deck out my game history page to have a modern look with Bootstrap 

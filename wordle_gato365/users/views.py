@@ -5,6 +5,7 @@ from django.contrib.auth.decorators import login_required
 from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm
 from django.contrib.auth.views import LogoutView
 from django.urls import reverse_lazy
+from django.db.models import Avg, Count
 from wordle.models import Game, Guess, GuessTime
 
 # Create your views here.
@@ -102,30 +103,21 @@ def game_history(request):
     
     game_data = []
     for game in games:
-        guesses = Guess.objects.filter(game=game).order_by('sequence_number')
-        guess_data = []
-        for guess in guesses:
-            try:
-                time_taken = guess.time.time_taken
-            except GuessTime.DoesNotExist:
-                time_taken = None
-            guess_data.append({
-                'word': guess.guess_word,
-                'time_taken': time_taken
-            })
+        guesses = Guess.objects.filter(game=game)
+        guess_times = GuessTime.objects.filter(guess__game=game)
         
         game_data.append({
             'date': game.date,
             'word': game.word.word,
-            'status': game.status,
-            'time_played': game.time_played,
-            'guesses': guess_data
+            'num_guesses': guesses.count(),
+            'won': game.status == 'won',
+            'avg_time_per_guess': guess_times.aggregate(Avg('time_taken'))['time_taken__avg'] or 0,
+            'total_time': game.time_played
         })
     
     context = {
-        'game_data': game_data,
-        'title': 'Game History'  # This will be used in the base.html title block
+        'game_data': game_data
     }
+    
     return render(request, 'users/game_history.html', context)
-
 
