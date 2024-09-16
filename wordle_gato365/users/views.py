@@ -5,7 +5,7 @@ from django.contrib.auth.decorators import login_required
 from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm
 from django.contrib.auth.views import LogoutView
 from django.urls import reverse_lazy
-
+from wordle.models import Game, Guess, GuessTime
 
 # Create your views here.
 
@@ -94,3 +94,38 @@ def leaderboardlist(request):
 
 def stats(request):
     return render(request, 'users/stats.html')
+
+
+@login_required
+def game_history(request):
+    games = Game.objects.filter(user=request.user).order_by('-date')
+    
+    game_data = []
+    for game in games:
+        guesses = Guess.objects.filter(game=game).order_by('sequence_number')
+        guess_data = []
+        for guess in guesses:
+            try:
+                time_taken = guess.time.time_taken
+            except GuessTime.DoesNotExist:
+                time_taken = None
+            guess_data.append({
+                'word': guess.guess_word,
+                'time_taken': time_taken
+            })
+        
+        game_data.append({
+            'date': game.date,
+            'word': game.word.word,
+            'status': game.status,
+            'time_played': game.time_played,
+            'guesses': guess_data
+        })
+    
+    context = {
+        'game_data': game_data,
+        'title': 'Game History'  # This will be used in the base.html title block
+    }
+    return render(request, 'users/game_history.html', context)
+
+

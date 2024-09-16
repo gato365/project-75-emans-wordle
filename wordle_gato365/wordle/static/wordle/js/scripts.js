@@ -69,6 +69,7 @@ async function startGame() {
 
     // Start Timer
     startTimer();
+    
     guessStartTime = new Date();
     guessTimes = [];
   } catch (error) {
@@ -181,6 +182,7 @@ async function submitGuess() {
 function endGame(isWin, correctWord) {
   let timeTaken = endTimer();
   
+  
   document.getElementById('guessInput').disabled = true;
   
   showSessionInfo();
@@ -289,8 +291,13 @@ function showSessionInfo() {
 function updateGameTime() {
   let currentTime = new Date();
   totalGameTime = (currentTime - startTime) / 1000; // Time in seconds
-  document.getElementById('gameTime').textContent = `Time: ${Math.round(totalGameTime)} seconds`;
+  let gameTimeElement = document.getElementById('gameTime');
+  if (gameTimeElement) {
+      gameTimeElement.textContent = `Time: ${Math.round(totalGameTime)} seconds`;
+  }
 }
+
+
 function startTimer() {
   startTime = new Date();
   gameTimer = setInterval(updateGameTime, 1000); // Update time every second

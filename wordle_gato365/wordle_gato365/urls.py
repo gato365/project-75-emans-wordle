@@ -38,6 +38,7 @@ urlpatterns = [
     path('start_game/', wordle_views.start_game, name='start_game'),
     path('update_game_time/', wordle_views.update_game_time, name='update_game_time'),
     path('game/', wordle_views.game_view, name='game'),
+    path('game_history/', user_views.game_history, name='game_history'),
     path('update_guess_times/', wordle_views.update_guess_times, name='update_guess_times'),
     path('submit_guess/', wordle_views.submit_guess, name='submit_guess'),
     path('logout/', user_views.CustomLogoutView.as_view(), name='logout')

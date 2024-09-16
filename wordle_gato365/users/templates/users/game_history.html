@@ -1,0 +1,38 @@
+{% extends "users/base.html" %}
+
+{% block content_history %}
+<h2>Game History</h2>
+
+{% if game_data %}
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Word</th>
+                <th>Status</th>
+                <th>Time Played</th>
+                <th>Guesses</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for game in game_data %}
+            <tr>
+                <td>{{ game.date }}</td>
+                <td>{{ game.word }}</td>
+                <td>{{ game.status }}</td>
+                <td>{{ game.time_played }} seconds</td>
+                <td>
+                    <ul>
+                    {% for guess in game.guesses %}
+                        <li>{{ guess.word }} ({{ guess.time_taken|default:"N/A" }} seconds)</li>
+                    {% endfor %}
+                    </ul>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <p>No game history available.</p>
+{% endif %} 
+{% endblock content_history %}

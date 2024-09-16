@@ -21,14 +21,14 @@
     <header class="site-header">
       <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
         <div class="container">
-          <a class="navbaFr-brand mr-4" href="{% url 'home' %}">Wordle Game</a>
+          <a class="navbaFr-brand mr-4" href="{% url 'home' %}">Wurdz</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="navbarToggle">
             
             
             {% if user.is_authenticated %}
             <div class="navbar-nav mr-auto">
-              <a class="nav-item nav-link" href="{% url 'stats' %}">STATs</a>
+              <a class="nav-item nav-link" href="{% url 'game_history' %}">Game History</a>
               <a class="nav-item nav-link" href="{% url 'about' %}">About</a>
               <a class="nav-item nav-link" href="{% url 'game' %}">Play Game</a>
             </div>
@@ -78,10 +78,12 @@
       {% block game_content %}
 
       {% endblock %}
+      
+      {% block content_history %}
 
-
+      {% endblock content_history %}
+    
     {% endif %}
-
 
 
 

@@ -88,7 +88,7 @@ ROOT_URLCONF = 'wordle_gato365.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],  # This line is crucial
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
