@@ -59,3 +59,16 @@ class GuessTime(models.Model):
 ```
 
 I also want to deck out my game history page to have a modern look with Bootstrap 
+
+
+
+---------------------------------------------------------------------------------------------------------
+Question 3:
+So I want to advanve the game history table to have one main tab named "Badges" then 2 more tabs names "Summary of All games" and "All Games Played"
+
+The previous request allowed me to get all games played now I want to work on the summary of all games. 
+
+a) I know I need to modify the urls.py to have more paths. 
+b) I know the views.py within users need 3 more functions: general, badges, summary_of_all_games, and all_games_played (already done)[is this correct]
+c) I will need to have 3 more html pages in the templates directory: badges.html, summary_of_all_games.html, and all_games_played.html
+d) I would like to have a empty badge page that I will work on soon.

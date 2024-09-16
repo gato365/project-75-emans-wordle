@@ -1,0 +1,41 @@
+<h3>Summary of All Games</h3>
+<div class="card-deck">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Total Games</h5>
+            <p class="card-text">{{ summary.total_games }}</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Games Won</h5>
+            <p class="card-text">{{ summary.games_won }}</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Win Rate</h5>
+            <p class="card-text">{{ win_rate|floatformat:2 }}%</p>
+        </div>
+    </div>
+</div>
+<div class="card-deck mt-4">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Average Guesses</h5>
+            <p class="card-text">{{ summary.average_guesses|floatformat:2 }}</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Total Time Played</h5>
+            <p class="card-text">{{ summary.total_time_played }} seconds</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Average Time Per Game</h5>
+            <p class="card-text">{{ summary.average_time_per_game|floatformat:2 }} seconds</p>
+        </div>
+    </div>
+</div>
