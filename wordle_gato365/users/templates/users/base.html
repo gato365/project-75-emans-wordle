@@ -21,7 +21,7 @@
     <header class="site-header">
       <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
         <div class="container">
-          <a class="navbaFr-brand mr-4" href="{% url 'home' %}">Wurdz</a>
+          <a class="navbaFr-brand mr-4" href="{% url 'about' %}">Wurdz</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="navbarToggle">
             
@@ -30,6 +30,7 @@
             <div class="navbar-nav mr-auto">
               <a class="nav-item nav-link" href="{% url 'game_history' %}">Game History</a>
               <a class="nav-item nav-link" href="{% url 'about' %}">About</a>
+              <a class="nav-item nav-link" href="{% url 'home' %}">Home</a>
               <a class="nav-item nav-link" href="{% url 'game' %}">Play Game</a>
             </div>
 
@@ -37,9 +38,9 @@
             {% else %}
 
             <div class="navbar-nav mr-auto">
-              <a class="nav-item nav-link" href="{% url 'home' %}">Home</a>
+              
               <a class="nav-item nav-link" href="{% url 'about' %}">About</a>
-              <a class="nav-item nav-link" href="{% url 'leaderboardlist' %}">Leadership</a>
+              {% comment %} <a class="nav-item nav-link" href="{% url 'leaderboardlist' %}">Leadership</a> {% endcomment %}
             </div>
 
             {% endif %}

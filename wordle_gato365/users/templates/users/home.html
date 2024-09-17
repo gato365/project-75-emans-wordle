@@ -1,11 +1,11 @@
 {% extends "users/base.html" %}
 {% block content1 %}
-    <h1>Wordle Game Menu</h1>
-    <p>Welcome to the Wordle Game Menu! Choose an option to start playing or learn more.</p>
+    <h1>Wurdz Game Menu</h1>
+    <p>Welcome to the Wurdz Game Menu! Choose an option to start playing or learn more.</p>
     <ul>
-        <li><a href="#">Play Wordle</a> - Start a new game of Wordle.</li>
-        <li><a href="{% url 'about' %}">How to Play</a> - Learn the rules and how to play Wordle.</li>
-        <li><a href="#">Leaderboard</a> - Check out the top scores and players.</li>
-        <li><a href="#">Your Statistics</a> - View your game statistics and progress.</li>
+        
+        <li><a href="{% url 'game' %}">Play Game</a> - Start a new game and guess the secret word.</li>
+        <li><a href="{% url 'about' %}">How to Play</a> - Learn the rules and how to play Wurdz.</li>
+        <li><a href="{% url 'game_history' %}">Your Statistics</a> - View your game statistics and history.</li>
     </ul>
 {% endblock %}

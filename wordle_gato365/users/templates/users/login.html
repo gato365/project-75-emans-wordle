@@ -25,16 +25,16 @@
         <div class="border-top pt-3">
             <small class="text-muted">
         
-        <div>Login with Google Account</div>
+        {% comment %} <div>Login with Google Account</div> {% endcomment %}
         {% load static %}
         {% load socialaccount %}
         {% comment %} <a href="{% url 'socialaccount_login' 'google' %}">Login with Google</a> {% endcomment %}
-        </small>
+    
         </div>
 
         <div class="border-top pt-3">
             <small class="text-muted">
-                Need An Account? <a class="ml-2" href="#">Sign Up</a>
+                Need An Account? <a class="ml-2" href="{% url 'register' %}">Sign Up</a>
             </small>
         </div>
     </div>

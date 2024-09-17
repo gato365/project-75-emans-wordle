@@ -57,6 +57,7 @@ async function startGame() {
     document.getElementById('startButton').style.display = 'none';
     document.getElementById('guessInput').style.display = 'block';
     document.getElementById('submitGuessButton').style.display = 'block';
+    document.getElementById('gameTime').style.display = '';
 
     // Reset/Initialize Values
     document.getElementById('sessionInfo').value = '';

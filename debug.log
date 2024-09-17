@@ -2493,3 +2493,638 @@ C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle_g
 Watching for file changes with StatReloader
 C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle_gato365\settings.py changed, reloading.
 Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\migrations\0001_initial.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Python311\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'wordle_database.users_customuser' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py", line 79, in home
+    return render(request, 'users/home.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\defaulttags.py", line 319, in render
+    match = condition.eval(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\defaulttags.py", line 885, in eval
+    return self.value.resolve(context, ignore_failures=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 710, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\functional.py", line 251, in inner
+    self._setup()
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\functional.py", line 404, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\middleware.py", line 33, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\middleware.py", line 13, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\__init__.py", line 216, in get_user
+    user = backend.get_user(user_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\backends.py", line 157, in get_user
+    user = UserModel._default_manager.get(pk=user_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Python311\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'wordle_database.users_customuser' doesn't exist")
+"GET / HTTP/1.1" 500 290067
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4681
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2689
+"GET /register/ HTTP/1.1" 200 6620
+"POST /register/ HTTP/1.1" 200 6853
+"POST /register/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 3890
+"POST /login/ HTTP/1.1" 302 0
+Internal Server Error: /profile/
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py", line 61, in profile
+    p_form = ProfileUpdateForm(instance=request.user.profile)
+                                        ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\fields\related_descriptors.py", line 525, in __get__
+    raise self.RelatedObjectDoesNotExist(
+users.models.CustomUser.profile.RelatedObjectDoesNotExist: CustomUser has no profile.
+"GET /profile/ HTTP/1.1" 500 94587
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\apps.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\apps.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\signals.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\signals.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\signals.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\signals.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\signals.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\signals.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 3031
+"POST /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 3850
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\views\decorators\debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\views.py", line 88, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\views.py", line 107, in form_valid
+    auth_login(self.request, form.get_user())
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\__init__.py", line 152, in login
+    user_logged_in.send(sender=user.__class__, request=request, user=user)
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\dispatch\dispatcher.py", line 189, in send
+    response = receiver(signal=self, sender=sender, **named)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\models.py", line 23, in update_last_login
+    user.save(update_fields=["last_login"])
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\base_user.py", line 78, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\base.py", line 924, in save_base
+    post_save.send(
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\dispatch\dispatcher.py", line 189, in send
+    response = receiver(signal=self, sender=sender, **named)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\models.py", line 77, in create_or_update_user_profile
+    instance.profile.save()
+    ^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\fields\related_descriptors.py", line 525, in __get__
+    raise self.RelatedObjectDoesNotExist(
+users.models.CustomUser.profile.RelatedObjectDoesNotExist: CustomUser has no profile.
+"POST /login/ HTTP/1.1" 500 177433
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\signals.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\signals.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\signals.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\models.py changed, reloading.
+Watching for file changes with StatReloader
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle_gato365\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2689
+"GET /login/ HTTP/1.1" 200 3764
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /login/ HTTP/1.1" 302 0
+"GET /profile/ HTTP/1.1" 200 4295
+"GET /game/ HTTP/1.1" 200 3456
+"GET /static/wordle/css/styles.css HTTP/1.1" 304 0
+"GET /static/wordle/js/scripts.js HTTP/1.1" 304 0
+"POST /game/ HTTP/1.1" 200 34
+Game 1: Correct word is adapt, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 1: Correct word is adapt, guess is beach
+"POST /submit_guess/ HTTP/1.1" 200 279
+Game 1: Correct word is adapt, guess is adapt
+"POST /submit_guess/ HTTP/1.1" 200 284
+"POST /update_game_time/ HTTP/1.1" 200 21
+"POST /update_guess_times/ HTTP/1.1" 200 21
+"GET /game-history/ HTTP/1.1" 200 5739
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+"POST /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 3850
+"GET /register/ HTTP/1.1" 200 6675
+"GET /register/ HTTP/1.1" 200 6675
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Python311\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1062, "Duplicate entry '2' for key 'users_profile.user_id'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py", line 34, in register
+    user.save()
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\base_user.py", line 78, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\base.py", line 924, in save_base
+    post_save.send(
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\dispatch\dispatcher.py", line 189, in send
+    response = receiver(signal=self, sender=sender, **named)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\signals.py", line 8, in create_profile
+    Profile.objects.create(user=instance)
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\models.py", line 65, in save
+    super().save(*args, **kwargs)  # Pass along any arguments to the parent class's save.
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Python311\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry '2' for key 'users_profile.user_id'")
+"POST /register/ HTTP/1.1" 500 221087
+"POST /register/ HTTP/1.1" 200 7027
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\signals.py changed, reloading.
+Watching for file changes with StatReloader
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"GET /login/ HTTP/1.1" 200 3764
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /login/ HTTP/1.1" 302 0
+"GET /profile/ HTTP/1.1" 200 6293
+"GET /game/ HTTP/1.1" 200 3456
+"GET /about/ HTTP/1.1" 200 3474
+"GET /game-history/ HTTP/1.1" 200 5739
+"POST /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 3850
+"GET /register/ HTTP/1.1" 200 6675
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /register/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 3890
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /login/ HTTP/1.1" 302 0
+"GET /profile/ HTTP/1.1" 200 6288
+"GET /game/ HTTP/1.1" 200 3456
+"POST /game/ HTTP/1.1" 200 34
+Game 2: Correct word is adapt, guess is scare
+"POST /submit_guess/ HTTP/1.1" 200 279
+Game 2: Correct word is adapt, guess is flake
+"POST /submit_guess/ HTTP/1.1" 200 279
+Game 2: Correct word is adapt, guess is crane
+"POST /submit_guess/ HTTP/1.1" 200 279
+Game 2: Correct word is adapt, guess is train
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 2: Correct word is adapt, guess is ticke
+"POST /submit_guess/ HTTP/1.1" 200 279
+Game 2: Correct word is adapt, guess is rimme
+"POST /submit_guess/ HTTP/1.1" 200 280
+"POST /update_game_time/ HTTP/1.1" 200 21
+"POST /update_guess_times/ HTTP/1.1" 200 21
+"GET /about/ HTTP/1.1" 200 3474
+"GET /game-history/ HTTP/1.1" 200 5737
+"GET /game-history/ HTTP/1.1" 200 5737
+"GET /game-history/ HTTP/1.1" 200 5737
+"GET /game-history/ HTTP/1.1" 200 5737
+"GET /game-history/ HTTP/1.1" 200 5737
+Watching for file changes with StatReloader
+"GET /game-history/ HTTP/1.1" 200 5737
+"GET /profile/ HTTP/1.1" 200 6288
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 3031
+"GET /game/ HTTP/1.1" 200 3456
+"GET /game/ HTTP/1.1" 200 3479
+"POST /game/ HTTP/1.1" 200 34
+"GET /game/ HTTP/1.1" 200 3479
+"POST /game/ HTTP/1.1" 200 34
+Game 4: Correct word is adapt, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 280
+"GET /game/ HTTP/1.1" 200 3479
+"POST /game/ HTTP/1.1" 200 34
+Game 5: Correct word is adapt, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 5: Correct word is adapt, guess is adapt
+"POST /submit_guess/ HTTP/1.1" 200 284
+"POST /update_game_time/ HTTP/1.1" 200 21
+"POST /update_guess_times/ HTTP/1.1" 200 21
+"GET /about/ HTTP/1.1" 200 3474
+"GET /game/ HTTP/1.1" 200 3479
+"GET /game/ HTTP/1.1" 200 3479
+"POST /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 3782
+"GET /home/ HTTP/1.1" 200 2621
+"GET /home/ HTTP/1.1" 200 2522
+"GET /about/ HTTP/1.1" 200 3012
+"GET /home/ HTTP/1.1" 200 2522
+"GET /game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/profile/%25252525252525253Fnext%25252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/profile/%25252525252525253Fnext%25252525252525253D/profile/%2525252525252525253Fnext%2525252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/profile/%25252525252525253Fnext%25252525252525253D/profile/%2525252525252525253Fnext%2525252525252525253D/profile/%252525252525252525253Fnext%252525252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/profile/%25252525252525253Fnext%25252525252525253D/profile/%2525252525252525253Fnext%2525252525252525253D/profile/%252525252525252525253Fnext%252525252525252525253D/profile/%25252525252525252525253Fnext%25252525252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/profile/%25252525252525253Fnext%25252525252525253D/profile/%2525252525252525253Fnext%2525252525252525253D/profile/%252525252525252525253Fnext%252525252525252525253D/profile/%25252525252525252525253Fnext%25252525252525252525253D/profile/%2525252525252525252525253Fnext%2525252525252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/profile/%25252525252525253Fnext%25252525252525253D/profile/%2525252525252525253Fnext%2525252525252525253D/profile/%252525252525252525253Fnext%252525252525252525253D/profile/%25252525252525252525253Fnext%25252525252525252525253D/profile/%2525252525252525252525253Fnext%2525252525252525252525253D/profile/%252525252525252525252525253Fnext%252525252525252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/profile/%25252525252525253Fnext%25252525252525253D/profile/%2525252525252525253Fnext%2525252525252525253D/profile/%252525252525252525253Fnext%252525252525252525253D/profile/%25252525252525252525253Fnext%25252525252525252525253D/profile/%2525252525252525252525253Fnext%2525252525252525252525253D/profile/%252525252525252525252525253Fnext%252525252525252525252525253D/profile/%25252525252525252525252525253Fnext%25252525252525252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/profile/%25252525252525253Fnext%25252525252525253D/profile/%2525252525252525253Fnext%2525252525252525253D/profile/%252525252525252525253Fnext%252525252525252525253D/profile/%25252525252525252525253Fnext%25252525252525252525253D/profile/%2525252525252525252525253Fnext%2525252525252525252525253D/profile/%252525252525252525252525253Fnext%252525252525252525252525253D/profile/%25252525252525252525252525253Fnext%25252525252525252525252525253D/profile/%2525252525252525252525252525253Fnext%2525252525252525252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/profile/%25252525252525253Fnext%25252525252525253D/profile/%2525252525252525253Fnext%2525252525252525253D/profile/%252525252525252525253Fnext%252525252525252525253D/profile/%25252525252525252525253Fnext%25252525252525252525253D/profile/%2525252525252525252525253Fnext%2525252525252525252525253D/profile/%252525252525252525252525253Fnext%252525252525252525252525253D/profile/%25252525252525252525252525253Fnext%25252525252525252525252525253D/profile/%2525252525252525252525252525253Fnext%2525252525252525252525252525253D/profile/%252525252525252525252525252525253Fnext%252525252525252525252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/profile/%25252525252525253Fnext%25252525252525253D/profile/%2525252525252525253Fnext%2525252525252525253D/profile/%252525252525252525253Fnext%252525252525252525253D/profile/%25252525252525252525253Fnext%25252525252525252525253D/profile/%2525252525252525252525253Fnext%2525252525252525252525253D/profile/%252525252525252525252525253Fnext%252525252525252525252525253D/profile/%25252525252525252525252525253Fnext%25252525252525252525252525253D/profile/%2525252525252525252525252525253Fnext%2525252525252525252525252525253D/profile/%252525252525252525252525252525253Fnext%252525252525252525252525252525253D/profile/%25252525252525252525252525252525253Fnext%25252525252525252525252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/profile/%25252525252525253Fnext%25252525252525253D/profile/%2525252525252525253Fnext%2525252525252525253D/profile/%252525252525252525253Fnext%252525252525252525253D/profile/%25252525252525252525253Fnext%25252525252525252525253D/profile/%2525252525252525252525253Fnext%2525252525252525252525253D/profile/%252525252525252525252525253Fnext%252525252525252525252525253D/profile/%25252525252525252525252525253Fnext%25252525252525252525252525253D/profile/%2525252525252525252525252525253Fnext%2525252525252525252525252525253D/profile/%252525252525252525252525252525253Fnext%252525252525252525252525252525253D/profile/%25252525252525252525252525252525253Fnext%25252525252525252525252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/profile/%25252525252525253Fnext%25252525252525253D/profile/%2525252525252525253Fnext%2525252525252525253D/profile/%252525252525252525253Fnext%252525252525252525253D/profile/%25252525252525252525253Fnext%25252525252525252525253D/profile/%2525252525252525252525253Fnext%2525252525252525252525253D/profile/%252525252525252525252525253Fnext%252525252525252525252525253D/profile/%25252525252525252525252525253Fnext%25252525252525252525252525253D/profile/%2525252525252525252525252525253Fnext%2525252525252525252525252525253D/profile/%252525252525252525252525252525253Fnext%252525252525252525252525252525253D/profile/%25252525252525252525252525252525253Fnext%25252525252525252525252525252525253D/profile/%2525252525252525252525252525252525253Fnext%2525252525252525252525252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/profile/%25252525252525253Fnext%25252525252525253D/profile/%2525252525252525253Fnext%2525252525252525253D/profile/%252525252525252525253Fnext%252525252525252525253D/profile/%25252525252525252525253Fnext%25252525252525252525253D/profile/%2525252525252525252525253Fnext%2525252525252525252525253D/profile/%252525252525252525252525253Fnext%252525252525252525252525253D/profile/%25252525252525252525252525253Fnext%25252525252525252525252525253D/profile/%2525252525252525252525252525253Fnext%2525252525252525252525252525253D/profile/%252525252525252525252525252525253Fnext%252525252525252525252525252525253D/profile/%25252525252525252525252525252525253Fnext%25252525252525252525252525252525253D/profile/%2525252525252525252525252525252525253Fnext%2525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/profile/%25252525252525253Fnext%25252525252525253D/profile/%2525252525252525253Fnext%2525252525252525253D/profile/%252525252525252525253Fnext%252525252525252525253D/profile/%25252525252525252525253Fnext%25252525252525252525253D/profile/%2525252525252525252525253Fnext%2525252525252525252525253D/profile/%252525252525252525252525253Fnext%252525252525252525252525253D/profile/%25252525252525252525252525253Fnext%25252525252525252525252525253D/profile/%2525252525252525252525252525253Fnext%2525252525252525252525252525253D/profile/%252525252525252525252525252525253Fnext%252525252525252525252525252525253D/profile/%25252525252525252525252525252525253Fnext%25252525252525252525252525252525253D/profile/%2525252525252525252525252525252525253Fnext%2525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/profile/%25252525252525253Fnext%25252525252525253D/profile/%2525252525252525253Fnext%2525252525252525253D/profile/%252525252525252525253Fnext%252525252525252525253D/profile/%25252525252525252525253Fnext%25252525252525252525253D/profile/%2525252525252525252525253Fnext%2525252525252525252525253D/profile/%252525252525252525252525253Fnext%252525252525252525252525253D/profile/%25252525252525252525252525253Fnext%25252525252525252525252525253D/profile/%2525252525252525252525252525253Fnext%2525252525252525252525252525253D/profile/%252525252525252525252525252525253Fnext%252525252525252525252525252525253D/profile/%25252525252525252525252525252525253Fnext%25252525252525252525252525252525253D/profile/%2525252525252525252525252525252525253Fnext%2525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/profile/%25252525252525253Fnext%25252525252525253D/profile/%2525252525252525253Fnext%2525252525252525253D/profile/%252525252525252525253Fnext%252525252525252525253D/profile/%25252525252525252525253Fnext%25252525252525252525253D/profile/%2525252525252525252525253Fnext%2525252525252525252525253D/profile/%252525252525252525252525253Fnext%252525252525252525252525253D/profile/%25252525252525252525252525253Fnext%25252525252525252525252525253D/profile/%2525252525252525252525252525253Fnext%2525252525252525252525252525253D/profile/%252525252525252525252525252525253Fnext%252525252525252525252525252525253D/profile/%25252525252525252525252525252525253Fnext%25252525252525252525252525252525253D/profile/%2525252525252525252525252525252525253Fnext%2525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/profile/%25252525252525253Fnext%25252525252525253D/profile/%2525252525252525253Fnext%2525252525252525253D/profile/%252525252525252525253Fnext%252525252525252525253D/profile/%25252525252525252525253Fnext%25252525252525252525253D/profile/%2525252525252525252525253Fnext%2525252525252525252525253D/profile/%252525252525252525252525253Fnext%252525252525252525252525253D/profile/%25252525252525252525252525253Fnext%25252525252525252525252525253D/profile/%2525252525252525252525252525253Fnext%2525252525252525252525252525253D/profile/%252525252525252525252525252525253Fnext%252525252525252525252525252525253D/profile/%25252525252525252525252525252525253Fnext%25252525252525252525252525252525253D/profile/%2525252525252525252525252525252525253Fnext%2525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/profile/%25252525252525253Fnext%25252525252525253D/profile/%2525252525252525253Fnext%2525252525252525253D/profile/%252525252525252525253Fnext%252525252525252525253D/profile/%25252525252525252525253Fnext%25252525252525252525253D/profile/%2525252525252525252525253Fnext%2525252525252525252525253D/profile/%252525252525252525252525253Fnext%252525252525252525252525253D/profile/%25252525252525252525252525253Fnext%25252525252525252525252525253D/profile/%2525252525252525252525252525253Fnext%2525252525252525252525252525253D/profile/%252525252525252525252525252525253Fnext%252525252525252525252525252525253D/profile/%25252525252525252525252525252525253Fnext%25252525252525252525252525252525253D/profile/%2525252525252525252525252525252525253Fnext%2525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/profile/%25252525252525253Fnext%25252525252525253D/profile/%2525252525252525253Fnext%2525252525252525253D/profile/%252525252525252525253Fnext%252525252525252525253D/profile/%25252525252525252525253Fnext%25252525252525252525253D/profile/%2525252525252525252525253Fnext%2525252525252525252525253D/profile/%252525252525252525252525253Fnext%252525252525252525252525253D/profile/%25252525252525252525252525253Fnext%25252525252525252525252525253D/profile/%2525252525252525252525252525253Fnext%2525252525252525252525252525253D/profile/%252525252525252525252525252525253Fnext%252525252525252525252525252525253D/profile/%25252525252525252525252525252525253Fnext%25252525252525252525252525252525253D/profile/%2525252525252525252525252525252525253Fnext%2525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/profile/%25252525252525253Fnext%25252525252525253D/profile/%2525252525252525253Fnext%2525252525252525253D/profile/%252525252525252525253Fnext%252525252525252525253D/profile/%25252525252525252525253Fnext%25252525252525252525253D/profile/%2525252525252525252525253Fnext%2525252525252525252525253D/profile/%252525252525252525252525253Fnext%252525252525252525252525253D/profile/%25252525252525252525252525253Fnext%25252525252525252525252525253D/profile/%2525252525252525252525252525253Fnext%2525252525252525252525252525253D/profile/%252525252525252525252525252525253Fnext%252525252525252525252525252525253D/profile/%25252525252525252525252525252525253Fnext%25252525252525252525252525252525253D/profile/%2525252525252525252525252525252525253Fnext%2525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/profile/%25252525252525253Fnext%25252525252525253D/profile/%2525252525252525253Fnext%2525252525252525253D/profile/%252525252525252525253Fnext%252525252525252525253D/profile/%25252525252525252525253Fnext%25252525252525252525253D/profile/%2525252525252525252525253Fnext%2525252525252525252525253D/profile/%252525252525252525252525253Fnext%252525252525252525252525253D/profile/%25252525252525252525252525253Fnext%25252525252525252525252525253D/profile/%2525252525252525252525252525253Fnext%2525252525252525252525252525253D/profile/%252525252525252525252525252525253Fnext%252525252525252525252525252525253D/profile/%25252525252525252525252525252525253Fnext%25252525252525252525252525252525253D/profile/%2525252525252525252525252525252525253Fnext%2525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/profile/%25252525252525253Fnext%25252525252525253D/profile/%2525252525252525253Fnext%2525252525252525253D/profile/%252525252525252525253Fnext%252525252525252525253D/profile/%25252525252525252525253Fnext%25252525252525252525253D/profile/%2525252525252525252525253Fnext%2525252525252525252525253D/profile/%252525252525252525252525253Fnext%252525252525252525252525253D/profile/%25252525252525252525252525253Fnext%25252525252525252525252525253D/profile/%2525252525252525252525252525253Fnext%2525252525252525252525252525253D/profile/%252525252525252525252525252525253Fnext%252525252525252525252525252525253D/profile/%25252525252525252525252525252525253Fnext%25252525252525252525252525252525253D/profile/%2525252525252525252525252525252525253Fnext%2525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/profile/%25252525252525253Fnext%25252525252525253D/profile/%2525252525252525253Fnext%2525252525252525253D/profile/%252525252525252525253Fnext%252525252525252525253D/profile/%25252525252525252525253Fnext%25252525252525252525253D/profile/%2525252525252525252525253Fnext%2525252525252525252525253D/profile/%252525252525252525252525253Fnext%252525252525252525252525253D/profile/%25252525252525252525252525253Fnext%25252525252525252525252525253D/profile/%2525252525252525252525252525253Fnext%2525252525252525252525252525253D/profile/%252525252525252525252525252525253Fnext%252525252525252525252525252525253D/profile/%25252525252525252525252525252525253Fnext%25252525252525252525252525252525253D/profile/%2525252525252525252525252525252525253Fnext%2525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/profile/%25252525252525253Fnext%25252525252525253D/profile/%2525252525252525253Fnext%2525252525252525253D/profile/%252525252525252525253Fnext%252525252525252525253D/profile/%25252525252525252525253Fnext%25252525252525252525253D/profile/%2525252525252525252525253Fnext%2525252525252525252525253D/profile/%252525252525252525252525253Fnext%252525252525252525252525253D/profile/%25252525252525252525252525253Fnext%25252525252525252525252525253D/profile/%2525252525252525252525252525253Fnext%2525252525252525252525252525253D/profile/%252525252525252525252525252525253Fnext%252525252525252525252525252525253D/profile/%25252525252525252525252525252525253Fnext%25252525252525252525252525252525253D/profile/%2525252525252525252525252525252525253Fnext%2525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/profile/%25252525252525253Fnext%25252525252525253D/profile/%2525252525252525253Fnext%2525252525252525253D/profile/%252525252525252525253Fnext%252525252525252525253D/profile/%25252525252525252525253Fnext%25252525252525252525253D/profile/%2525252525252525252525253Fnext%2525252525252525252525253D/profile/%252525252525252525252525253Fnext%252525252525252525252525253D/profile/%25252525252525252525252525253Fnext%25252525252525252525252525253D/profile/%2525252525252525252525252525253Fnext%2525252525252525252525252525253D/profile/%252525252525252525252525252525253Fnext%252525252525252525252525252525253D/profile/%25252525252525252525252525252525253Fnext%25252525252525252525252525252525253D/profile/%2525252525252525252525252525252525253Fnext%2525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/profile/%25252525252525253Fnext%25252525252525253D/profile/%2525252525252525253Fnext%2525252525252525253D/profile/%252525252525252525253Fnext%252525252525252525253D/profile/%25252525252525252525253Fnext%25252525252525252525253D/profile/%2525252525252525252525253Fnext%2525252525252525252525253D/profile/%252525252525252525252525253Fnext%252525252525252525252525253D/profile/%25252525252525252525252525253Fnext%25252525252525252525252525253D/profile/%2525252525252525252525252525253Fnext%2525252525252525252525252525253D/profile/%252525252525252525252525252525253Fnext%252525252525252525252525252525253D/profile/%25252525252525252525252525252525253Fnext%25252525252525252525252525252525253D/profile/%2525252525252525252525252525252525253Fnext%2525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525252525252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/profile/%25252525252525253Fnext%25252525252525253D/profile/%2525252525252525253Fnext%2525252525252525253D/profile/%252525252525252525253Fnext%252525252525252525253D/profile/%25252525252525252525253Fnext%25252525252525252525253D/profile/%2525252525252525252525253Fnext%2525252525252525252525253D/profile/%252525252525252525252525253Fnext%252525252525252525252525253D/profile/%25252525252525252525252525253Fnext%25252525252525252525252525253D/profile/%2525252525252525252525252525253Fnext%2525252525252525252525252525253D/profile/%252525252525252525252525252525253Fnext%252525252525252525252525252525253D/profile/%25252525252525252525252525252525253Fnext%25252525252525252525252525252525253D/profile/%2525252525252525252525252525252525253Fnext%2525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525252525252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/profile/%25252525252525253Fnext%25252525252525253D/profile/%2525252525252525253Fnext%2525252525252525253D/profile/%252525252525252525253Fnext%252525252525252525253D/profile/%25252525252525252525253Fnext%25252525252525252525253D/profile/%2525252525252525252525253Fnext%2525252525252525252525253D/profile/%252525252525252525252525253Fnext%252525252525252525252525253D/profile/%25252525252525252525252525253Fnext%25252525252525252525252525253D/profile/%2525252525252525252525252525253Fnext%2525252525252525252525252525253D/profile/%252525252525252525252525252525253Fnext%252525252525252525252525252525253D/profile/%25252525252525252525252525252525253Fnext%25252525252525252525252525252525253D/profile/%2525252525252525252525252525252525253Fnext%2525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525252525252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/profile/%25252525252525253Fnext%25252525252525253D/profile/%2525252525252525253Fnext%2525252525252525253D/profile/%252525252525252525253Fnext%252525252525252525253D/profile/%25252525252525252525253Fnext%25252525252525252525253D/profile/%2525252525252525252525253Fnext%2525252525252525252525253D/profile/%252525252525252525252525253Fnext%252525252525252525252525253D/profile/%25252525252525252525252525253Fnext%25252525252525252525252525253D/profile/%2525252525252525252525252525253Fnext%2525252525252525252525252525253D/profile/%252525252525252525252525252525253Fnext%252525252525252525252525252525253D/profile/%25252525252525252525252525252525253Fnext%25252525252525252525252525252525253D/profile/%2525252525252525252525252525252525253Fnext%2525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525252525252525252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /profile/?next=/profile/%3Fnext%3D/profile/%253Fnext%253D/profile/%25253Fnext%25253D/profile/%2525253Fnext%2525253D/profile/%252525253Fnext%252525253D/profile/%25252525253Fnext%25252525253D/profile/%2525252525253Fnext%2525252525253D/profile/%252525252525253Fnext%252525252525253D/profile/%25252525252525253Fnext%25252525252525253D/profile/%2525252525252525253Fnext%2525252525252525253D/profile/%252525252525252525253Fnext%252525252525252525253D/profile/%25252525252525252525253Fnext%25252525252525252525253D/profile/%2525252525252525252525253Fnext%2525252525252525252525253D/profile/%252525252525252525252525253Fnext%252525252525252525252525253D/profile/%25252525252525252525252525253Fnext%25252525252525252525252525253D/profile/%2525252525252525252525252525253Fnext%2525252525252525252525252525253D/profile/%252525252525252525252525252525253Fnext%252525252525252525252525252525253D/profile/%25252525252525252525252525252525253Fnext%25252525252525252525252525252525253D/profile/%2525252525252525252525252525252525253Fnext%2525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525252525252525252525253D/profile/%252525252525252525252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525252525252525252525253D/profile/%25252525252525252525252525252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525252525252525252525252525253D/profile/%2525252525252525252525252525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525252525252525252525252525253D/game-history/ HTTP/1.1" 302 0
+"GET /home/ HTTP/1.1" 200 2522
+"GET /about/ HTTP/1.1" 200 3012
+"GET /home/ HTTP/1.1" 200 2522
+"GET /home/ HTTP/1.1" 200 2523
+"GET /about/ HTTP/1.1" 200 3013
+"GET /about/ HTTP/1.1" 200 3013
+"GET /about/ HTTP/1.1" 200 3013
+"GET /login/ HTTP/1.1" 200 3646
+"POST /login/ HTTP/1.1" 200 3840
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /login/ HTTP/1.1" 302 0
+"GET /profile/ HTTP/1.1" 200 6355
+"POST /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 3732
+"GET /login/ HTTP/1.1" 200 3646
+"GET /login/ HTTP/1.1" 200 3610
+"GET /login/ HTTP/1.1" 200 3598
+"GET /login/ HTTP/1.1" 200 3607
+"GET /register/ HTTP/1.1" 200 6557
+"GET /login/ HTTP/1.1" 200 3607

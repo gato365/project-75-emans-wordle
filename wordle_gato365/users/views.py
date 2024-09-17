@@ -7,27 +7,12 @@ from django.contrib.auth.views import LogoutView
 from django.urls import reverse_lazy
 from django.db.models import Avg, Count, Sum
 from wordle.models import Game, Guess, GuessTime
+from django.contrib.auth import get_user_model
+from .forms import UserUpdateForm, ProfileUpdateForm
+from .models import Profile
+from django.contrib.auth.decorators import login_required
 
-# Create your views here.
 
-def leaderboardlist(request):
-    leaderboard_data = []
-    for i in range(1, 11):
-        player_data = {
-            'rank': i,
-            'player': f'Player {i}',
-            'games_played': 10 + i,
-            'games_won': 8 + i,
-            'win_percentage': (8 + i) / (10 + i) * 100,
-            'average_guesses': 4 + (i % 3),
-            'best_word': f'Word{i}'
-        }
-        leaderboard_data.append(player_data)
-    
-    context = {
-        'leaderboard_data': leaderboard_data
-    }
-    return render(request, 'users/leaderboardlist.html', context)
 
 class CustomLogoutView(LogoutView):
     next_page = reverse_lazy('login')
@@ -36,48 +21,46 @@ class CustomLogoutView(LogoutView):
         messages.add_message(request, messages.INFO, 'You just logged out.')
         return super().dispatch(request, *args, **kwargs)
 
+CustomUser = get_user_model()
+
 
 def register(request):
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)
         if form.is_valid():
             user = form.save(commit=False)
-            user_type = form.cleaned_data.get('user_type')
-            if user_type == 'faculty':
-                user.graduating_class = None
-                user.major = None
+            if user.user_type == 'faculty_staff':
+                user.graduating_class = 'not_applicable'
             user.save()
-            username = form.cleaned_data.get('username')
             messages.success(request, f'Your account has been created! You are now able to log in')
             return redirect('login')
     else:
         form = UserRegisterForm()
     return render(request, 'users/register.html', {'form': form})
 
-
 @login_required
 def profile(request):
     if request.method == 'POST':
-        u_form = UserUpdateForm(request.POST, instance = request.user)
-        p_form = ProfileUpdateForm(request.POST, 
-                                   request.FILES,
-                                   instance = request.user.profile)
+        u_form = UserUpdateForm(request.POST, instance=request.user)
+        p_form = ProfileUpdateForm(request.POST, request.FILES, instance=request.user.profile)
         if u_form.is_valid() and p_form.is_valid():
-            u_form.save()
+            user = u_form.save(commit=False)
+            if user.user_type == 'faculty_staff':
+                user.graduating_class = 'not_applicable'
+            user.save()
             p_form.save()
             messages.success(request, f'Your account has been updated!')
             return redirect('profile')
     else:
-        u_form = UserUpdateForm(instance = request.user)
+        u_form = UserUpdateForm(instance=request.user)
         p_form = ProfileUpdateForm(instance=request.user.profile)
+
     context = {
         'u_form': u_form,
         'p_form': p_form
     }
 
-    return render(request, 'users/profile.html',context)
-
-
+    return render(request, 'users/profile.html', context)
 
 
 

@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 from .models import Profile, CustomUser
 from django.contrib.auth import get_user_model
+from .models import Profile, CustomUser
 
 CustomUser = get_user_model()
 
@@ -25,15 +26,26 @@ class UserRegisterForm(UserCreationForm):
         self.fields['major'].widget.attrs['class'] = 'student-field'
 
 
-# Model Form
+
+
+
+
 class UserUpdateForm(forms.ModelForm):
     email = forms.EmailField()
-    
+
     class Meta:
-        model = User
-        fields = ['username', 'email']
+        model = CustomUser
+        fields = ['username', 'email', 'user_type', 'graduating_class', 'college', 'major']
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['graduating_class'].required = False
+        if self.instance.user_type == 'faculty_staff':
+            self.fields['graduating_class'].initial = 'not_applicable'
+            self.fields['graduating_class'].widget.attrs['disabled'] = 'disabled'
+
 
 class ProfileUpdateForm(forms.ModelForm):
     class Meta:
         model = Profile
-        fields = ['image']
+        fields = ['image']  # Add any other fields from your Profile model
