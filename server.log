@@ -225,3 +225,115 @@ STREAM b'eXIf' 41 68
 STREAM b'IDAT' 121 65536
 "POST /login/ HTTP/1.1" 302 0
 "GET /game-history/ HTTP/1.1" 200 7076
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\models.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 17, 2024 - 08:09:05
+Django version 5.0.6, using settings 'wordle_gato365.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\models.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 17, 2024 - 08:09:50
+Django version 5.0.6, using settings 'wordle_gato365.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\models.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 17, 2024 - 08:09:52
+Django version 5.0.6, using settings 'wordle_gato365.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\models.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 17, 2024 - 08:09:57
+Django version 5.0.6, using settings 'wordle_gato365.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\models.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 17, 2024 - 08:10:48
+Django version 5.0.6, using settings 'wordle_gato365.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\models.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 17, 2024 - 08:10:53
+Django version 5.0.6, using settings 'wordle_gato365.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+"GET /game-history/ HTTP/1.1" 200 7076
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 17, 2024 - 08:11:35
+Django version 5.0.6, using settings 'wordle_gato365.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 17, 2024 - 08:11:38
+Django version 5.0.6, using settings 'wordle_gato365.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+"GET /game/ HTTP/1.1" 200 3546
+"POST /game/ HTTP/1.1" 200 34
+Game 6: Correct word is tasty, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 6: Correct word is tasty, guess is style
+"POST /submit_guess/ HTTP/1.1" 200 281
+Game 6: Correct word is tasty, guess is tasty
+"POST /submit_guess/ HTTP/1.1" 200 284
+"POST /update_game_time/ HTTP/1.1" 200 21
+"POST /update_guess_times/ HTTP/1.1" 200 21
+"GET /about/ HTTP/1.1" 200 3540
+"GET /home/ HTTP/1.1" 200 3050
+"GET /about/ HTTP/1.1" 200 3540
+"GET /game-history/ HTTP/1.1" 200 7502
+"GET /game/ HTTP/1.1" 200 3546
+"POST /game/ HTTP/1.1" 200 34
+Game 7: Correct word is paper, guess is scare
+"POST /submit_guess/ HTTP/1.1" 200 281
+Game 7: Correct word is paper, guess is react
+"POST /submit_guess/ HTTP/1.1" 200 281
+Game 7: Correct word is paper, guess is break
+"POST /submit_guess/ HTTP/1.1" 200 281
+Game 7: Correct word is paper, guess is areas
+"POST /submit_guess/ HTTP/1.1" 200 281
+Game 7: Correct word is paper, guess is pitch
+"POST /submit_guess/ HTTP/1.1" 200 279
+Game 7: Correct word is paper, guess is paret
+"POST /submit_guess/ HTTP/1.1" 200 284
+"POST /update_game_time/ HTTP/1.1" 200 21
+"POST /update_guess_times/ HTTP/1.1" 200 21
+"GET /game-history/ HTTP/1.1" 200 7928
