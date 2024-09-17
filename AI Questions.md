@@ -144,3 +144,55 @@ def all_games_played(request):
 
 ```
 
+---------------------------------------------------------------------------------------------------------
+Question 5:
+This information will be gathered in their form
+For each user I would like to know more information about them.
+- If they are a student, i want to know their 
+    - Graduating class: 2024, 2025, 2026, 2027, 2028 as options
+    - College membership:  Orfalea College of Business,  Bailey College of Science and Mathematics, College of Agriculture, Food and Environmental Sciences, College of Architecture and Environmental, College of Liberal Arts, College of Engineering
+    - Major: textbox
+- If they are a faculty member, I want to know their
+    - College membership:  Orfalea College of Business,  Bailey College of Science and Mathematics, College of Agriculture, Food and Environmental Sciences, College of Architecture and Environmental, Not Applicable
+
+Here is my registraytionhtml page:
+```
+{% extends "users/base.html" %}
+{% load crispy_forms_tags %}
+{% block content1 %}
+    <div class="content-section">
+        <form method="POST" autocomplete="off">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Join Today</legend>
+                {{ form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-info" type="submit">Sign Up</button>
+            </div>
+        </form>
+        <div class="border-top pt-3">
+            <small class="text-muted">
+                Already Have An Account? <a class="ml-2" href="#">Sign In</a>
+            </small>
+        </div>
+    </div>
+{% endblock content1 %}
+```
+
+Here is my views
+```python
+def register(request):
+    if request.method == 'POST':
+        form = UserRegisterForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
+            messages.success(request, f'Your account has been created! You are now able to log in')
+            return redirect('login')
+    else:
+        form = UserRegisterForm()
+    return render(request, 'users/register.html', {'form': form})
+```
+
+I doubt I need to change anythring from my urls.py file.

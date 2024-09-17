@@ -1,14 +1,28 @@
 from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
-from .models import Profile
+from .models import Profile, CustomUser
+from django.contrib.auth import get_user_model
+
+CustomUser = get_user_model()
+
 
 class UserRegisterForm(UserCreationForm):
     email = forms.EmailField()
+    user_type = forms.ChoiceField(choices=CustomUser.USER_TYPE_CHOICES)
+    graduating_class = forms.ChoiceField(choices=CustomUser.GRADUATING_CLASS_CHOICES, required=False)
+    college = forms.ChoiceField(choices=CustomUser.COLLEGE_CHOICES)
+    major = forms.CharField(max_length=100, required=False)
     
     class Meta:
-        model = User
-        fields = ['username', 'email', 'password1', 'password2']
+        model = CustomUser
+        fields = ['username', 'email', 'password1', 'password2', 'user_type', 'graduating_class', 'college', 'major']
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['graduating_class'].widget = forms.Select(choices=CustomUser.GRADUATING_CLASS_CHOICES)
+        self.fields['graduating_class'].widget.attrs['class'] = 'student-field'
+        self.fields['major'].widget.attrs['class'] = 'student-field'
 
 
 # Model Form
