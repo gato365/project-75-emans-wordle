@@ -32,9 +32,8 @@ def game_view(request):
 def start_game(request):
     """Start a new game."""
     
-    # word = Word.objects.order_by('?').first()
+    word = Word.objects.order_by('?').first()
     ## select a word from the database that is the first word in the database
-    word = Word.objects.first()
     if not word:
         logger.debug(f'No words available')
         return JsonResponse({'error': 'No words available'}, status=400)   

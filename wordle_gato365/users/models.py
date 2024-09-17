@@ -5,6 +5,7 @@ from django.dispatch import receiver
 from django.contrib.auth.models import AbstractUser
 from django.conf import settings
 
+
 class CustomUser(AbstractUser):
     USER_TYPE_CHOICES = (
         ('student', 'Student'),
@@ -75,3 +76,7 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
     if created:
         Profile.objects.create(user=instance)
     instance.profile.save()
+
+
+
+

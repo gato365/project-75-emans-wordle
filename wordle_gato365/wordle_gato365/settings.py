@@ -212,8 +212,8 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap4'
 
 
-LOGIN_REDIRECT_URL = 'profile'
-LOGIN_URL = 'profile'
+LOGIN_REDIRECT_URL = '/game-history/'
+LOGIN_URL = '/game-history/'
 
 
 

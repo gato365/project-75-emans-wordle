@@ -97,3 +97,131 @@ STREAM b'IDAT' 121 65536
 "GET /login/ HTTP/1.1" 200 3607
 "GET /register/ HTTP/1.1" 200 6557
 "GET /login/ HTTP/1.1" 200 3607
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle_gato365\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 17, 2024 - 05:50:18
+Django version 5.0.6, using settings 'wordle_gato365.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle_gato365\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 17, 2024 - 05:50:24
+Django version 5.0.6, using settings 'wordle_gato365.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\views\decorators\debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\views.py", line 88, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\views.py", line 108, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\views.py", line 41, in get_success_url
+    return self.get_redirect_url() or self.get_default_redirect_url()
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\views.py", line 95, in get_default_redirect_url
+    return resolve_url(settings.LOGIN_REDIRECT_URL)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'game-history' not found. 'game-history' is not a valid view function or pattern name.
+"POST /login/ HTTP/1.1" 500 157534
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle_gato365\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 17, 2024 - 05:51:02
+Django version 5.0.6, using settings 'wordle_gato365.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle_gato365\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 17, 2024 - 05:51:06
+Django version 5.0.6, using settings 'wordle_gato365.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle_gato365\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 17, 2024 - 05:51:11
+Django version 5.0.6, using settings 'wordle_gato365.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+Forbidden (CSRF token from POST incorrect.): /login/
+"POST /login/ HTTP/1.1" 403 2517
+"GET / HTTP/1.1" 200 2523
+"GET /login/ HTTP/1.1" 200 3607
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /login/ HTTP/1.1" 302 0
+"GET /game-history/ HTTP/1.1" 200 7076
