@@ -4488,3 +4488,298 @@ Game 16: Correct word is faith, guess is faith
 "GET /static/users/main.css HTTP/1.1" 200 1373
 "GET /static/wordle/css/styles.css HTTP/1.1" 200 3408
 "GET /static/users/favicon.ico HTTP/1.1" 200 1150
+Today's date: 2024-09-18
+Today's word: faith - 2024-09-18
+Bad Request: /game/
+"POST /game/ HTTP/1.1" 400 42
+"POST /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 3693
+"GET /register/ HTTP/1.1" 200 6557
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /register/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 3733
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /login/ HTTP/1.1" 302 0
+"GET /game-history/ HTTP/1.1" 200 4948
+"GET /home/ HTTP/1.1" 200 3050
+"GET /game-history/ HTTP/1.1" 200 4948
+"GET /about/ HTTP/1.1" 200 3540
+"GET /game/ HTTP/1.1" 200 3618
+"GET /static/wordle/css/styles.css HTTP/1.1" 304 0
+"GET /static/wordle/js/scripts.js HTTP/1.1" 304 0
+Today's date: 2024-09-18
+Today's word: faith - 2024-09-18
+Created game: Game object (17)
+"POST /game/ HTTP/1.1" 200 35
+Game 17: Correct word is faith, guess is coast
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 17: Correct word is faith, guess is treat
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 17: Correct word is faith, guess is stare
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 17: Correct word is faith, guess is scare
+"POST /submit_guess/ HTTP/1.1" 200 279
+Game 17: Correct word is faith, guess is faith
+"POST /submit_guess/ HTTP/1.1" 200 284
+"POST /update_game_time/ HTTP/1.1" 200 21
+"POST /update_guess_times/ HTTP/1.1" 200 21
+Today's date: 2024-09-18
+Today's word: faith - 2024-09-18
+Bad Request: /game/
+"POST /game/ HTTP/1.1" 400 42
+"GET /game-history/ HTTP/1.1" 200 5807
+"GET /game-history/ HTTP/1.1" 200 5807
+"POST /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 3693
+"GET /register/ HTTP/1.1" 200 6557
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /register/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 3733
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /login/ HTTP/1.1" 302 0
+"GET /game-history/ HTTP/1.1" 200 4948
+"GET /game/ HTTP/1.1" 200 3618
+"GET /static/wordle/css/styles.css HTTP/1.1" 304 0
+"GET /static/wordle/js/scripts.js HTTP/1.1" 304 0
+Today's date: 2024-09-18
+Today's word: faith - 2024-09-18
+Created game: Game object (18)
+"POST /game/ HTTP/1.1" 200 35
+Game 18: Correct word is faith, guess is maple
+"POST /submit_guess/ HTTP/1.1" 200 279
+Game 18: Correct word is faith, guess is tacit
+"POST /submit_guess/ HTTP/1.1" 200 281
+Game 18: Correct word is faith, guess is autor
+"POST /submit_guess/ HTTP/1.1" 200 280
+"GET /game/ HTTP/1.1" 200 3618
+Today's date: 2024-09-18
+Today's word: faith - 2024-09-18
+Bad Request: /game/
+"POST /game/ HTTP/1.1" 400 42
+Today's date: 2024-09-18
+Today's word: faith - 2024-09-18
+Bad Request: /game/
+"POST /game/ HTTP/1.1" 400 42
+"GET /game-history/ HTTP/1.1" 200 5804
+"POST /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 3693
+"GET /register/ HTTP/1.1" 200 6557
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /register/ HTTP/1.1" 200 6595
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /register/ HTTP/1.1" 200 6666
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py", line 38, in register
+    form = UserRegisterForm()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py", line 27, in __init__
+    self.fields['graduating_class'].widget = forms.Select(choices=[('', 'Select your graduating class')] + CustomUser.GRADUATING_CLASS_CHOICES)
+                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: can only concatenate list (not "tuple") to list
+"GET /register/ HTTP/1.1" 500 85444
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4681
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /register/ HTTP/1.1" 200 6689
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /register/ HTTP/1.1" 200 6689
+"GET /register/ HTTP/1.1" 200 6689
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /register/ HTTP/1.1" 200 6690
+"GET /register/ HTTP/1.1" 200 6690
+"GET /register/ HTTP/1.1" 200 6690
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /register/ HTTP/1.1" 200 6690
+"GET /register/ HTTP/1.1" 200 6690
+Watching for file changes with StatReloader
+"GET /register/ HTTP/1.1" 200 6690
+"GET /register/ HTTP/1.1" 200 6690
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /register/ HTTP/1.1" 200 6732
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /register/ HTTP/1.1" 200 6733
+"GET /register/ HTTP/1.1" 200 6733
+"GET /register/ HTTP/1.1" 200 6733
+Watching for file changes with StatReloader
+"GET /register/ HTTP/1.1" 200 6733
+"GET /static/users/favicon.ico HTTP/1.1" 200 1150
+"GET /register/ HTTP/1.1" 200 6733
+"GET /register/ HTTP/1.1" 200 6733
+"GET /register/ HTTP/1.1" 200 6733
+"GET /register/ HTTP/1.1" 200 6733
+"GET /register/ HTTP/1.1" 200 6733
+"GET /static/users/main.css HTTP/1.1" 200 1373
+"GET /static/users/favicon.ico HTTP/1.1" 200 1150
+"GET /about/ HTTP/1.1" 200 3013
+"GET /about/ HTTP/1.1" 200 3004
+"GET /about/ HTTP/1.1" 200 3004
+"GET /about/ HTTP/1.1" 200 3004
+"GET /about/ HTTP/1.1" 200 3013
+"GET /about/ HTTP/1.1" 200 3002
+"GET /about/ HTTP/1.1" 200 3002
+"GET /about/ HTTP/1.1" 200 3013
+"GET /about/ HTTP/1.1" 200 3013
+"GET /about/ HTTP/1.1" 200 3013
+"GET /about/ HTTP/1.1" 200 3013
+"GET /about/ HTTP/1.1" 200 3013
+"GET /about/ HTTP/1.1" 200 3013
+"GET /about/ HTTP/1.1" 200 3013
+"GET /about/ HTTP/1.1" 200 3013
+"GET /about/ HTTP/1.1" 200 3013
+"GET /static/users/main.css HTTP/1.1" 200 1373
+"GET /static/users/favicon.ico HTTP/1.1" 200 1150
+"GET /about/ HTTP/1.1" 200 3013
+"GET /static/users/main.css HTTP/1.1" 200 1373
+"GET /static/users/favicon.ico HTTP/1.1" 200 1150
+"GET /about/ HTTP/1.1" 200 3013
+"GET /static/users/main.css HTTP/1.1" 200 1373
+"GET /static/users/favicon.ico HTTP/1.1" 200 1150
+Watching for file changes with StatReloader
+"GET /about/ HTTP/1.1" 200 3013
+"GET /login/ HTTP/1.1" 200 3607
+"GET / HTTP/1.1" 200 2523
+"GET /static/users/main.css HTTP/1.1" 200 1373
+"GET /static/users/favicon.ico HTTP/1.1" 200 1150
+"GET /register/ HTTP/1.1" 200 6733
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /register/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 3733
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /login/ HTTP/1.1" 302 0
+"GET /game-history/ HTTP/1.1" 200 4948
+"GET /game/ HTTP/1.1" 200 3618
+"GET /static/wordle/js/scripts.js HTTP/1.1" 304 0
+"GET /static/wordle/css/styles.css HTTP/1.1" 200 3412
+Today's date: 2024-09-18
+Today's word: faith - 2024-09-18
+Created game: Game object (19)
+"POST /game/ HTTP/1.1" 200 35
+Game 19: Correct word is faith, guess is gambi
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 19: Correct word is faith, guess is dalto
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 19: Correct word is faith, guess is faith
+"POST /submit_guess/ HTTP/1.1" 200 284
+"POST /update_game_time/ HTTP/1.1" 200 21
+"POST /update_guess_times/ HTTP/1.1" 200 21
+Today's date: 2024-09-18
+Today's word: faith - 2024-09-18
+Bad Request: /game/
+"POST /game/ HTTP/1.1" 400 42
+"GET /about/ HTTP/1.1" 200 3540
+"GET /home/ HTTP/1.1" 200 3050
+"GET /game-history/ HTTP/1.1" 200 5807

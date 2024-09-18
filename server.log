@@ -2,83 +2,17 @@ Watching for file changes with StatReloader
 Performing system checks...
 
 System check identified no issues (0 silenced).
-September 18, 2024 - 09:29:30
+September 18, 2024 - 12:09:19
 Django version 5.0.6, using settings 'wordle_gato365.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CTRL-BREAK.
 
-"GET /game/ HTTP/1.1" 200 3618
-"GET /static/wordle/js/scripts.js HTTP/1.1" 304 0
-Today's date: 2024-09-18
-Today's word: faith - 2024-09-18
-Created game: Game object (14)
-"POST /game/ HTTP/1.1" 200 35
-Game 14: Correct word is faith, guess is happy
-"POST /submit_guess/ HTTP/1.1" 200 280
-Game 14: Correct word is faith, guess is adapt
-"POST /submit_guess/ HTTP/1.1" 200 280
-Game 14: Correct word is faith, guess is ghost
-"POST /submit_guess/ HTTP/1.1" 200 280
-Game 14: Correct word is faith, guess is scare
-"POST /submit_guess/ HTTP/1.1" 200 279
-Game 14: Correct word is faith, guess is faith
-"POST /submit_guess/ HTTP/1.1" 200 284
-"POST /update_game_time/ HTTP/1.1" 200 21
-"POST /update_guess_times/ HTTP/1.1" 200 21
-Today's date: 2024-09-18
-Today's word: faith - 2024-09-18
-Bad Request: /game/
-"POST /game/ HTTP/1.1" 400 42
-Today's date: 2024-09-18
-Today's word: faith - 2024-09-18
-Bad Request: /game/
-"POST /game/ HTTP/1.1" 400 42
-"GET /game-history/ HTTP/1.1" 200 10034
-"POST /logout/ HTTP/1.1" 302 0
-"GET /login/ HTTP/1.1" 200 3693
+"GET /about/ HTTP/1.1" 200 3013
 "GET /login/ HTTP/1.1" 200 3607
-STREAM b'IHDR' 16 13
-STREAM b'eXIf' 41 68
-STREAM b'IDAT' 121 65536
-STREAM b'IHDR' 16 13
-STREAM b'eXIf' 41 68
-STREAM b'IDAT' 121 65536
-"POST /login/ HTTP/1.1" 302 0
-"GET /game-history/ HTTP/1.1" 200 6652
-"GET /game/ HTTP/1.1" 200 3618
-"GET /static/wordle/js/scripts.js HTTP/1.1" 304 0
-Today's date: 2024-09-18
-Today's word: faith - 2024-09-18
-Created game: Game object (15)
-"POST /game/ HTTP/1.1" 200 35
-Game 15: Correct word is faith, guess is float
-"POST /submit_guess/ HTTP/1.1" 200 281
-Game 15: Correct word is faith, guess is fatte
-"POST /submit_guess/ HTTP/1.1" 200 281
-Game 15: Correct word is faith, guess is maple
-"POST /submit_guess/ HTTP/1.1" 200 279
-Game 15: Correct word is faith, guess is faith
-"POST /submit_guess/ HTTP/1.1" 200 284
-"POST /update_game_time/ HTTP/1.1" 200 21
-"POST /update_guess_times/ HTTP/1.1" 200 21
-"GET /game-history/ HTTP/1.1" 200 7077
-"GET /game/ HTTP/1.1" 200 3618
-Today's date: 2024-09-18
-Today's word: faith - 2024-09-18
-Bad Request: /game/
-"POST /game/ HTTP/1.1" 400 42
-Today's date: 2024-09-18
-Today's word: faith - 2024-09-18
-Bad Request: /game/
-"POST /game/ HTTP/1.1" 400 42
-Today's date: 2024-09-18
-Today's word: faith - 2024-09-18
-Bad Request: /game/
-"POST /game/ HTTP/1.1" 400 42
-"GET /game-history/ HTTP/1.1" 200 7077
-"POST /logout/ HTTP/1.1" 302 0
-"GET /login/ HTTP/1.1" 200 3693
-"GET /register/ HTTP/1.1" 200 6557
+"GET / HTTP/1.1" 200 2523
+"GET /static/users/main.css HTTP/1.1" 200 1373
+"GET /static/users/favicon.ico HTTP/1.1" 200 1150
+"GET /register/ HTTP/1.1" 200 6733
 STREAM b'IHDR' 16 13
 STREAM b'eXIf' 41 68
 STREAM b'IDAT' 121 65536
@@ -98,27 +32,25 @@ STREAM b'eXIf' 41 68
 STREAM b'IDAT' 121 65536
 "POST /login/ HTTP/1.1" 302 0
 "GET /game-history/ HTTP/1.1" 200 4948
-"GET /game-history/ HTTP/1.1" 200 4948
-"GET /about/ HTTP/1.1" 200 3540
-"GET /home/ HTTP/1.1" 200 3050
 "GET /game/ HTTP/1.1" 200 3618
 "GET /static/wordle/js/scripts.js HTTP/1.1" 304 0
+"GET /static/wordle/css/styles.css HTTP/1.1" 200 3412
 Today's date: 2024-09-18
 Today's word: faith - 2024-09-18
-Created game: Game object (16)
+Created game: Game object (19)
 "POST /game/ HTTP/1.1" 200 35
-Game 16: Correct word is faith, guess is ticke
+Game 19: Correct word is faith, guess is gambi
 "POST /submit_guess/ HTTP/1.1" 200 280
-Game 16: Correct word is faith, guess is after
-"POST /submit_guess/ HTTP/1.1" 200 281
-Game 16: Correct word is faith, guess is taker
+Game 19: Correct word is faith, guess is dalto
 "POST /submit_guess/ HTTP/1.1" 200 280
-Game 16: Correct word is faith, guess is faith
+Game 19: Correct word is faith, guess is faith
 "POST /submit_guess/ HTTP/1.1" 200 284
 "POST /update_game_time/ HTTP/1.1" 200 21
 "POST /update_guess_times/ HTTP/1.1" 200 21
-"GET /game/ HTTP/1.1" 200 3618
-"GET /static/wordle/js/scripts.js HTTP/1.1" 200 9862
-"GET /static/users/main.css HTTP/1.1" 200 1373
-"GET /static/wordle/css/styles.css HTTP/1.1" 200 3408
-"GET /static/users/favicon.ico HTTP/1.1" 200 1150
+Today's date: 2024-09-18
+Today's word: faith - 2024-09-18
+Bad Request: /game/
+"POST /game/ HTTP/1.1" 400 42
+"GET /about/ HTTP/1.1" 200 3540
+"GET /home/ HTTP/1.1" 200 3050
+"GET /game-history/ HTTP/1.1" 200 5807

@@ -29,7 +29,10 @@ body {
   .site-header .navbar-nav .nav-link.active {
     font-weight: 500;
   }
-  
+  /* styles.css */
+.navbar {
+  background-color: #3498db; /* Change this to your desired color */
+}
   .content-section {
     background: #ffffff;
     padding: 10px 20px;
@@ -83,4 +86,23 @@ body {
   
   .account-heading {
     font-size: 2.5rem;
+  }
+
+  
+  .message {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+  .message.error {
+    background-color: #ffebee;
+    color: #c62828;
+  }
+  .message.success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+  }
+  .message.info {
+    background-color: #e3f2fd;
+    color: #1565c0;
   }
