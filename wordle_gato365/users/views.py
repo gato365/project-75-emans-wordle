@@ -109,7 +109,7 @@ def general_game_history(request):
         win_rate = 0
 
     game_data = []
-    for game in games.order_by('-date'):
+    for game in games.order_by('date'):
         guesses = Guess.objects.filter(game=game)
         guess_times = GuessTime.objects.filter(guess__game=game)
         

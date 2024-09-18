@@ -46,13 +46,16 @@ async function startGame() {
       },
       body: JSON.stringify({ start_game: true })
     });
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    const data = await response.json();
-    currentGameId = data.game_id;
 
-    
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(data.error || 'Failed to start the game');
+    }
+
+    currentGameId = data.game_id;
+    const attemptsLeft = data.attempts_left || 6; // Default to 6 if not provided
+
     // Hide/Show Elements
     document.getElementById('startButton').style.display = 'none';
     document.getElementById('guessInput').style.display = 'block';
@@ -61,7 +64,7 @@ async function startGame() {
 
     // Reset/Initialize Values
     document.getElementById('sessionInfo').value = '';
-    document.getElementById('attemptsLeft').textContent = `You have ${attempts} attempts left.`;
+    document.getElementById('attemptsLeft').textContent = `You have ${attemptsLeft} attempts left.`;
     document.getElementById('attemptedWords').innerHTML = '';
     document.getElementById('feedback').innerHTML = '';
 
@@ -73,11 +76,25 @@ async function startGame() {
     
     guessStartTime = new Date();
     guessTimes = [];
+
+    // Display success message
+    displayMessage('Game started successfully!', 'success');
   } catch (error) {
     console.error('There was a problem starting the game:', error);
+    displayMessage(`Failed to start the game: ${error.message}`, 'error');
   }
 }
 
+// Helper function to display messages
+function displayMessage(message, type = 'info') {
+  const messageElement = document.getElementById('message');
+  messageElement.textContent = message;
+  messageElement.className = `message ${type}`;
+  messageElement.style.display = 'block';
+  setTimeout(() => {
+    messageElement.style.display = 'none';
+  }, 5000); // Hide message after 5 seconds
+}
 
 
 function restartGame() {

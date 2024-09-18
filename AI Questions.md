@@ -196,3 +196,21 @@ def register(request):
 ```
 
 I doubt I need to change anythring from my urls.py file.
+
+
+
+------------------------------------------------------------------------------------
+
+
+Question 6:
+
+So here is my Words Model
+```
+class Word(models.Model):
+    word = models.CharField(max_length=255)
+    date_used = models.DateField(null=True) 
+```
+
+I want the users to only play this game once a day in which everyone gets the same word. I would like to have only one game played per day for 70. 
+Should I preload the table with the dates and based on day the word that corresponds to the day would show up?
+What else do I need to change?

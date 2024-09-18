@@ -4,11 +4,16 @@ from django.views.decorators.http import require_POST
 from django.views.decorators.http import require_http_methods
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.csrf import ensure_csrf_cookie
-from .models import Game, Word, Guess, GuessTime
+from .models import Game, Word, Guess, GuessTime, UserGame
 from collections import Counter
+from django.utils import timezone
 import json
 import logging
+import traceback
 logger = logging.getLogger(__name__)
+
+
+
 
 
 
@@ -17,8 +22,17 @@ logger = logging.getLogger(__name__)
 @require_http_methods(["GET", "POST"])
 def game_view(request):
     if request.method == "GET":
+        today_word = Word.get_word_for_today()
+        if not today_word:
+            return render(request, 'wordle/game.html', {'error': 'No word available for today.'})
+        
+        # Check if user has already played today
+        if UserGame.objects.filter(user=request.user, date_played=timezone.now().date()).exists():
+            return render(request, 'wordle/game.html', {'error': 'You have already played today.'})
+        
         context = {
-            'key': 'value'
+            'word': today_word.word,
+            # Add any other context data you need
         }
         return render(request, 'wordle/game.html', context)
     elif request.method == "POST":
@@ -27,25 +41,39 @@ def game_view(request):
 
 
 
-
-
 def start_game(request):
     """Start a new game."""
-    
-    word = Word.objects.order_by('?').first()
-    ## select a word from the database that is the first word in the database
-    if not word:
-        logger.debug(f'No words available')
-        return JsonResponse({'error': 'No words available'}, status=400)   
-    game = Game.objects.create(user=request.user, word=word, status='active', time_played=0)
-    return JsonResponse({
-        'game_id': game.id,
-        'attempts_left': 6
-    })
-
-
-
-
+    try:
+        today = timezone.now().date()
+        today_word = Word.get_word_for_today()
+        
+        logger.debug(f"Today's date: {today}")
+        logger.debug(f"Today's word: {today_word}")
+        
+        if not today_word:
+            return JsonResponse({'error': 'No word available for today'}, status=400)
+        
+        # Check if user has already played today
+        if UserGame.objects.filter(user=request.user, date_played=today).exists():
+            return JsonResponse({'error': 'You have already played today'}, status=400)
+        
+        game = Game.objects.create(
+            user=request.user,
+            word=today_word,  # Use the Word object directly, not its ID
+            status='active',
+            time_played=0
+        )
+        UserGame.objects.create(user=request.user, date_played=today)
+        
+        logger.debug(f"Created game: {game}")
+        
+        return JsonResponse({
+            'game_id': game.id,
+            'attempts_left': 6
+        })
+    except Exception as e:
+        logger.error(f"Error in start_game: {str(e)}", exc_info=True)
+        return JsonResponse({'error': str(e)}, status=500)
 
 @login_required
 @require_POST
