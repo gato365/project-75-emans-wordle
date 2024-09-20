@@ -1,11 +1,41 @@
 {% extends "users/base.html" %}
+{% load static %}
+
 {% block content1 %}
-    <h1>Wurdz Game Menu</h1>
-    <p>Welcome to the Wurdz Game Menu! Choose an option to start playing or learn more.</p>
-    <ul>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <h1 class="display-4 fw-bold mb-4" style="font-family: 'Permanent Marker', cursive; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+                Welcome to theWurdz
+            </h1>
+            
+            {% if user.is_authenticated %}
+                <a href="{% url 'game' %}" class="btn btn-primary btn-lg mb-3">Play Game</a>
+            {% else %}
+                <div class="mb-3">
+                    <a href="{% url 'register' %}" class="btn btn-success btn-lg me-2">Register</a>
+                    <a href="{% url 'login' %}" class="btn btn-outline-primary btn-lg">Login</a>
+                </div>
+            {% endif %}
+            
         
-        <li><a href="{% url 'game' %}">Play Game</a> - Start a new game and guess the secret word.</li>
-        <li><a href="{% url 'about' %}">How to Play</a> - Learn the rules and how to play Wurdz.</li>
-        <li><a href="{% url 'game_history' %}">Your Statistics</a> - View your game statistics and history.</li>
-    </ul>
+        </div>
+    </div>
+</div>
+{% endblock content1%}
+
+{% block extra_head %}
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+    .list-group-item {
+        transition: background-color 0.3s;
+    }
+    .list-group-item:hover {
+        background-color: #e9ecef;
+    }
+</style>
 {% endblock %}
