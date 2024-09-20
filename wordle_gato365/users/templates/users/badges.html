@@ -1,2 +1,57 @@
-<h3>Badges</h3>
-<p>Your badges will be displayed here soon!</p>
+{% extends "users/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Your Badges</h2>
+    <div class="row">
+        <!-- First Game Badge -->
+        <div class="col-md-4 mb-4">
+            <div class="card {% if games_played > 0 %}border-success{% endif %}">
+                <div class="card-body text-center">
+                    <div style="width: 100px; height: 100px; margin: 0 auto; position: relative;">
+                        <img src="{% static 'wordle/images/logo2021_close.png' %}" alt="First Game Badge" style="width: 100%; height: 100%; object-fit: cover; {% if games_played == 0 %}filter: grayscale(100%) opacity(0.5);{% endif %}">
+                        {% if games_played > 0 %}
+                            <div style="position: absolute; top: 0; right: 0; background-color: #28a745; border-radius: 50%; padding: 5px;">
+                                <i class="fas fa-check text-white"></i>
+                            </div>
+                        {% endif %}
+                    </div>
+                    <p class="mt-3">First Game Completed</p>
+                    {% if games_played > 0 %}
+                        <small class="text-success">Unlocked!</small>
+                    {% else %}
+                        <small class="text-muted">Play your first game to unlock</small>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        
+        <!-- Placeholder badges -->
+        {% for i in "12345678" %}
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <div style="width: 100px; height: 100px; background-color: #f0f0f0; border-radius: 50%; margin: 0 auto;">
+                        <!-- Badge placeholder -->
+                    </div>
+                    <p class="mt-3">Future Badge</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<style>
+    .card {
+        transition: transform 0.3s;
+    }
+    .card:hover {
+        transform: scale(1.05);
+    }
+</style>
+{% endblock %}

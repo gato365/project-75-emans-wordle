@@ -109,7 +109,7 @@ def general_game_history(request):
         win_rate = 0
 
     game_data = []
-    for game in games.order_by('date'):
+    for game in games.order_by('-date'):
         guesses = Guess.objects.filter(game=game)
         guess_times = GuessTime.objects.filter(guess__game=game)
         
@@ -131,10 +131,27 @@ def general_game_history(request):
     
     return render(request, 'users/game_history.html', context)
 
+
+
 @login_required
 def badges(request):
     # This will be implemented later
     return render(request, 'users/badges.html')
+
+
+def badges_view(request):
+    user = request.user
+
+    games = Game.objects.filter(user=user)
+    games_played = games.count()
+    
+    context = {
+        'badge_1_games_played': games_played,
+    }
+    return render(request, 'users/badges.html', context)
+
+
+
 
 # You can keep these separate views if needed, or remove them if not used
 @login_required

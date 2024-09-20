@@ -4899,3 +4899,248 @@ Not Found: /favicon.ico
 "GET /game-history/?next=/game-history/%3Fnext%3D/game-history/%253Fnext%253D/game-history/%25253Fnext%25253D/game-history/%2525253Fnext%2525253D/game-history/%252525253Fnext%252525253D/game-history/%25252525253Fnext%25252525253D/game-history/%2525252525253Fnext%2525252525253D/game-history/%252525252525253Fnext%252525252525253D/game-history/%25252525252525253Fnext%25252525252525253D/game-history/%2525252525252525253Fnext%2525252525252525253D/game-history/%252525252525252525253Fnext%252525252525252525253D/game-history/%25252525252525252525253Fnext%25252525252525252525253D/game-history/%2525252525252525252525253Fnext%2525252525252525252525253D/game-history/%252525252525252525252525253Fnext%252525252525252525252525253D/game-history/%25252525252525252525252525253Fnext%25252525252525252525252525253D/game-history/%2525252525252525252525252525253Fnext%2525252525252525252525252525253D/game-history/%252525252525252525252525252525253Fnext%252525252525252525252525252525253D/game-history/%25252525252525252525252525252525253Fnext%25252525252525252525252525252525253D/game-history/%2525252525252525252525252525252525253Fnext%2525252525252525252525252525252525253D/game-history/%252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525253D/game-history/%25252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525253D/game-history/%2525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525253D/game-history/%252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525253D/game-history/%25252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525253D/game-history/%2525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525253D/game-history/%252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525253D/game-history/%25252525252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525252525253D/game-history/%2525252525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525252525253D/game-history/%252525252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525252525253D/game-history/%25252525252525252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525252525252525253D/game-history/%2525252525252525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525252525252525253D/game-history/%252525252525252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525252525252525253D/game-history/%25252525252525252525252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525252525252525252525253D/game-history/%2525252525252525252525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525252525252525252525253D/game-history/%252525252525252525252525252525252525252525252525252525252525252525253Fnext%252525252525252525252525252525252525252525252525252525252525252525253D/game-history/%25252525252525252525252525252525252525252525252525252525252525252525253Fnext%25252525252525252525252525252525252525252525252525252525252525252525253D/game-history/%2525252525252525252525252525252525252525252525252525252525252525252525253Fnext%2525252525252525252525252525252525252525252525252525252525252525252525253D/game/ HTTP/1.1" 302 0
 "GET /home/ HTTP/1.1" 200 3301
 "GET /home/ HTTP/1.1" 200 2725
+"GET /home/ HTTP/1.1" 200 2728
+"GET /about/ HTTP/1.1" 200 3016
+"GET /login/ HTTP/1.1" 200 3610
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /login/ HTTP/1.1" 302 0
+"GET /game-history/ HTTP/1.1" 200 10037
+"GET /home/ HTTP/1.1" 200 3103
+"GET /about/ HTTP/1.1" 200 3543
+"GET /home/ HTTP/1.1" 200 3103
+"GET /game/ HTTP/1.1" 200 3621
+"GET /static/wordle/css/styles.css HTTP/1.1" 200 3412
+"GET /static/wordle/js/scripts.js HTTP/1.1" 200 9862
+Today's date: 2024-09-20
+Today's word: pupil - 2024-09-20
+Created game: Game object (20)
+"POST /game/ HTTP/1.1" 200 35
+Game 20: Correct word is pupil, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 20: Correct word is pupil, guess is piper
+"POST /submit_guess/ HTTP/1.1" 200 281
+Game 20: Correct word is pupil, guess is pupil
+"POST /submit_guess/ HTTP/1.1" 200 284
+"POST /update_game_time/ HTTP/1.1" 200 21
+"POST /update_guess_times/ HTTP/1.1" 200 21
+"GET /game-history/ HTTP/1.1" 200 10463
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /game-history/
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py", line 132, in general_game_history
+    return render(request, 'users/game_history.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\loader_tags.py", line 199, in render
+    template = context.template.engine.select_template(template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\engine.py", line 208, in select_template
+    return self.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\defaulttags.py", line 961, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\defaulttags.py", line 860, in do_for
+    sequence = parser.compile_filter(bits[in_index + 1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 693, in __init__
+    filter_func = parser.find_filter(filter_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 603, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'reversed'
+"GET /game-history/ HTTP/1.1" 500 361834
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /game-history/ HTTP/1.1" 200 10463
+"POST /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 3696
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /login/ HTTP/1.1" 302 0
+"GET /game-history/ HTTP/1.1" 200 4951
+"POST /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 3696
+"POST /login/ HTTP/1.1" 200 3800
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /login/ HTTP/1.1" 302 0
+"GET /game-history/ HTTP/1.1" 200 7080
+"GET /game-history/ HTTP/1.1" 200 7080
+"GET /game/ HTTP/1.1" 200 3624
+Today's date: 2024-09-20
+Today's word: pupil - 2024-09-20
+Created game: Game object (21)
+"POST /game/ HTTP/1.1" 200 35
+Game 21: Correct word is pupil, guess is paper
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 21: Correct word is pupil, guess is scare
+"POST /submit_guess/ HTTP/1.1" 200 278
+Game 21: Correct word is pupil, guess is audio
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 21: Correct word is pupil, guess is lapel
+"POST /submit_guess/ HTTP/1.1" 200 280
+Game 21: Correct word is pupil, guess is pupil
+"POST /submit_guess/ HTTP/1.1" 200 284
+"POST /update_game_time/ HTTP/1.1" 200 21
+"POST /update_guess_times/ HTTP/1.1" 200 21
+Today's date: 2024-09-20
+Today's word: pupil - 2024-09-20
+Bad Request: /game/
+"POST /game/ HTTP/1.1" 400 42
+"GET /game-history/ HTTP/1.1" 200 7506
+"GET /game-history/ HTTP/1.1" 200 14212
+"GET /game-history/ HTTP/1.1" 200 14212
+"GET /game-history/ HTTP/1.1" 200 14212
+"GET /game-history/ HTTP/1.1" 200 14212
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /game-history/ HTTP/1.1" 200 14409
+"GET /game-history/ HTTP/1.1" 200 14477
+"GET /static/path/to/your/first_game_badge.png HTTP/1.1" 404 1959
+"GET /game-history/ HTTP/1.1" 200 14499
+"GET /static/wordle_gato365%20/users/static/users/logo2021_close.png HTTP/1.1" 404 2021
+"GET /game-history/ HTTP/1.1" 200 14499
+"GET /static/wordle_gato365%20/users/static/users/logo2021_close.png HTTP/1.1" 404 2021
+"GET /game-history/ HTTP/1.1" 200 14496
+"GET /static/wordle_gato365/users/static/users/logo2021_close.png HTTP/1.1" 404 2016
+"GET /game-history/ HTTP/1.1" 200 14490
+"GET /static/wordle_gato365/users/static/logo2021_close.png HTTP/1.1" 404 1998
+"GET /game-history/ HTTP/1.1" 200 14503
+"GET /static/wordle_gato365/users/static/users/images/logo2021_close.png HTTP/1.1" 404 2037
+"GET /game-history/ HTTP/1.1" 200 14476
+"GET /static/wordle/images/logo2021_close.png HTTP/1.1" 200 62312
