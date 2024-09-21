@@ -18,7 +18,7 @@ class UsersViewsTestCase(TestCase):
             'email': 'newuser@example.com',
             'user_type': 'student', 
             'graduating_class': '2027',   
-            'college': 'Engineering',     
+            'college': 'engineering',     
             'major': 'Computer Science'   
         })
         if response.status_code == 200:

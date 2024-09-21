@@ -31,7 +31,7 @@ body {
   }
   /* styles.css */
 .navbar {
-  background-color: #3498db; /* Change this to your desired color */
+  background-color: #154734; /* Change this to your desired color */
 }
   .content-section {
     background: #ffffff;
@@ -46,7 +46,7 @@ body {
   }
   
   a.article-title:hover {
-    color: #428bca;
+    color: #BD8B13;
     text-decoration: none;
   }
   
