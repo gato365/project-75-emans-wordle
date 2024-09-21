@@ -15,7 +15,7 @@ body {
   }
   
   .bg-steel {
-    background-color: #154734;
+    background-color: #154734 !important;
   }
   
   .site-header .navbar-nav .nav-link {
@@ -29,10 +29,7 @@ body {
   .site-header .navbar-nav .nav-link.active {
     font-weight: 500;
   }
-  /* styles.css */
-.navbar {
-  background-color: #154734; /* Change this to your desired color */
-}
+
   .content-section {
     background: #ffffff;
     padding: 10px 20px;

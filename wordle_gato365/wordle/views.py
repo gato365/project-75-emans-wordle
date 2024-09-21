@@ -11,7 +11,9 @@ import json
 import logging
 import traceback
 logger = logging.getLogger(__name__)
-
+from django.utils import timezone
+from datetime import datetime, time, timedelta
+from django.conf import settings
 
 
 
@@ -190,4 +192,8 @@ def update_game_time(request):
     game.save()
     
     return JsonResponse({'status': 'success'})
+
+
+
+
 

@@ -5144,3 +5144,53 @@ Watching for file changes with StatReloader
 "GET /static/wordle_gato365/users/static/users/images/logo2021_close.png HTTP/1.1" 404 2037
 "GET /game-history/ HTTP/1.1" 200 14476
 "GET /static/wordle/images/logo2021_close.png HTTP/1.1" 200 62312
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2720
+"GET /static/users/main.css HTTP/1.1" 200 1373
+"GET /login/ HTTP/1.1" 200 3610
+"GET /about/ HTTP/1.1" 200 3016
+Watching for file changes with StatReloader
+"GET /login/ HTTP/1.1" 200 4137
+"GET /static/users/favicon.ico HTTP/1.1" 304 0
+"GET /login/ HTTP/1.1" 200 4137
+"GET /about/ HTTP/1.1" 200 3543
+"GET /about/ HTTP/1.1" 200 3543
+"GET /static/users/main.css HTTP/1.1" 200 1373
+"GET /static/users/favicon.ico HTTP/1.1" 200 1150
+Watching for file changes with StatReloader
+"GET /about/ HTTP/1.1" 200 3543
+"GET /static/users/main.css HTTP/1.1" 200 1373
+"GET /static/users/favicon.ico HTTP/1.1" 200 1150
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 3024
+"GET / HTTP/1.1" 200 3024
+"GET /static/users/favicon.ico HTTP/1.1" 200 1150
+"GET /game/ HTTP/1.1" 200 3553
+"GET /static/wordle/css/styles.css HTTP/1.1" 200 3412
+"GET /static/wordle/js/scripts.js HTTP/1.1" 200 9862
+Today's date: 2024-09-21
+Today's word: tasty - 2024-09-21
+Created game: Game object (22)
+"POST /game/ HTTP/1.1" 200 35
+Game 22: Correct word is tasty, guess is pupil
+"POST /submit_guess/ HTTP/1.1" 200 278
+Game 22: Correct word is tasty, guess is tasty
+"POST /submit_guess/ HTTP/1.1" 200 284
+"POST /update_game_time/ HTTP/1.1" 200 21
+"POST /update_guess_times/ HTTP/1.1" 200 21
+Today's date: 2024-09-21
+Today's word: tasty - 2024-09-21
+Bad Request: /game/
+"POST /game/ HTTP/1.1" 400 42
+"GET /game/ HTTP/1.1" 200 3624
+"GET /static/users/main.css HTTP/1.1" 200 1373
+"GET /static/wordle/css/styles.css HTTP/1.1" 200 3412
+"GET /static/wordle/js/scripts.js HTTP/1.1" 200 9862
+"GET /static/users/favicon.ico HTTP/1.1" 200 1150
+"GET /home/ HTTP/1.1" 200 3095
+"GET /about/ HTTP/1.1" 200 3543
+"GET /home/ HTTP/1.1" 200 3095
+"GET /game/ HTTP/1.1" 200 3624
+"POST /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 3696
+"GET /static/users/main.css HTTP/1.1" 200 1373
