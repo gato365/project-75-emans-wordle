@@ -37,7 +37,7 @@ DEBUG = True
 # DEBUG = 'RENDER' not in os.environ
 
 ALLOWED_HOSTS = ['wordle-app-2024-4c250a9e97a3.herokuapp.com', 'localhost', '127.0.0.1','www.thewurdz.org','thewurdz.org']
-
+CSRF_TRUSTED_ORIGINS = ['https://www.thewurdz.org']
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_EXTERNAL_HOSTNAME:

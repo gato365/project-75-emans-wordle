@@ -214,3 +214,37 @@ class Word(models.Model):
 I want the users to only play this game once a day in which everyone gets the same word. I would like to have only one game played per day for 70. 
 Should I preload the table with the dates and based on day the word that corresponds to the day would show up?
 What else do I need to change?
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------
+
+Question 7:
+I would like to create test for the following views for wordle:
+- general_game_history
+- badges
+- summary_of_all_games
+- all_games_played
+- register
+
+I would like to test the following for each view for user:
+- register
+- login
+- logout
+- If the user is not logged in, they should be redirected to the login page
+- If the user is logged in, they should be able to access the page
+- If the user is logged in, they should be able to see their username on the page
+- If the user is logged in, they should be able to see their game history on the page
+
+
+1. How did this error come about?
+2. What can I do to resolve it?
+3. How is my code currently running in my normal app though now it is causing an error?
