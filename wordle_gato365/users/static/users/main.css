@@ -46,7 +46,11 @@ body {
     color: #BD8B13;
     text-decoration: none;
   }
-  
+  .navbaFr-brand {
+    color: #BD8B13;
+    font-weight: bold;
+    font-size: 2em;
+  }
   .article-content {
     white-space: pre-line;
   }
