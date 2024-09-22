@@ -15,6 +15,7 @@ from pathlib import Path
 import os
 import dj_database_url
 from dotenv import load_dotenv
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -76,6 +77,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware', 
     'allauth.account.middleware.AccountMiddleware',
+    'django_db_geventpool.middleware.GeventPoolMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -134,14 +136,24 @@ else:
     # Use the local database configuration
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.mysql',
+            'ENGINE': 'django_db_geventpool.backends.mysql',
             'NAME': os.getenv('DB_NAME', 'your_default_db_name'),
             'USER': os.getenv('DB_USER', 'your_default_db_user'),
             'PASSWORD': os.getenv('DB_PASSWORD', 'your_default_db_password'),
             'HOST': os.getenv('DB_HOST', 'localhost'),
             'PORT': os.getenv('DB_PORT', '3306'),
+            'CONN_MAX_AGE': 0,
+            'OPTIONS': {
+                'MAX_CONNS': 20,  # maximum number of connections in the pool
+                'REUSE_CONNS': 10,  # number of connections to keep open and reuse
+                'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",  # Recommended for MySQL
+            }
         }
     }
+
+
+
+
 
 
 # Password validation

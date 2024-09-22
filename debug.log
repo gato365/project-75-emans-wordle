@@ -5425,3 +5425,5 @@ Watching for file changes with StatReloader
 "GET /static/users/images/power_logo.png HTTP/1.1" 304 0
 "GET /static/users/main.css%3Fv%3D1.2 HTTP/1.1" 404 1924
 "GET /login/ HTTP/1.1" 200 4378
+"GET /login/ HTTP/1.1" 200 4378
+"GET / HTTP/1.1" 200 3336
