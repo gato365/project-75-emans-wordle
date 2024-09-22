@@ -5326,3 +5326,97 @@ Game 24: Correct word is tasty, guess is tasty
 "GET /game-history/ HTTP/1.1" 200 12779
 "GET /game-history/ HTTP/1.1" 200 12781
 "GET /static/wordle/images/first_word_badge.png HTTP/1.1" 200 66353
+Watching for file changes with StatReloader
+"GET /game-history/ HTTP/1.1" 200 10073
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /game-history/ HTTP/1.1" 200 15137
+"GET /static/wordle/images/first_word_badge.png HTTP/1.1" 304 0
+"GET /static/wordle/images/vocabulary_virtuoso_badge.png HTTP/1.1" 404 1989
+"GET /static/wordle/images/streak_master_badge.png HTTP/1.1" 404 1971
+"GET /static/wordle/images/perfect_week_badge.png HTTP/1.1" 404 1968
+"GET /static/wordle/images/speed_racer_badge.png HTTP/1.1" 200 56131
+"GET /static/wordle/images/lucky_guess_badge.png HTTP/1.1" 200 44085
+"GET /game-history/ HTTP/1.1" 200 15359
+"GET /static/wordle/images/first_word_badge.png HTTP/1.1" 304 0
+"GET /static/wordle/images/perfect_week_badge.png HTTP/1.1" 404 1968
+"GET /static/users/images/power_logo.png HTTP/1.1" 404 1941
+"GET /static/wordle/images/streak_master_badge.png HTTP/1.1" 404 1971
+"GET /static/wordle/images/speed_racer_badge.png HTTP/1.1" 304 0
+"GET /static/wordle/images/lucky_guess_badge.png HTTP/1.1" 304 0
+"GET /static/wordle/images/vocabulary_virtuoso_badge.png HTTP/1.1" 404 1989
+"GET /static/users/images/power_logo.png HTTP/1.1" 404 1941
+"GET /static/users/favicon.ico HTTP/1.1" 304 0
+"GET /game-history/ HTTP/1.1" 200 15359
+"GET /static/wordle/images/perfect_week_badge.png HTTP/1.1" 404 1968
+"GET /static/wordle/images/streak_master_badge.png HTTP/1.1" 404 1971
+"GET /static/wordle/images/vocabulary_virtuoso_badge.png HTTP/1.1" 404 1989
+"GET /static/users/images/power_logo.png HTTP/1.1" 200 36796
+"GET /game-history/ HTTP/1.1" 200 15491
+"GET /static/wordle/images/perfect_week_badge.png HTTP/1.1" 404 1968
+"GET /static/wordle/images/streak_master_badge.png HTTP/1.1" 404 1971
+"GET /static/wordle/images/vocabulary_virtuoso_badge.png HTTP/1.1" 404 1989
+"GET /static/users/images/power_logo.png HTTP/1.1" 304 0
+"GET /game-history/ HTTP/1.1" 200 15495
+"GET /static/wordle/images/perfect_week_badge.png HTTP/1.1" 404 1968
+"GET /static/wordle/images/streak_master_badge.png HTTP/1.1" 404 1971
+"GET /static/wordle/images/vocabulary_virtuoso_badge.png HTTP/1.1" 404 1989
+"GET /game-history/ HTTP/1.1" 200 15495
+"GET /static/wordle/images/perfect_week_badge.png HTTP/1.1" 404 1968
+"GET /static/wordle/images/streak_master_badge.png HTTP/1.1" 404 1971
+"GET /static/wordle/images/vocabulary_virtuoso_badge.png HTTP/1.1" 404 1989
+"GET /static/users/images/power_logo.png HTTP/1.1" 304 0
+"GET /game-history/ HTTP/1.1" 200 15495
+"GET /static/wordle/images/perfect_week_badge.png HTTP/1.1" 404 1968
+"GET /static/wordle/images/streak_master_badge.png HTTP/1.1" 404 1971
+"GET /static/wordle/images/vocabulary_virtuoso_badge.png HTTP/1.1" 404 1989
+"GET /game-history/ HTTP/1.1" 200 15633
+"GET /static/wordle/images/perfect_week_badge.png HTTP/1.1" 404 1968
+"GET /static/wordle/images/streak_master_badge.png HTTP/1.1" 404 1971
+"GET /static/wordle/images/vocabulary_virtuoso_badge.png HTTP/1.1" 404 1989
+"GET /static/users/images/power_logo.png HTTP/1.1" 304 0
+"GET /game-history/ HTTP/1.1" 200 15617
+"GET /static/wordle/images/seven_days_badge.png HTTP/1.1" 200 68206
+"GET /static/wordle/images/fourteen_days_badge.png HTTP/1.1" 200 62982
+"GET /static/users/images/power_logo.png HTTP/1.1" 304 0
+"GET /static/wordle/images/vocab_badge.png HTTP/1.1" 200 47881
+"GET /game-history/ HTTP/1.1" 200 15747
+"GET /static/users/images/power_logo.png HTTP/1.1" 304 0
+"GET /game-history/ HTTP/1.1" 200 15747
+"GET /game-history/ HTTP/1.1" 200 15747
+"GET /game-history/ HTTP/1.1" 200 15747
+"GET /game-history/ HTTP/1.1" 200 15747
+"GET /about/ HTTP/1.1" 200 3791
+"GET /about/ HTTP/1.1" 200 3791
+"GET /home/ HTTP/1.1" 200 3343
+"GET /game/ HTTP/1.1" 200 3881
+"GET /static/wordle/css/styles.css HTTP/1.1" 200 3843
+"GET /static/wordle/js/scripts.js HTTP/1.1" 200 10045
+"GET /profile/ HTTP/1.1" 200 6613
+"GET /game-history/ HTTP/1.1" 200 15747
+"GET /static/users/images/power_logo.png HTTP/1.1" 304 0
+"GET /game-history/ HTTP/1.1" 200 15992
+"GET /game-history/ HTTP/1.1" 200 15993
+"GET /static/users/images/power_logo.png HTTP/1.1" 304 0
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\models.py changed, reloading.
+Watching for file changes with StatReloader

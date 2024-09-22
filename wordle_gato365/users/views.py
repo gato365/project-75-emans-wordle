@@ -143,13 +143,12 @@ def badges_view(request):
     user = request.user
 
     games = Game.objects.filter(user=user)
-    games_played = games.count()
+    games_played = request.user.games_played
     
     context = {
-        'badge_1_games_played': games_played,
+        'games_played': games_played,
     }
     return render(request, 'users/badges.html', context)
-
 
 
 
@@ -161,3 +160,50 @@ def summary_of_all_games(request):
 @login_required
 def all_games_played(request):
     return general_game_history(request)
+
+
+
+
+@login_required
+def badges_view(request):
+    user_badges = UserBadge.objects.filter(user=request.user).values_list('badge_name', flat=True)
+    badges = [
+        {
+            "name": "First Word",
+            "description": "Awarded for completing the first Wordle puzzle.",
+            "image": "wordle/images/first_word_badge.png",
+            "unlocked": request.user.games_played > 0
+        },
+        {
+            "name": "Perfect Week",
+            "description": "Solve 7 consecutive puzzles (one week) without missing a day.",
+            "image": "wordle/images/seven_days_badge.png",
+            "unlocked": False  # You'll need to implement the logic for this
+        },
+        {
+            "name": "Streak Master",
+            "description": "Maintain a streak of 14 days or more.",
+            "image": "wordle/images/fourteen_days_badge.png",
+            "unlocked": False  # You'll need to implement the logic for this
+        },
+        {
+            "name": "Vocabulary Virtuoso",
+            "description": "Correctly guess 5 words that are considered advanced vocabulary.",
+            "image": "wordle/images/vocab_badge.png",
+            "unlocked": False  # You'll need to implement the logic for this
+        },
+        {
+            "name": "Speed Racer",
+            "description": "Solve a puzzle in under 2 minutes.",
+            "image": "wordle/images/speed_racer_badge.png",
+            "unlocked": False  # You'll need to implement the logic for this
+        },
+        {
+            "name": "Lucky Guess",
+            "description": "Solve a puzzle on the first try (this is rare and partly luck-based).",
+            "image": "wordle/images/lucky_guess_badge.png",
+            "unlocked": False  # You'll need to implement the logic for this
+        },
+    ]
+
+    return render(request, 'wordle/badges.html', {'badges': badges})
