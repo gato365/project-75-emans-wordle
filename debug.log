@@ -5420,3 +5420,8 @@ C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\mo
 Watching for file changes with StatReloader
 C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\models.py changed, reloading.
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /login/ HTTP/1.1" 200 4388
+"GET /static/users/images/power_logo.png HTTP/1.1" 304 0
+"GET /static/users/main.css%3Fv%3D1.2 HTTP/1.1" 404 1924
+"GET /login/ HTTP/1.1" 200 4378
