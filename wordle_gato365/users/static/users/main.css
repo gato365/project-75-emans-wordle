@@ -14,6 +14,9 @@ body {
     margin: 0;
   }
   
+  nav {
+    background-color: #154734 !important;
+  }
   .bg-steel {
     background-color: #154734 !important;
   }
@@ -46,7 +49,7 @@ body {
     color: #BD8B13;
     text-decoration: none;
   }
-  .navbaFr-brand {
+  .nameWebsite {
     color: #BD8B13;
     font-weight: bold;
     font-size: 2em;
