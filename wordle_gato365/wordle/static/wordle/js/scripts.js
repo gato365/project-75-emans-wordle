@@ -211,8 +211,18 @@ function endGame(isWin, correctWord) {
 
   if (isWin) {
       alert(`Game over! You've guessed the word correctly in ${timeTaken} seconds!`);
+
+      setTimeout(() => {
+        alert(`Game over! You've guessed the word correctly in ${timeTaken} seconds!`);
+    }, 3000);
+
+
   } else {
+
+    setTimeout(() => {
       alert(`Game over! You've run out of attempts. The correct word was ${correctWord}. Time taken: ${timeTaken} seconds.`);
+    }, 3000);
+    
   }
 
   // Send the game time to the server

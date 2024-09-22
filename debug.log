@@ -5321,3 +5321,8 @@ Game 24: Correct word is tasty, guess is tasty
 "POST /submit_guess/ HTTP/1.1" 200 284
 "POST /update_game_time/ HTTP/1.1" 200 21
 "POST /update_guess_times/ HTTP/1.1" 200 21
+"GET /game/ HTTP/1.1" 200 3633
+"GET /static/users/favicon.ico HTTP/1.1" 304 0
+"GET /game-history/ HTTP/1.1" 200 12779
+"GET /game-history/ HTTP/1.1" 200 12781
+"GET /static/wordle/images/first_word_badge.png HTTP/1.1" 200 66353

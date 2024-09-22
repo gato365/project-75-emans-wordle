@@ -10,7 +10,7 @@
             <div class="card {% if games_played > 0 %}border-success{% endif %}">
                 <div class="card-body text-center">
                     <div style="width: 100px; height: 100px; margin: 0 auto; position: relative;">
-                        <img src="{% static 'wordle/images/logo2021_close.png' %}" alt="First Game Badge" style="width: 100%; height: 100%; object-fit: cover; {% if games_played == 0 %}filter: grayscale(100%) opacity(0.5);{% endif %}">
+                        <img src="{% static 'wordle/images/first_word_badge.png' %}" alt="First Game Badge" style="width: 100%; height: 100%; object-fit: cover; {% if games_played == 0 %}filter: grayscale(100%) opacity(0.5);{% endif %}">
                         {% if games_played > 0 %}
                             <div style="position: absolute; top: 0; right: 0; background-color: #28a745; border-radius: 50%; padding: 5px;">
                                 <i class="fas fa-check text-white"></i>
