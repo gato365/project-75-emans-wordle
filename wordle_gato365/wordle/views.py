@@ -4,7 +4,7 @@ from django.views.decorators.http import require_POST
 from django.views.decorators.http import require_http_methods
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.csrf import ensure_csrf_cookie
-from .models import Game, Word, Guess, GuessTime, UserGame
+from .models import Game, Word, Guess, GuessTime, UserGame, get_current_wordle_date
 from collections import Counter
 from django.utils import timezone
 import json
@@ -29,11 +29,12 @@ def game_view(request):
             return render(request, 'wordle/game.html', {'error': 'No word available for today.'})
         
         # Check if user has already played today
-        if UserGame.objects.filter(user=request.user, date_played=timezone.now().date()).exists():
+        if UserGame.objects.filter(user=request.user, date_played=get_current_wordle_date()).exists():
             return render(request, 'wordle/game.html', {'error': 'You have already played today.'})
         
         context = {
             'word': today_word.word,
+            'next_game_time': (datetime.combine(get_current_wordle_date() + timedelta(days=1), settings.WORDLE_RESET_TIME)).isoformat(),
             # Add any other context data you need
         }
         return render(request, 'wordle/game.html', context)

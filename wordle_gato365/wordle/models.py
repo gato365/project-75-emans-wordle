@@ -3,6 +3,23 @@ from django.conf import settings
 from django.utils import timezone
 from django.core.exceptions import ObjectDoesNotExist
 from django.contrib.auth import get_user_model
+import pytz
+from datetime import datetime, time, timedelta
+
+
+
+def get_current_wordle_date():
+    """Get the date for the current Wordle game in PST."""
+    now = timezone.now().astimezone(settings.WORDLE_TIMEZONE)
+    today_reset = now.replace(hour=settings.WORDLE_RESET_TIME.hour, 
+                              minute=settings.WORDLE_RESET_TIME.minute, 
+                              second=settings.WORDLE_RESET_TIME.second, 
+                              microsecond=0)
+    
+    if now < today_reset:
+        return (today_reset - timedelta(days=1)).date()
+    return today_reset.date()
+
 User = get_user_model()
 
 
@@ -10,13 +27,11 @@ class Word(models.Model):
     word = models.CharField(max_length=255)
     date = models.DateField()
 
+
     @classmethod
     def get_word_for_today(cls):
-        today = timezone.now().date()
-        try:
-            return cls.objects.filter(date=today).first()
-        except ObjectDoesNotExist:
-            return None
+        today = get_current_wordle_date()
+        return cls.objects.filter(date=today).first()
 
     def __str__(self):
         return f"{self.word} - {self.date}"
@@ -48,3 +63,5 @@ class UserGame(models.Model):
 
     class Meta:
         unique_together = ['user', 'date_played']
+
+

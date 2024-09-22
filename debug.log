@@ -5194,3 +5194,130 @@ Bad Request: /game/
 "POST /logout/ HTTP/1.1" 302 0
 "GET /login/ HTTP/1.1" 200 3696
 "GET /static/users/main.css HTTP/1.1" 200 1373
+Watching for file changes with StatReloader
+"GET /login/ HTTP/1.1" 200 4137
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /login/ HTTP/1.1" 302 0
+"GET /game-history/ HTTP/1.1" 200 17433
+"GET /about/ HTTP/1.1" 200 3543
+"GET /home/ HTTP/1.1" 200 3095
+"GET /game/ HTTP/1.1" 200 3624
+"GET /static/wordle/css/styles.css HTTP/1.1" 304 0
+"GET /static/wordle/js/scripts.js HTTP/1.1" 304 0
+Today's date: 2024-09-22
+Today's word: buddy - 2024-09-22
+Created game: Game object (23)
+"POST /game/ HTTP/1.1" 200 35
+Game 23: Correct word is buddy, guess is budit
+"POST /submit_guess/ HTTP/1.1" 200 281
+Game 23: Correct word is buddy, guess is buddy
+"POST /submit_guess/ HTTP/1.1" 200 284
+"POST /update_game_time/ HTTP/1.1" 200 21
+"POST /update_guess_times/ HTTP/1.1" 200 21
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle_gato365\settings.py changed, reloading.
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle_gato365\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py changed, reloading.
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py changed, reloading.
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 3696
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /login/ HTTP/1.1" 302 0
+"GET /game-history/ HTTP/1.1" 200 11921
+"GET /game/ HTTP/1.1" 200 3624
+Internal Server Error: /game/
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\views\decorators\http.py", line 64, in inner
+    return func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py", line 42, in game_view
+    ret
+NameError: name 'ret' is not defined
+"POST /game/ HTTP/1.1" 500 101697
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py changed, reloading.
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Today's date: 2024-09-22
+Today's word: tasty - 2024-09-21
+Created game: Game object (24)
+"POST /game/ HTTP/1.1" 200 35
+Game 24: Correct word is tasty, guess is buddy
+"POST /submit_guess/ HTTP/1.1" 200 279
+Game 24: Correct word is tasty, guess is hasty
+"POST /submit_guess/ HTTP/1.1" 200 282
+Game 24: Correct word is tasty, guess is tasty
+"POST /submit_guess/ HTTP/1.1" 200 284
+"POST /update_game_time/ HTTP/1.1" 200 21
+"POST /update_guess_times/ HTTP/1.1" 200 21

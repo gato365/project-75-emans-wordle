@@ -19,7 +19,9 @@ from dotenv import load_dotenv
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
+# Add these to your settings.py
+WORDLE_TIMEZONE = pytz.timezone('America/Los_Angeles')
+WORDLE_RESET_TIME = time(hour=0, minute=0, second=0)
 
 
 load_dotenv()
