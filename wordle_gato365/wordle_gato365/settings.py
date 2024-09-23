@@ -34,7 +34,7 @@ SECRET_KEY = 'django-insecure-6g9e3!e_&!vif@5i^hktv^+lq-y&-=xv-^brjcakq8-f-if4qu
 
 # SECURITY WARNING: don't run with debug turned on in production!
 ## 1a) Currently commented out
-DEBUG = True
+DEBUG = False
 
 
 ## 1b) Currently in use
@@ -136,7 +136,7 @@ else:
     # Use the local database configuration
     DATABASES = {
         'default': {
-            'ENGINE': 'django_db_geventpool.backends.mysql',
+            'ENGINE': 'django.db.backends.mysql',
             'NAME': os.getenv('DB_NAME', 'your_default_db_name'),
             'USER': os.getenv('DB_USER', 'your_default_db_user'),
             'PASSWORD': os.getenv('DB_PASSWORD', 'your_default_db_password'),
@@ -183,7 +183,7 @@ LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
-
+USE_L10N = True
 USE_TZ = True
 
 
