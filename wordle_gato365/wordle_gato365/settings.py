@@ -16,7 +16,7 @@ import os
 import dj_database_url
 from dotenv import load_dotenv
 import dj_database_url
-
+# import silk
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -67,6 +67,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'allauth',
+    # 'silk',
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
@@ -77,10 +78,11 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware', 
     'allauth.account.middleware.AccountMiddleware',
-    'django_db_geventpool.middleware.GeventPoolMiddleware',
+    # 'django_db_geventpool.middleware.GeventPoolMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
+    # 'silk.middleware.SilkyMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -142,14 +144,45 @@ else:
             'PASSWORD': os.getenv('DB_PASSWORD', 'your_default_db_password'),
             'HOST': os.getenv('DB_HOST', 'localhost'),
             'PORT': os.getenv('DB_PORT', '3306'),
-            'CONN_MAX_AGE': 0,
-            'OPTIONS': {
-                'MAX_CONNS': 20,  # maximum number of connections in the pool
-                'REUSE_CONNS': 10,  # number of connections to keep open and reuse
-                'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",  # Recommended for MySQL
-            }
+              'OPTIONS': {
+                  'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+                  'charset': 'utf8mb4',
+                  },
+                  # django-mysql settings
+                  'use_mysql_microseconds_precision': True,
         }
     }
+
+
+# Connection pooling settings
+DJANGO_DB_POOL_OPTIONS = {
+    'pool_size': 25,
+    'max_overflow': 5,
+    'timeout': 20,
+    'recycle': 300,
+}
+
+
+
+## Section 5: Cache settings
+CACHES = {
+    'default': {
+        'BACKEND': 'django_redis.cache.RedisCache',
+        'LOCATION': 'redis://:pc4b0c7560ba47f9828caf09bf793a41cbfde42da50b4777f65b0a0fe4527ee06@ec2-44-219-154-188.compute-1.amazonaws.com:7529',
+        'OPTIONS': {
+            'CLIENT_CLASS': 'django_redis.client.DefaultClient',
+        }
+    },
+    'local': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'unique-snowflake',
+    }
+}
+
+# Cache time to live is 15 minutes (in seconds)
+CACHE_TTL = 60 * 15
+
+
 
 
 

@@ -5,6 +5,9 @@
 {% block content_history %}
 <div class="container mt-5">
     <h2>{{ user.username }}'s Game History</h2>
+    <div class="text-center my-4">
+        <a href="{% url 'game' %}" class="btn btn-primary btn-lg">Play Game</a>
+    </div>
     <ul class="nav nav-tabs" id="gameHistoryTabs" role="tablist">
         <li class="nav-item">
             <a class="nav-link active" id="badges-tab" data-toggle="tab" href="#badges" role="tab">Badges</a>
@@ -30,4 +33,3 @@
 </div>
 
 {% endblock content_history %}
-

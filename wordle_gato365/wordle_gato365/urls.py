@@ -46,6 +46,7 @@ urlpatterns = [
 
     path('update_guess_times/', wordle_views.update_guess_times, name='update_guess_times'),
     path('submit_guess/', wordle_views.submit_guess, name='submit_guess'),
-    path('logout/', user_views.CustomLogoutView.as_view(), name='logout')
+    path('logout/', user_views.CustomLogoutView.as_view(), name='logout'),
+    # path('silk/', include('silk.urls', namespace='silk')),
    
 ]  + static(settings.STATIC_URL)
