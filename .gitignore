@@ -17,7 +17,8 @@ bin-release/
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
 
-important_commands.md
+misc_info_and_organization/important_commands.md
+SQL Analysis/
 
 Lib
 Scripts

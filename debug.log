@@ -5427,3 +5427,4 @@ Watching for file changes with StatReloader
 "GET /login/ HTTP/1.1" 200 4378
 "GET /login/ HTTP/1.1" 200 4378
 "GET / HTTP/1.1" 200 3336
+Watching for file changes with StatReloader
