@@ -77,7 +77,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware', 
     'allauth.account.middleware.AccountMiddleware',
-    'django_db_geventpool.middleware.GeventPoolMiddleware',
+    # 'django_db_geventpool.middleware.GeventPoolMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -143,11 +143,11 @@ else:
             'HOST': os.getenv('DB_HOST', 'localhost'),
             'PORT': os.getenv('DB_PORT', '3306'),
             'CONN_MAX_AGE': 0,
-            'OPTIONS': {
-                'MAX_CONNS': 20,  # maximum number of connections in the pool
-                'REUSE_CONNS': 10,  # number of connections to keep open and reuse
-                'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",  # Recommended for MySQL
-            }
+            # 'OPTIONS': {
+            #     'MAX_CONNS': 20,  # maximum number of connections in the pool
+            #     'REUSE_CONNS': 10,  # number of connections to keep open and reuse
+            #     'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",  # Recommended for MySQL
+            # }
         }
     }
 

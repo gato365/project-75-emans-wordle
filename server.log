@@ -2,61 +2,8 @@ Watching for file changes with StatReloader
 Performing system checks...
 
 System check identified no issues (0 silenced).
-Exception in thread django-main-thread:
-Traceback (most recent call last):
-  File "C:\Python311\Lib\threading.py", line 1038, in _bootstrap_inner
-    self.run()
-  File "C:\Python311\Lib\threading.py", line 975, in run
-    self._target(*self._args, **self._kwargs)
-  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\autoreload.py", line 64, in wrapper
-    fn(*args, **kwargs)
-  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\management\commands\runserver.py", line 136, in inner_run
-    self.check_migrations()
-  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\management\base.py", line 581, in check_migrations
-    executor = MigrationExecutor(connections[DEFAULT_DB_ALIAS])
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\migrations\executor.py", line 18, in __init__
-    self.loader = MigrationLoader(self.connection)
-                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\migrations\loader.py", line 58, in __init__
-    self.build_graph()
-  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\migrations\loader.py", line 235, in build_graph
-    self.applied_migrations = recorder.applied_migrations()
-                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\migrations\recorder.py", line 89, in applied_migrations
-    if self.has_table():
-       ^^^^^^^^^^^^^^^^
-  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\migrations\recorder.py", line 63, in has_table
-    with self.connection.cursor() as cursor:
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\asyncio.py", line 26, in inner
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\backends\base\base.py", line 316, in cursor
-    return self._cursor()
-           ^^^^^^^^^^^^^^
-  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\backends\base\base.py", line 292, in _cursor
-    self.ensure_connection()
-  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\asyncio.py", line 26, in inner
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\backends\base\base.py", line 275, in ensure_connection
-    self.connect()
-  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\asyncio.py", line 26, in inner
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\backends\base\base.py", line 256, in connect
-    self.connection = self.get_new_connection(conn_params)
-                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\utils\asyncio.py", line 26, in inner
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\backends\mysql\base.py", line 256, in get_new_connection
-    connection = Database.connect(**conn_params)
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Python311\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
-    return Connection(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Python311\Lib\site-packages\MySQLdb\connections.py", line 195, in __init__
-    super().__init__(*args, **kwargs2)
-TypeError: 'MAX_CONNS' is an invalid keyword argument for connect()
+September 27, 2024 - 15:52:22
+Django version 5.0.6, using settings 'wordle_gato365.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
