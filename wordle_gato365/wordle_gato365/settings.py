@@ -55,9 +55,6 @@ if RENDER_EXTERNAL_HOSTNAME:
 AUTH_USER_MODEL = 'users.CustomUser'
 
 
- 
-STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
-
 
 
 # Application definition
