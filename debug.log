@@ -6090,3 +6090,7 @@ STREAM b'IDAT' 121 65536
 "GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
 "GET /static/wordle/js/scripts.3730c73d73e9.js HTTP/1.1" 200 2562
 "GET /static/wordle/css/styles.7a86420876a0.css HTTP/1.1" 200 1085
+"GET / HTTP/1.1" 200 3375
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/users/favicon.c88b3cd98b54.ico HTTP/1.1" 200 237
