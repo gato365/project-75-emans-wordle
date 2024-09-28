@@ -32,6 +32,9 @@ load_dotenv()
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-6g9e3!e_&!vif@5i^hktv^+lq-y&-=xv-^brjcakq8-f-if4qu'
 
+
+
+
 # SECURITY WARNING: don't run with debug turned on in production!
 ## 1a) Currently commented out
 DEBUG = False
@@ -50,6 +53,11 @@ if RENDER_EXTERNAL_HOSTNAME:
 
 ## Custom user model
 AUTH_USER_MODEL = 'users.CustomUser'
+
+
+ 
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
+
 
 
 # Application definition
