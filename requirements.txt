@@ -16,7 +16,6 @@ HTMLParser==0.0.2
 ipdb==0.13.13
 ipython==8.12.3
 ipywidgets==8.0.4
-jnius==1.1.0
 keyring==25.4.1
 lockfile==0.12.2
 mock==5.1.0
