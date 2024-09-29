@@ -31,7 +31,7 @@ wordle_gato365/wordle/static/user/
 
 
 
-
+__pycache__
 server.log
 debug.log
 staticfiles/
