@@ -28,3 +28,10 @@ wordle_gato365/wordle/static/wordle/js
 wordle_gato365/wordle/static/wordle/css
 wordle_gato365/wordle/static/admin/
 wordle_gato365/wordle/static/user/
+
+
+
+__pycache__
+server.log
+debug.log
+staticfiles/
