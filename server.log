@@ -2,7 +2,7 @@ Watching for file changes with StatReloader
 Performing system checks...
 
 System check identified no issues (0 silenced).
-September 29, 2024 - 11:50:17
+September 29, 2024 - 11:53:58
 Django version 5.0.6, using settings 'wordle_gato365.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CTRL-BREAK.
@@ -13,8 +13,9 @@ Quit the server with CTRL-BREAK.
 "GET /static/wordle/images/seven_days_badge.ffa6209d7f30.png HTTP/1.1" 200 68206
 "GET /static/wordle/images/fourteen_days_badge.79271bcbc5a5.png HTTP/1.1" 200 62982
 "GET /static/wordle/images/vocab_badge.843a2eed2cb3.png HTTP/1.1" 200 47881
-"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
 "GET /static/wordle/images/speed_racer_badge.5791b675efb3.png HTTP/1.1" 200 56131
 "GET /static/wordle/images/lucky_guess_badge.2e45d1ce65d4.png HTTP/1.1" 200 44085
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
 "GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
 "GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/users/favicon.c88b3cd98b54.ico HTTP/1.1" 200 237
