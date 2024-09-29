@@ -1,0 +1,40 @@
+{% extends "users/base.html" %}
+{% load static %}
+
+
+{% block game_content %}
+
+
+
+<link href = "{% static 'wordle/css/styles.css' %}" rel = "stylesheet">  
+
+
+    <div id="game">
+        <br>
+  
+
+    <div id="game">
+        <h1>theWurdz</h1>
+        <button id="startButton">Start Game</button>
+        <button id="restartButton" style="display: none;">Restart Game</button>
+        <input type="text" id="guessInput" style="display: none;" placeholder="Enter your 5 Letter Guess" maxlength="5" autocomplete="off" autocorrect="off" autocapitalize="off"
+        spellcheck="false">
+        <button id="submitGuessButton" style="display: none;" onclick="submitGuess()">Submit Guess</button>
+         <div id="attemptsLeft"></div>
+         <div id="feedback"></div>
+         <div id="gameTime" style="display: none;">Time: 0 seconds</div>
+        <div id="attemptedWords"></div>
+        <div id="message" class="message" style="display: none;"></div>
+        <textarea id="sessionInfo" class="styled-textarea" readonly></textarea>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="{% static 'wordle/js/scripts.js' %}"></script>
+
+{% endblock game_content %}

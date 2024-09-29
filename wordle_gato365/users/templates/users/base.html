@@ -1,0 +1,112 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"  crossorigin="anonymous" />
+
+    <link rel="stylesheet" type="text/css" href="{% static 'users/main.css' %}" />
+    <link rel="icon" type="image/x-icon" href="{% static 'users/favicon.ico' %}" />
+
+    {% if title %}
+      <title>{{ title }}</title>
+    {% else %}
+      <title>theWurdz</title>
+    {% endif %}
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+        <div class="container">
+          <a class="nameWebsite" href="{% url 'about' %}">theWurdz</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            
+            
+            {% if user.is_authenticated %}
+            <div class="navbar-nav mr-auto">
+              <a class="nav-item nav-link" href="{% url 'game_history' %}">Game History</a>
+              <a class="nav-item nav-link" href="{% url 'about' %}">About</a>
+              <a class="nav-item nav-link" href="{% url 'home' %}">Home</a>
+              <a class="nav-item nav-link" href="{% url 'game' %}">Play Game</a>
+            </div>
+
+
+            {% else %}
+
+            <div class="navbar-nav mr-auto">
+              
+              <a class="nav-item nav-link" href="{% url 'about' %}">About</a>
+              {% comment %} <a class="nav-item nav-link" href="{% url 'leaderboardlist' %}">Leadership</a> {% endcomment %}
+            </div>
+
+            {% endif %}
+
+
+
+            <!-- Navbar Right Side -->
+            <div class="navbar-nav">
+              {% if user.is_authenticated %}
+                <a class="nav-item nav-link" href="{% url 'profile' %}">Profile</a>
+
+                <form action="{% url 'logout' %}" method="post" style="display: inline;">
+                  {% csrf_token %}
+                  <button type="submit" class="btn btn-outline-light">Logout</button>
+                </form>
+              {% else %}
+                <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
+                <a class="nav-item nav-link" href="{% url 'register' %}">Register</a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    
+
+    
+    {% comment %}  If LOGGED IN {% endcomment %}
+    
+    {% if user.is_authenticated %}
+      {% block content %}
+
+      {% endblock %}
+
+      {% block game_content %}
+
+      {% endblock %}
+      
+      {% block content_history %}
+
+      {% endblock content_history %}
+
+      {% block extra_js %}
+
+      {% endblock extra_js %}
+    
+    {% endif %}
+
+
+
+    {% block content1 %}
+
+    {% endblock content1 %}
+
+    <footer class="footer" style="text-align: center;">
+      <a href="https://www.gato365.com/" target="_blank">
+      <img src="{% static 'users/images/power_logo.png' %}" alt="Your Logo" style="width: 150px; height: 150px;">
+      </a>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  </body>
+</html>

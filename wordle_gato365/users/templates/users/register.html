@@ -1,0 +1,42 @@
+{% extends "users/base.html" %}
+{% load crispy_forms_tags %}
+{% block content1 %}
+<div class="content-section">
+    <form method="POST" autocomplete="off">
+        {% csrf_token %}
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4">Join Today</legend>
+            {{ form|crispy }}
+        </fieldset>
+        <div class="form-group">
+            <button class="btn btn-outline-info" type="submit">Sign Up</button>
+        </div>
+    </form>
+    <div class="border-top pt-3">
+        <small class="text-muted">
+            Already Have An Account? <a class="ml-2" href="#">Sign In</a>
+        </small>
+    </div>
+</div>
+{% endblock content1 %}
+
+
+{% block extra_js %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const userTypeField = document.querySelector('#id_user_type');
+        const studentFields = document.querySelectorAll('.student-field');
+
+        function toggleStudentFields() {
+            const isStudent = userTypeField.value === 'student';
+            studentFields.forEach(field => {
+                field.closest('.form-group').style.display = isStudent ? 'block' : 'none';
+                field.required = isStudent;
+            });
+        }
+
+        userTypeField.addEventListener('change', toggleStudentFields);
+        toggleStudentFields(); // Initial call to set correct state
+    });
+</script>
+{% endblock extra_js %}

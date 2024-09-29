@@ -1,0 +1,17 @@
+*.pyc
+*.pyo
+*.mo
+*.db
+*.css.map
+*.egg-info
+*.sql.gz
+*.log
+.cache
+.project
+.idea
+.pydevproject
+.idea/workspace.xml
+.DS_Store
+node_modules
+/static
+/media

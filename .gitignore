@@ -1,0 +1,30 @@
+# Build and Release Folders
+bin-debug/
+bin-release/
+[Oo]bj/
+[Bb]in/
+
+# Other files and folders
+.settings/
+
+# Executables
+*.swf
+*.air
+*.ipa
+*.apk
+.env
+server.log 
+# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
+# should NOT be excluded as they contain compiler settings and other important
+# information for Eclipse / Flash Builder.
+
+misc_info_and_organization/important_commands.md
+SQL Analysis/
+
+Lib
+Scripts
+
+wordle_gato365/wordle/static/wordle/js
+wordle_gato365/wordle/static/wordle/css
+wordle_gato365/wordle/static/admin/
+wordle_gato365/wordle/static/user/
