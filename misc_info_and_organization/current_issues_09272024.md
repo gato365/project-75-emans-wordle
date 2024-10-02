@@ -1,4 +1,8 @@
 
+6. Badges Mechanism (4 points) [Working on Badges]
+
+
+
 
 ## Frontend Technology
 2. Update words with this weeks new words (1 point)
@@ -9,7 +13,7 @@
 
 ## Backend and Frontend Functionality
 1. Display keyboard of use letters (1 point)
-6. Badges Mechanism (4 points)
+
 3. Time/Date Issue (Understand) (2 points) 
     - Time of Day in California the day that dictates time play
 10. Provide Statistics based on other majors

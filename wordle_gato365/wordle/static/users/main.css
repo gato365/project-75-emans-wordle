@@ -13,9 +13,17 @@ body {
   }
   
   .bg-steel {
-    background-color: #5f788a;
+    background-color: #154734 !important;
   }
-  
+  a.article-title:hover {
+    color: #BD8B13;
+    text-decoration: none;
+  }
+  .nameWebsite {
+    color: #BD8B13;
+    font-weight: bold;
+    font-size: 2em;
+  }
   .site-header .navbar-nav .nav-link {
     color: #cbd5db;
   }

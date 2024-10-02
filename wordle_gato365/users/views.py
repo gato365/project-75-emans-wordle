@@ -139,11 +139,10 @@ def badges(request):
     return render(request, 'users/badges.html')
 
 
+@login_required
 def badges_view(request):
     user = request.user
-
-    games = Game.objects.filter(user=user)
-    games_played = request.user.games_played
+    games_played = Game.objects.filter(user=user).count()
     
     context = {
         'games_played': games_played,

@@ -158,6 +158,7 @@ rfc3986-validator==0.1.1
 rsa==4.9
 scikit-learn==1.2.2
 scipy==1.9.3
+django-db-connection-pool==1.2.5
 seaborn==0.12.2
 Send2Trash==1.8.0
 six==1.16.0

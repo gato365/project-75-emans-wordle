@@ -148,11 +148,9 @@ else:
             'HOST': os.getenv('DB_HOST', 'localhost'),
             'PORT': os.getenv('DB_PORT', '3306'),
             'CONN_MAX_AGE': 0,
-            # 'OPTIONS': {
-            #     'MAX_CONNS': 20,  # maximum number of connections in the pool
-            #     'REUSE_CONNS': 10,  # number of connections to keep open and reuse
-            #     'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",  # Recommended for MySQL
-            # }
+            'POOL_SIZE': 5,  # Adjust pool size as needed
+            'MAX_OVERFLOW': 10  # Adjust max overflow as need
+              
         }
     }
 
