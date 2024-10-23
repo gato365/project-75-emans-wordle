@@ -2,45 +2,26 @@ Watching for file changes with StatReloader
 Performing system checks...
 
 System check identified no issues (0 silenced).
-October 02, 2024 - 04:47:32
+October 09, 2024 - 13:07:11
 Django version 5.0.6, using settings 'wordle_gato365.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CTRL-BREAK.
 
-"POST /logout/ HTTP/1.1" 302 0
-"GET /login/ HTTP/1.1" 200 3973
-"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
-"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
-STREAM b'IHDR' 16 13
-STREAM b'eXIf' 41 68
-STREAM b'IDAT' 121 65536
-STREAM b'IHDR' 16 13
-STREAM b'eXIf' 41 68
-STREAM b'IDAT' 121 65536
-"POST /login/ HTTP/1.1" 302 0
-"GET /game-history/ HTTP/1.1" 200 17901
-"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
-"GET /static/wordle/images/first_word_badge.8c4c41d3dcd5.png HTTP/1.1" 200 66353
-"GET /static/wordle/images/seven_days_badge.ffa6209d7f30.png HTTP/1.1" 200 68206
-"GET /static/wordle/images/vocab_badge.843a2eed2cb3.png HTTP/1.1" 200 47881
-"GET /static/wordle/images/speed_racer_badge.5791b675efb3.png HTTP/1.1" 200 56131
-"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
-"GET /static/wordle/images/fourteen_days_badge.79271bcbc5a5.png HTTP/1.1" 200 62982
-"GET /static/wordle/images/lucky_guess_badge.2e45d1ce65d4.png HTTP/1.1" 200 44085
 "GET /game/ HTTP/1.1" 200 3936
 "GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
-"GET /static/wordle/css/styles.7a86420876a0.css HTTP/1.1" 200 1085
 "GET /static/wordle/js/scripts.3730c73d73e9.js HTTP/1.1" 200 2562
+"GET /static/wordle/css/styles.7a86420876a0.css HTTP/1.1" 200 1085
 "GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
-Today's date: 2024-10-02
-Today's word: slack - 2024-10-02
-Created game: Game object (26)
+"GET /static/users/favicon.c88b3cd98b54.ico HTTP/1.1" 200 237
+Today's date: 2024-10-09
+Today's word: smile - 2024-10-09
+Created game: Game object (28)
 "POST /game/ HTTP/1.1" 200 35
-Game 26: Correct word is slack, guess is audio
-"POST /submit_guess/ HTTP/1.1" 200 279
-Game 26: Correct word is slack, guess is lapto
-"POST /submit_guess/ HTTP/1.1" 200 280
-Game 26: Correct word is slack, guess is slack
+Game 28: Correct word is smile, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 278
+Game 28: Correct word is smile, guess is slite
+"POST /submit_guess/ HTTP/1.1" 200 282
+Game 28: Correct word is smile, guess is smile
 "POST /submit_guess/ HTTP/1.1" 200 284
 "POST /update_game_time/ HTTP/1.1" 200 21
 "POST /update_guess_times/ HTTP/1.1" 200 21

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Wordle</h1>
+        <div id="board"></div>
+        <div id="keyboard"></div>
+        <div id="controls">
+            <button id="backspace" aria-label="Backspace">Backspace</button>
+            <button id="enter" aria-label="Enter">Enter</button>
+        </div>
+        <p id="message" aria-live="polite"></p>
+    </div>
+    <script src="wordle-game.js"></script>
+</body>
+</html>

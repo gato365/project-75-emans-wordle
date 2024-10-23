@@ -1148,3 +1148,897 @@ Game 26: Correct word is slack, guess is slack
 "POST /submit_guess/ HTTP/1.1" 200 284
 "POST /update_game_time/ HTTP/1.1" 200 21
 "POST /update_guess_times/ HTTP/1.1" 200 21
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 3375
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /game/ HTTP/1.1" 200 3936
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/wordle/css/styles.7a86420876a0.css HTTP/1.1" 200 1085
+"GET /static/wordle/js/scripts.3730c73d73e9.js HTTP/1.1" 200 2562
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+Today's date: 2024-10-02
+Today's word: slack - 2024-10-02
+Bad Request: /game/
+"POST /game/ HTTP/1.1" 400 42
+"POST /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 3973
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /login/ HTTP/1.1" 302 0
+"GET /game-history/ HTTP/1.1" 200 15346
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/wordle/images/seven_days_badge.ffa6209d7f30.png HTTP/1.1" 200 68206
+"GET /static/wordle/images/first_word_badge.8c4c41d3dcd5.png HTTP/1.1" 200 66353
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/wordle/images/speed_racer_badge.5791b675efb3.png HTTP/1.1" 200 56131
+"GET /static/wordle/images/vocab_badge.843a2eed2cb3.png HTTP/1.1" 200 47881
+"GET /static/wordle/images/fourteen_days_badge.79271bcbc5a5.png HTTP/1.1" 200 62982
+"GET /static/wordle/images/lucky_guess_badge.2e45d1ce65d4.png HTTP/1.1" 200 44085
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /game/ HTTP/1.1" 200 3936
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/wordle/js/scripts.3730c73d73e9.js HTTP/1.1" 200 2562
+"GET /static/wordle/css/styles.7a86420876a0.css HTTP/1.1" 200 1085
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+Today's date: 2024-10-02
+Today's word: slack - 2024-10-02
+Created game: Game object (27)
+"POST /game/ HTTP/1.1" 200 35
+Game 27: Correct word is slack, guess is peppy
+"POST /submit_guess/ HTTP/1.1" 200 278
+Game 27: Correct word is slack, guess is slack
+"POST /submit_guess/ HTTP/1.1" 200 284
+"POST /update_game_time/ HTTP/1.1" 200 21
+"POST /update_guess_times/ HTTP/1.1" 200 21
+Watching for file changes with StatReloader
+"GET /login/ HTTP/1.1" 200 3887
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/favicon.c88b3cd98b54.ico HTTP/1.1" 200 237
+"POST /login/ HTTP/1.1" 200 4076
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /login/ HTTP/1.1" 302 0
+"GET /game-history/ HTTP/1.1" 200 21246
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/wordle/images/seven_days_badge.ffa6209d7f30.png HTTP/1.1" 200 68206
+"GET /static/wordle/images/first_word_badge.8c4c41d3dcd5.png HTTP/1.1" 200 66353
+"GET /static/wordle/images/fourteen_days_badge.79271bcbc5a5.png HTTP/1.1" 200 62982
+"GET /static/wordle/images/speed_racer_badge.5791b675efb3.png HTTP/1.1" 200 56131
+"GET /static/wordle/images/vocab_badge.843a2eed2cb3.png HTTP/1.1" 200 47881
+"GET /static/wordle/images/lucky_guess_badge.2e45d1ce65d4.png HTTP/1.1" 200 44085
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /game-history/ HTTP/1.1" 200 21246
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/wordle/images/first_word_badge.8c4c41d3dcd5.png HTTP/1.1" 200 66353
+"GET /static/wordle/images/seven_days_badge.ffa6209d7f30.png HTTP/1.1" 200 68206
+"GET /static/wordle/images/fourteen_days_badge.79271bcbc5a5.png HTTP/1.1" 200 62982
+"GET /static/wordle/images/vocab_badge.843a2eed2cb3.png HTTP/1.1" 200 47881
+"GET /static/wordle/images/speed_racer_badge.5791b675efb3.png HTTP/1.1" 200 56131
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/wordle/images/lucky_guess_badge.2e45d1ce65d4.png HTTP/1.1" 200 44085
+"GET /static/users/favicon.c88b3cd98b54.ico HTTP/1.1" 200 237
+"GET /game-history/badges HTTP/1.1" 301 0
+"GET /game-history/badges/ HTTP/1.1" 200 10021
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/wordle/images/first_word_badge.8c4c41d3dcd5.png HTTP/1.1" 200 66353
+"GET /static/wordle/images/seven_days_badge.ffa6209d7f30.png HTTP/1.1" 200 68206
+"GET /static/wordle/images/fourteen_days_badge.79271bcbc5a5.png HTTP/1.1" 200 62982
+"GET /static/wordle/images/vocab_badge.843a2eed2cb3.png HTTP/1.1" 200 47881
+"GET /static/wordle/images/speed_racer_badge.5791b675efb3.png HTTP/1.1" 200 56131
+"GET /static/wordle/images/lucky_guess_badge.2e45d1ce65d4.png HTTP/1.1" 200 44085
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /game-history/badges/
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py", line 143, in badges
+    victories = Game.objects.filter(user=user, status="win").order_by('-date_played')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\query.py", line 1701, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\sql\query.py", line 2253, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'date_played' into field. Choices are: date, guess, id, status, time_played, user, user_id, word, word_id
+"GET /game-history/badges/ HTTP/1.1" 500 145
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 179
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /game-history/badges/
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py", line 163, in badges
+    advanced_victories_count = victories.filter(word__difficulty='advanced').count()
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\sql\query.py", line 1383, in build_lookup
+    lhs = self.try_transform(lhs, lookup_name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\sql\query.py", line 1427, in try_transform
+    raise FieldError(
+django.core.exceptions.FieldError: Unsupported lookup 'difficulty' for ForeignKey or join on the field not permitted.
+"GET /game-history/badges/ HTTP/1.1" 500 145
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /game-history/badges/
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\query.py", line 1647, in _annotate
+    if arg.default_alias in kwargs:
+       ^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\aggregates.py", line 110, in default_alias
+    raise TypeError("Complex expressions require an alias")
+TypeError: Complex expressions require an alias
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py", line 172, in badges
+    first_try_count = victories.annotate(Max("guess__sequence_number",filter=Q(guess__sequence_number=1))).count()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\db\models\query.py", line 1653, in _annotate
+    raise TypeError("Complex annotations require an alias")
+TypeError: Complex annotations require an alias
+"GET /game-history/badges/ HTTP/1.1" 500 145
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /game-history/badges/ HTTP/1.1" 200 10264
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/wordle/images/first_word_badge.8c4c41d3dcd5.png HTTP/1.1" 200 66353
+"GET /static/wordle/images/seven_days_badge.ffa6209d7f30.png HTTP/1.1" 200 68206
+"GET /static/wordle/images/fourteen_days_badge.79271bcbc5a5.png HTTP/1.1" 200 62982
+"GET /static/wordle/images/vocab_badge.843a2eed2cb3.png HTTP/1.1" 200 47881
+"GET /static/wordle/images/speed_racer_badge.5791b675efb3.png HTTP/1.1" 200 56131
+"GET /static/wordle/images/lucky_guess_badge.2e45d1ce65d4.png HTTP/1.1" 200 44085
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/users/favicon.c88b3cd98b54.ico HTTP/1.1" 200 237
+"GET /game-history/ HTTP/1.1" 200 21246
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/wordle/images/seven_days_badge.ffa6209d7f30.png HTTP/1.1" 200 68206
+"GET /static/wordle/images/first_word_badge.8c4c41d3dcd5.png HTTP/1.1" 200 66353
+"GET /static/wordle/images/fourteen_days_badge.79271bcbc5a5.png HTTP/1.1" 200 62982
+"GET /static/wordle/images/vocab_badge.843a2eed2cb3.png HTTP/1.1" 200 47881
+"GET /static/wordle/images/lucky_guess_badge.2e45d1ce65d4.png HTTP/1.1" 200 44085
+"GET /static/wordle/images/speed_racer_badge.5791b675efb3.png HTTP/1.1" 200 56131
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /game-history/badges HTTP/1.1" 301 0
+"GET /game-history/badges/ HTTP/1.1" 200 10264
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/wordle/images/first_word_badge.8c4c41d3dcd5.png HTTP/1.1" 200 66353
+"GET /static/wordle/images/seven_days_badge.ffa6209d7f30.png HTTP/1.1" 200 68206
+"GET /static/wordle/images/fourteen_days_badge.79271bcbc5a5.png HTTP/1.1" 200 62982
+"GET /static/wordle/images/vocab_badge.843a2eed2cb3.png HTTP/1.1" 200 47881
+"GET /static/wordle/images/speed_racer_badge.5791b675efb3.png HTTP/1.1" 200 56131
+"GET /static/wordle/images/lucky_guess_badge.2e45d1ce65d4.png HTTP/1.1" 200 44085
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /game-history/badges/ HTTP/1.1" 200 10264
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/wordle/images/first_word_badge.8c4c41d3dcd5.png HTTP/1.1" 200 66353
+"GET /static/wordle/images/seven_days_badge.ffa6209d7f30.png HTTP/1.1" 200 68206
+"GET /static/wordle/images/fourteen_days_badge.79271bcbc5a5.png HTTP/1.1" 200 62982
+"GET /static/wordle/images/vocab_badge.843a2eed2cb3.png HTTP/1.1" 200 47881
+"GET /static/wordle/images/speed_racer_badge.5791b675efb3.png HTTP/1.1" 200 56131
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/wordle/images/lucky_guess_badge.2e45d1ce65d4.png HTTP/1.1" 200 44085
+"GET /static/users/favicon.c88b3cd98b54.ico HTTP/1.1" 200 237
+"GET /game-history/badges/ HTTP/1.1" 200 10264
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/wordle/images/first_word_badge.8c4c41d3dcd5.png HTTP/1.1" 200 66353
+"GET /static/wordle/images/seven_days_badge.ffa6209d7f30.png HTTP/1.1" 200 68206
+"GET /static/wordle/images/fourteen_days_badge.79271bcbc5a5.png HTTP/1.1" 200 62982
+"GET /static/wordle/images/vocab_badge.843a2eed2cb3.png HTTP/1.1" 200 47881
+"GET /static/wordle/images/speed_racer_badge.5791b675efb3.png HTTP/1.1" 200 56131
+"GET /static/wordle/images/lucky_guess_badge.2e45d1ce65d4.png HTTP/1.1" 200 44085
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/users/favicon.c88b3cd98b54.ico HTTP/1.1" 200 237
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /game-history/badges/ HTTP/1.1" 200 10264
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/wordle/images/first_word_badge.8c4c41d3dcd5.png HTTP/1.1" 200 66353
+"GET /static/wordle/images/seven_days_badge.ffa6209d7f30.png HTTP/1.1" 200 68206
+"GET /static/wordle/images/fourteen_days_badge.79271bcbc5a5.png HTTP/1.1" 200 62982
+"GET /static/wordle/images/vocab_badge.843a2eed2cb3.png HTTP/1.1" 200 47881
+"GET /static/wordle/images/speed_racer_badge.5791b675efb3.png HTTP/1.1" 200 56131
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/wordle/images/lucky_guess_badge.2e45d1ce65d4.png HTTP/1.1" 200 44085
+"GET /static/users/favicon.c88b3cd98b54.ico HTTP/1.1" 200 237
+Watching for file changes with StatReloader
+"GET /game-history/badges/ HTTP/1.1" 200 10264
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/wordle/images/first_word_badge.8c4c41d3dcd5.png HTTP/1.1" 200 66353
+"GET /static/wordle/images/seven_days_badge.ffa6209d7f30.png HTTP/1.1" 200 68206
+"GET /static/wordle/images/fourteen_days_badge.79271bcbc5a5.png HTTP/1.1" 200 62982
+"GET /static/wordle/images/vocab_badge.843a2eed2cb3.png HTTP/1.1" 200 47881
+"GET /static/wordle/images/speed_racer_badge.5791b675efb3.png HTTP/1.1" 200 56131
+"GET /static/wordle/images/lucky_guess_badge.2e45d1ce65d4.png HTTP/1.1" 200 44085
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/users/favicon.c88b3cd98b54.ico HTTP/1.1" 200 237
+"GET /game-history/badges/ HTTP/1.1" 200 10264
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/wordle/images/first_word_badge.8c4c41d3dcd5.png HTTP/1.1" 200 66353
+"GET /static/wordle/images/seven_days_badge.ffa6209d7f30.png HTTP/1.1" 200 68206
+"GET /static/wordle/images/fourteen_days_badge.79271bcbc5a5.png HTTP/1.1" 200 62982
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/wordle/images/vocab_badge.843a2eed2cb3.png HTTP/1.1" 200 47881
+"GET /static/wordle/images/speed_racer_badge.5791b675efb3.png HTTP/1.1" 200 56131
+"GET /static/wordle/images/lucky_guess_badge.2e45d1ce65d4.png HTTP/1.1" 200 44085
+"GET /static/users/favicon.c88b3cd98b54.ico HTTP/1.1" 200 237
+Watching for file changes with StatReloader
+"GET /game-history/badges/ HTTP/1.1" 200 10303
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/wordle/images/first_word_badge.8c4c41d3dcd5.png HTTP/1.1" 200 66353
+"GET /static/wordle/images/seven_days_badge.ffa6209d7f30.png HTTP/1.1" 200 68206
+"GET /static/wordle/images/fourteen_days_badge.79271bcbc5a5.png HTTP/1.1" 200 62982
+"GET /static/wordle/images/vocab_badge.843a2eed2cb3.png HTTP/1.1" 200 47881
+"GET /static/wordle/images/speed_racer_badge.5791b675efb3.png HTTP/1.1" 200 56131
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/wordle/images/lucky_guess_badge.2e45d1ce65d4.png HTTP/1.1" 200 44085
+"GET /static/users/favicon.c88b3cd98b54.ico HTTP/1.1" 200 237
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /game-history/badges/ HTTP/1.1" 200 10264
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/wordle/images/first_word_badge.8c4c41d3dcd5.png HTTP/1.1" 200 66353
+"GET /static/wordle/images/seven_days_badge.ffa6209d7f30.png HTTP/1.1" 200 68206
+"GET /static/wordle/images/fourteen_days_badge.79271bcbc5a5.png HTTP/1.1" 200 62982
+"GET /static/wordle/images/vocab_badge.843a2eed2cb3.png HTTP/1.1" 200 47881
+"GET /static/wordle/images/speed_racer_badge.5791b675efb3.png HTTP/1.1" 200 56131
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/wordle/images/lucky_guess_badge.2e45d1ce65d4.png HTTP/1.1" 200 44085
+"GET /static/users/favicon.c88b3cd98b54.ico HTTP/1.1" 200 237
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /game-history/badges/ HTTP/1.1" 200 10303
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/wordle/images/first_word_badge.8c4c41d3dcd5.png HTTP/1.1" 200 66353
+"GET /static/wordle/images/seven_days_badge.ffa6209d7f30.png HTTP/1.1" 200 68206
+"GET /static/wordle/images/fourteen_days_badge.79271bcbc5a5.png HTTP/1.1" 200 62982
+"GET /static/wordle/images/vocab_badge.843a2eed2cb3.png HTTP/1.1" 200 47881
+"GET /static/wordle/images/speed_racer_badge.5791b675efb3.png HTTP/1.1" 200 56131
+"GET /static/wordle/images/lucky_guess_badge.2e45d1ce65d4.png HTTP/1.1" 200 44085
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/users/favicon.c88b3cd98b54.ico HTTP/1.1" 200 237
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+Watching for file changes with StatReloader
+"GET /login/ HTTP/1.1" 200 4414
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /login/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4414
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /login/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4414
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /game/ HTTP/1.1" 200 3936
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/wordle/css/styles.7a86420876a0.css HTTP/1.1" 200 1085
+"GET /static/wordle/js/scripts.3730c73d73e9.js HTTP/1.1" 200 2562
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/users/favicon.c88b3cd98b54.ico HTTP/1.1" 200 237
+"GET /home/ HTTP/1.1" 200 3375
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/users/favicon.c88b3cd98b54.ico HTTP/1.1" 200 237
+"GET /game-history/ HTTP/1.1" 200 21246
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/wordle/images/fourteen_days_badge.79271bcbc5a5.png HTTP/1.1" 200 62982
+"GET /static/wordle/images/first_word_badge.8c4c41d3dcd5.png HTTP/1.1" 200 66353
+"GET /static/wordle/images/seven_days_badge.ffa6209d7f30.png HTTP/1.1" 200 68206
+"GET /static/wordle/images/vocab_badge.843a2eed2cb3.png HTTP/1.1" 200 47881
+"GET /static/wordle/images/lucky_guess_badge.2e45d1ce65d4.png HTTP/1.1" 200 44085
+"GET /static/wordle/images/speed_racer_badge.5791b675efb3.png HTTP/1.1" 200 56131
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /game/ HTTP/1.1" 200 3936
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/wordle/css/styles.7a86420876a0.css HTTP/1.1" 200 1085
+"GET /static/wordle/js/scripts.3730c73d73e9.js HTTP/1.1" 200 2562
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+Today's date: 2024-10-09
+Today's word: None
+Bad Request: /game/
+"POST /game/ HTTP/1.1" 400 40
+Watching for file changes with StatReloader
+"GET /game/ HTTP/1.1" 200 3936
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/wordle/js/scripts.3730c73d73e9.js HTTP/1.1" 200 2562
+"GET /static/wordle/css/styles.7a86420876a0.css HTTP/1.1" 200 1085
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/users/favicon.c88b3cd98b54.ico HTTP/1.1" 200 237
+Today's date: 2024-10-09
+Today's word: smile - 2024-10-09
+Created game: Game object (28)
+"POST /game/ HTTP/1.1" 200 35
+Game 28: Correct word is smile, guess is happy
+"POST /submit_guess/ HTTP/1.1" 200 278
+Game 28: Correct word is smile, guess is slite
+"POST /submit_guess/ HTTP/1.1" 200 282
+Game 28: Correct word is smile, guess is smile
+"POST /submit_guess/ HTTP/1.1" 200 284
+"POST /update_game_time/ HTTP/1.1" 200 21
+"POST /update_guess_times/ HTTP/1.1" 200 21

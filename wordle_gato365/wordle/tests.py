@@ -24,6 +24,7 @@ class WordleViewsTestCase(TestCase):
 
         # Test for logged in user
         self.client.login(username='testuser', password='12345')
+        
         response = self.client.get(reverse('game_history'))
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, 'testuser')
@@ -41,12 +42,15 @@ class WordleViewsTestCase(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, 'testuser')
         # Add more assertions based on what should be in the badges page
+        ## For CSS code
+        self.assertContains(response, 'filters: greyscale(100%)')
+
 
     def test_summary_of_all_games_view(self):
         # Test redirection for non-logged in user
         response = self.client.get(reverse('summary_of_all_games'))
         self.assertEqual(response.status_code, 302)
-        self.assertRedirects(response, f"{reverse('login')}?next={reverse('summary_of_all_games')}")
+        self.assertRedirects(response, f"{reverse('login')}?next={reverse('summary_of_all_games')}",fetch_redirect_response=False)
 
         # Test for logged in user
         self.client.login(username='testuser', password='12345')
@@ -54,6 +58,8 @@ class WordleViewsTestCase(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, 'testuser')
         # Add more assertions based on what should be in the summary page
+
+
 
     def test_all_games_played_view(self):
         # Test redirection for non-logged in user
@@ -72,6 +78,12 @@ class WordleViewsTestCase(TestCase):
 
 
 ## Test Badges
+### Render the template, put an id for each badge and check css
+# RenderedTemplate = renderTheTemplate(“game_status/badge”)
+# assert(renderedTemlate).contains(“filters: greyscale(100%”))
+
+
+
 ## Test Summary of all games
 ## Test All games played
 ## Test Game history

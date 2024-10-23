@@ -5,7 +5,7 @@ from django.contrib.auth.decorators import login_required
 from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm
 from django.contrib.auth.views import LogoutView
 from django.urls import reverse_lazy
-from django.db.models import Avg, Count, Sum
+from django.db.models import Avg, Count, Sum, Max,Q
 from wordle.models import Game, Guess, GuessTime
 from django.contrib.auth import get_user_model
 from .forms import UserUpdateForm, ProfileUpdateForm
@@ -133,22 +133,55 @@ def general_game_history(request):
 
 
 
+
 @login_required
 def badges(request):
-    # This will be implemented later
-    return render(request, 'users/badges.html')
-
-
-@login_required
-def badges_view(request):
     user = request.user
-    games_played = Game.objects.filter(user=user).count()
     
+    games_played = Game.objects.filter(user=user).count()
+
+    victories = Game.objects.filter(user=user, status="win").order_by('-date')
+    total_victories = victories.count()
+
+    # Weekly Warrior Badge
+    weekly_warrior = False
+    if total_victories >= 7:
+        last_seven_victories = victories[:7]
+        print(last_seven_victories[0])
+        print(last_seven_victories[6])
+        if (last_seven_victories[0].date - last_seven_victories[6].date).days == 6:
+            weekly_warrior = True
+
+    # Fortnight Phreak Badge
+    fortnight_phreak = False
+    if total_victories >= 14:
+        last_fourteen_victories = victories[:14]
+        if (last_fourteen_victories[0].date - last_fourteen_victories[13].date).days == 13:
+            fortnight_phreak = True
+
+    # # Vocabulary Victor Badge
+    # advanced_victories_count = victories.filter(word__difficulty='advanced').count()
+    # vocabulary_victor = advanced_victories_count >= 5
+
+    # # Swift Solver Badge
+    # swift_solver_count = victories.filter(time_taken__lt=timedelta(minutes=2)).count()
+    # swift_solver = swift_solver_count >= 3
+
+    # First Try Phenom Badge
+    ##
+    first_try_count = victories.annotate(sequence = Max("guess__sequence_number",filter=Q(guess__sequence_number=1))).count()
+    first_try_phenom = first_try_count >= 3
+
     context = {
         'games_played': games_played,
+        'total_victories': total_victories,
+        'weekly_warrior': weekly_warrior,
+        'fortnight_phreak': fortnight_phreak,
+        # 'vocabulary_victor': vocabulary_victor,
+        # 'swift_solver': swift_solver,
+        'first_try_phenom': first_try_phenom,
     }
     return render(request, 'users/badges.html', context)
-
 
 
 # You can keep these separate views if needed, or remove them if not used
