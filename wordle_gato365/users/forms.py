@@ -9,7 +9,7 @@ CustomUser = get_user_model()
 
 
 class UserRegisterForm(UserCreationForm):
-    email = forms.EmailField(label="Enter your CalPoly email")
+    email = forms.EmailField(label="Enter a user name:")
     user_type = forms.ChoiceField(choices=CustomUser.USER_TYPE_CHOICES)
     graduating_class = forms.ChoiceField(choices=CustomUser.GRADUATING_CLASS_CHOICES)
     college = forms.ChoiceField(choices=CustomUser.COLLEGE_CHOICES)
@@ -19,7 +19,7 @@ class UserRegisterForm(UserCreationForm):
         model = CustomUser
         fields = ['username', 'email', 'password1', 'password2', 'user_type', 'graduating_class', 'college', 'major']
         labels = {
-            'username': 'Enter your Cal Poly username',
+            'username': 'Enter your favorite word:',
         }
 
     def __init__(self, *args, **kwargs):
