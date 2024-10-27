@@ -62,6 +62,7 @@ AUTH_USER_MODEL = 'users.CustomUser'
 INSTALLED_APPS = [
     'wordle.apps.WordleConfig',
     'users.apps.UsersConfig',
+    'tournament.apps.TournamentConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'crispy_forms',
