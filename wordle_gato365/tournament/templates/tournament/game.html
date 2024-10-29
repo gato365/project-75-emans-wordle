@@ -1,0 +1,239 @@
+{% extends "users/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-4">
+    <!-- Tournament Header -->
+    <div class="row mb-4">
+        <div class="col-12 text-center">
+            <h2>{{ tournament.name }}</h2>
+            <div id="timer" class="display-4 text-danger mb-3">Loading...</div>
+        </div>
+    </div>
+
+    <!-- Game Area -->
+    <div class="row">
+        <div class="col-md-8">
+            <!-- Word Display and Input -->
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h4 class="mb-0">Word {{ words_completed|add:1 }} of {{ total_words }}</h4>
+                        <div>
+                            <span class="badge badge-light">{{ current_word.difficulty|title }}</span>
+                            <span class="badge badge-light ml-2">{{ attempts_left }} attempts left</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <!-- Word Grid -->
+                    <div id="wordGrid" class="mb-4">
+                        {% for i in "123456" %}
+                        <div class="word-row" id="row-{{ forloop.counter0 }}">
+                            {% for j in "12345" %}
+                            <div class="word-tile"></div>
+                            {% endfor %}
+                        </div>
+                        {% endfor %}
+                    </div>
+
+                    <!-- Input Form -->
+                    <form id="guessForm" {% if is_completed or not current_word %}style="display: none;"{% endif %}>
+                        {% csrf_token %}
+                        <div class="input-group">
+                            <input type="text" 
+                                   id="guessInput" 
+                                   class="form-control form-control-lg" 
+                                   maxlength="5" 
+                                   pattern="[A-Za-z]{5}"
+                                   placeholder="Enter 5-letter word"
+                                   autocomplete="off"
+                                   autocorrect="off"
+                                   autocapitalize="off"
+                                   spellcheck="false"
+                                   {% if not current_word or attempts_left == 0 %}disabled{% endif %}>
+                            <div class="input-group-append">
+                                <button type="submit" 
+                                        class="btn btn-primary btn-lg"
+                                        {% if not current_word or attempts_left == 0 %}disabled{% endif %}>
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Messages -->
+                    <div id="messageArea" class="mt-3" style="display: none;">
+                        <div class="alert" role="alert"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar Stats -->
+        <div class="col-md-4">
+            <!-- Team Info -->
+            <div class="card mb-4">
+                <div class="card-header bg-info text-white">
+                    <h5 class="mb-0">Team Progress</h5>
+                </div>
+                <div class="card-body">
+                    <h6 class="card-title">{{ team.name }}</h6>
+                    <p class="mb-2">Score: <span id="teamScore">{{ team.total_score }}</span></p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-success" 
+                             role="progressbar" 
+                             style="width: {{ words_completed|divisibleby:total_words|multiply:100 }}%"
+                             aria-valuenow="{{ words_completed }}"
+                             aria-valuemin="0"
+                             aria-valuemax="{{ total_words }}">
+                            {{ words_completed }} / {{ total_words }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Word History -->
+            <div class="card">
+                <div class="card-header bg-secondary text-white">
+                    <h5 class="mb-0">Previous Words</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        {% for attempt in previous_attempts %}
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Word {{ forloop.counter }}
+                            {% if attempt.is_solved %}
+                            <span class="badge badge-success">Solved</span>
+                            {% else %}
+                            <span class="badge badge-danger">Failed</span>
+                            {% endif %}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% block extra_js %}
+<script>
+const GAME_CONFIG = {
+    tournamentId: {{ tournament.id }},
+    timeRemaining: {{ time_remaining }},
+    isCompleted: {{ is_completed|yesno:"true,false" }},
+};
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Timer Management
+    function updateTimer() {
+        if (GAME_CONFIG.timeRemaining <= 0) {
+            document.getElementById("timer").innerHTML = "Time's Up!";
+            endGame();
+            return;
+        }
+
+        const hours = Math.floor(GAME_CONFIG.timeRemaining / 3600);
+        const minutes = Math.floor((GAME_CONFIG.timeRemaining % 3600) / 60);
+        const seconds = GAME_CONFIG.timeRemaining % 60;
+
+        document.getElementById("timer").innerHTML = 
+            `${hours}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        
+        GAME_CONFIG.timeRemaining--;
+    }
+
+    // Word Grid Management
+    function updateGrid(guess, feedback) {
+        const currentRow = document.getElementById(`row-${6 - attempts_left}`);
+        const tiles = currentRow.getElementsByClassName('word-tile');
+        
+        for (let i = 0; i < 5; i++) {
+            tiles[i].textContent = guess[i];
+            tiles[i].className = `word-tile ${feedback[i]}`;
+        }
+    }
+
+    // Form Submission
+    document.getElementById('guessForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const guess = document.getElementById('guessInput').value.toUpperCase();
+        
+        try {
+            const response = await fetch("{% url 'tournament:submit_guess' tournament.pk %}", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': document.querySelector('[name=csrfmiddlewaretoken]').value
+                },
+                body: JSON.stringify({ guess })
+            });
+            
+            const data = await response.json();
+            handleGuessResponse(data);
+        } catch (error) {
+            showMessage('An error occurred. Please try again.', 'danger');
+        }
+    });
+
+    function handleGuessResponse(data) {
+        if (data.error) {
+            showMessage(data.error, 'danger');
+            return;
+        }
+
+        updateGrid(data.guess, data.feedback);
+        document.getElementById('guessInput').value = '';
+        
+        if (data.is_solved) {
+            showMessage('Correct! Moving to next word...', 'success');
+            setTimeout(() => window.location.reload(), 1500);
+        } else if (data.attempts_left === 0) {
+            showMessage('No more attempts. Moving to next word...', 'warning');
+            setTimeout(() => window.location.reload(), 1500);
+        }
+    }
+
+    function showMessage(message, type) {
+        const messageArea = document.getElementById('messageArea');
+        const alert = messageArea.querySelector('.alert');
+        alert.className = `alert alert-${type}`;
+        alert.textContent = message;
+        messageArea.style.display = 'block';
+    }
+
+    // Initialize
+    updateTimer();
+    setInterval(updateTimer, 1000);
+});
+</script>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+.word-tile {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #ccc;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.word-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4px;
+}
+
+.correct { background-color: #198754; color: white; }
+.present { background-color: #ffc107; color: black; }
+.absent { background-color: #6c757d; color: white; }
+</style>
+{% endblock %}
+{% endblock content %}

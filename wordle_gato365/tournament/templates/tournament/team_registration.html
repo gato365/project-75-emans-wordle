@@ -1,0 +1,67 @@
+{% extends "users/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="text-center mb-0">Team Registration</h3>
+                </div>
+                <div class="card-body">
+                    <form method="POST">
+                        {% csrf_token %}
+                        
+                        {% if form.non_field_errors %}
+                        <div class="alert alert-danger">
+                            {% for error in form.non_field_errors %}
+                                {{ error }}
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+
+                        <div class="form-group">
+                            <label for="{{ form.name.id_for_label }}">Team Name</label>
+                            {{ form.name }}
+                            {% if form.name.errors %}
+                            <div class="invalid-feedback d-block">
+                                {{ form.name.errors }}
+                            </div>
+                            {% endif %}
+                        </div>
+
+                        <div class="form-group">
+                            <label for="{{ form.access_code.id_for_label }}">Tournament Access Code</label>
+                            {{ form.access_code }}
+                            {% if form.access_code.errors %}
+                            <div class="invalid-feedback d-block">
+                                {{ form.access_code.errors }}
+                            </div>
+                            {% endif %}
+                        </div>
+
+                        <div class="form-group">
+                            <label for="{{ form.member_emails.id_for_label }}">Team Member Emails</label>
+                            {{ form.member_emails }}
+                            <small class="form-text text-muted">
+                                Enter Cal Poly emails (one per line, {{ tournament.min_team_size }}-{{ tournament.max_team_size }} members)
+                            </small>
+                            {% if form.member_emails.errors %}
+                            <div class="invalid-feedback d-block">
+                                {{ form.member_emails.errors }}
+                            </div>
+                            {% endif %}
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-primary">Register Team</button>
+                            <a href="{% url 'tournament:tournament_list' %}" class="btn btn-secondary ml-2">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

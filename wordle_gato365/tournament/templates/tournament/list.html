@@ -1,0 +1,61 @@
+{% extends "users/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row mb-4">
+        <div class="col-12">
+            <h2 class="text-center">Active Tournaments</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        {% for tournament in tournaments %}
+        <div class="col-md-4 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">{{ tournament.name }}</h5>
+                    <div class="card-text">
+                        <p>
+                            <strong>Start Time:</strong><br>
+                            {{ tournament.start_time|date:"F j, Y, g:i a" }}
+                        </p>
+                        <p>
+                            <strong>Duration:</strong><br>
+                            2 Hours
+                        </p>
+                        <p>
+                            <strong>Team Size:</strong><br>
+                            {{ tournament.min_team_size }} - {{ tournament.max_team_size }} players
+                        </p>
+                        <p>
+                            <strong>Teams Registered:</strong><br>
+                            {{ tournament.tournamentteam_set.count }}
+                        </p>
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    {% if tournament.is_ongoing %}
+                        <span class="badge badge-success mb-2">In Progress</span><br>
+                    {% endif %}
+                    <a href="{% url 'tournament:tournament_join' tournament.pk %}" 
+                       class="btn btn-primary {% if tournament.is_ongoing %}disabled{% endif %}">
+                        {% if tournament.is_ongoing %}
+                            Tournament in Progress
+                        {% else %}
+                            Join Tournament
+                        {% endif %}
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <div class="col-12 text-center">
+            <div class="alert alert-info">
+                No active tournaments available at the moment.
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

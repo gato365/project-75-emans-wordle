@@ -1,0 +1,114 @@
+{% extends "users/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12 text-center mb-4">
+            <h2>{{ tournament.name }}</h2>
+            {% if not is_started %}
+                <div id="countdown" class="display-4 mb-4">
+                    Loading countdown...
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h4>Your Team</h4>
+                </div>
+                <div class="card-body">
+                    {% if user_team %}
+                        <h5>{{ user_team.name }}</h5>
+                        <ul class="list-unstyled">
+                            {% for member in user_team.teammember_set.all %}
+                                <li>{{ member.user.get_full_name|default:member.user.username }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        <p>You're not part of any team yet.</p>
+                        <a href="{% url 'tournament:tournament_join' tournament.pk %}" class="btn btn-primary">
+                            Join a Team
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Tournament Info</h4>
+                </div>
+                <div class="card-body">
+                    <p><strong>Start Time:</strong><br>
+                    {{ tournament.start_time|date:"F j, Y, g:i a" }}</p>
+                    <p><strong>Duration:</strong><br>
+                    2 Hours</p>
+                    <p><strong>Total Teams:</strong><br>
+                    {{ teams.count }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Registered Teams</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        {% for team in teams %}
+                        <div class="col-md-4 mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ team.name }}</h5>
+                                    <p class="card-text">
+                                        Members: {{ team.teammember_set.count }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        {% empty %}
+                        <div class="col-12">
+                            <p>No teams registered yet.</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% block extra_js %}
+<script>
+    function updateCountdown() {
+        const startTime = new Date("{{ tournament.start_time|date:'c' }}").getTime();
+        const now = new Date().getTime();
+        const distance = startTime - now;
+
+        if (distance <= 0) {
+            document.getElementById("countdown").innerHTML = "Tournament Starting!";
+            window.location.href = "{% url 'tournament:tournament_game' tournament.pk %}";
+            return;
+        }
+
+        const hours = Math.floor(distance / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("countdown").innerHTML = 
+            `${hours}h ${minutes}m ${seconds}s`;
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+</script>
+{% endblock %}
+{% endblock %}

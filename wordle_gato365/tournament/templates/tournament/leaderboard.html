@@ -1,0 +1,170 @@
+{% extends "users/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-4">
+    <!-- Tournament Header -->
+    <div class="row mb-4">
+        <div class="col-12 text-center">
+            <h2>{{ tournament.name }} - Leaderboard</h2>
+            {% if tournament.is_ongoing %}
+            <div class="alert alert-info">
+                Tournament in Progress - Results are Live
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Leaderboard Content -->
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <!-- Top 3 Teams -->
+            <div class="row mb-4">
+                <!-- Second Place -->
+                <div class="col-md-4 text-center">
+                    {% with teams|slice:"1:2"|first as second_place %}
+                    {% if second_place %}
+                    <div class="card border-silver">
+                        <div class="card-body">
+                            <h5 class="text-silver">
+                                <i class="fas fa-medal"></i> 2nd Place
+                            </h5>
+                            <h6>{{ second_place.name }}</h6>
+                            <p class="mb-0">{{ second_place.total_score }} points</p>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% endwith %}
+                </div>
+
+                <!-- First Place -->
+                <div class="col-md-4 text-center">
+                    {% with teams|first as first_place %}
+                    {% if first_place %}
+                    <div class="card border-gold">
+                        <div class="card-body">
+                            <h5 class="text-gold">
+                                <i class="fas fa-trophy"></i> 1st Place
+                            </h5>
+                            <h6>{{ first_place.name }}</h6>
+                            <p class="mb-0">{{ first_place.total_score }} points</p>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% endwith %}
+                </div>
+
+                <!-- Third Place -->
+                <div class="col-md-4 text-center">
+                    {% with teams|slice:"2:3"|first as third_place %}
+                    {% if third_place %}
+                    <div class="card border-bronze">
+                        <div class="card-body">
+                            <h5 class="text-bronze">
+                                <i class="fas fa-medal"></i> 3rd Place
+                            </h5>
+                            <h6>{{ third_place.name }}</h6>
+                            <p class="mb-0">{{ third_place.total_score }} points</p>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% endwith %}
+                </div>
+            </div>
+
+            <!-- Full Rankings -->
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">Complete Rankings</h4>
+                </div>
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover mb-0">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Team</th>
+                                    <th>Score</th>
+                                    <th>Words Completed</th>
+                                    <th>Time</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for team in teams %}
+                                <tr {% if user_team == team %}class="table-active"{% endif %}>
+                                    <td>{{ forloop.counter }}</td>
+                                    <td>{{ team.name }}</td>
+                                    <td>{{ team.total_score }}</td>
+                                    <td>{{ team.completed_words }}/5</td>
+                                    <td>
+                                        {% if team.completion_time %}
+                                            {{ team.completion_time }}
+                                        {% elif team.is_completed %}
+                                            Completed
+                                        {% else %}
+                                            In Progress
+                                        {% endif %}
+                                    </td>
+                                    <td>
+                                        {% if team.is_completed %}
+                                            <span class="badge badge-success">Finished</span>
+                                        {% else %}
+                                            <span class="badge badge-info">Playing</span>
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                                {% empty %}
+                                <tr>
+                                    <td colspan="6" class="text-center">No teams have registered yet.</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tournament Stats -->
+            <div class="card mt-4">
+                <div class="card-header bg-info text-white">
+                    <h4 class="mb-0">Tournament Statistics</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <h5>Teams</h5>
+                            <p class="h3">{{ teams.count }}</p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <h5>Avg. Score</h5>
+                            <p class="h3">{{ average_score|floatformat:1 }}</p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <h5>Completion Rate</h5>
+                            <p class="h3">{{ completion_rate|floatformat:1 }}%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% block extra_css %}
+<style>
+.border-gold {
+    border: 3px solid #FFD700;
+}
+.border-silver {
+    border: 3px solid #C0C0C0;
+}
+.border-bronze {
+    border: 3px solid #CD7F32;
+}
+.text-gold {
+    color: #FFD700;
+}
+</style>
+{% endblock %}
+{% endblock %}
