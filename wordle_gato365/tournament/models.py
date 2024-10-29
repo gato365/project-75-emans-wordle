@@ -38,6 +38,10 @@ class TeamMember(models.Model):
     team = models.ForeignKey(TournamentTeam, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     joined_at = models.DateTimeField(auto_now_add=True)
+    score = models.IntegerField(default=0)
+    completed = models.BooleanField(default=False)
+    start_time = models.DateTimeField(null=True)
+    end_time = models.DateTimeField(null=True)
 
     class Meta:
         unique_together = ['team', 'user']
@@ -71,6 +75,7 @@ class TeamWordAttempt(models.Model):
     start_time = models.DateTimeField(auto_now_add=True)
     completion_time = models.DateTimeField(null=True, blank=True)
     score = models.IntegerField(default=0)
+    success = models.BooleanField(default=False)
     attempts_used = models.IntegerField(default=0)
     is_solved = models.BooleanField(default=False)
 
