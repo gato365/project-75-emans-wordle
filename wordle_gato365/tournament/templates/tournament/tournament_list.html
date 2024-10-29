@@ -1,0 +1,29 @@
+{% extends "users/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>Active Tournaments</h2>
+    <div class="row">
+        {% for tournament in tournaments %}
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ tournament.name }}</h5>
+                    <p class="card-text">
+                        Starts: {{ tournament.start_time|date:"F j, Y, g:i a" }}<br>
+                        Teams: {{ tournament.tournamentteam_set.count }}
+                    </p>
+                    <a href="{% url 'tournament:tournament_join' tournament.pk %}" 
+                       class="btn btn-primary">Join Tournament</a>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <div class="col-12">
+            <p>No active tournaments available.</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

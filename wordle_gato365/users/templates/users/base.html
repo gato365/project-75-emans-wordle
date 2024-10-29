@@ -96,6 +96,13 @@
 
     {% endblock content1 %}
 
+    {% if user.is_authenticated %}
+<div class="navbar-nav mr-auto">
+    <!-- ... existing links ... -->
+    <a class="nav-item nav-link" href="{% url 'tournament:tournament_list' %}">Tournaments</a>
+</div>
+{% endif %}
+
     <footer class="footer" style="text-align: center;">
       <a href="https://www.gato365.com/" target="_blank">
       <img src="{% static 'users/images/power_logo.png' %}" alt="Your Logo" style="width: 150px; height: 150px;">
