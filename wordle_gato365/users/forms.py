@@ -9,7 +9,7 @@ CustomUser = get_user_model()
 
 
 class UserRegisterForm(UserCreationForm):
-    email = forms.EmailField(label="Enter your favorite word:")
+    email = forms.CharField(widget=forms.HiddenInput(),required=False)
     user_type = forms.ChoiceField(choices=CustomUser.USER_TYPE_CHOICES)
     graduating_class = forms.ChoiceField(choices=CustomUser.GRADUATING_CLASS_CHOICES)
     college = forms.ChoiceField(choices=CustomUser.COLLEGE_CHOICES)

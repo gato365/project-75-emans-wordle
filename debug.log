@@ -2042,3 +2042,628 @@ Game 28: Correct word is smile, guess is smile
 "POST /submit_guess/ HTTP/1.1" 200 284
 "POST /update_game_time/ HTTP/1.1" 200 21
 "POST /update_guess_times/ HTTP/1.1" 200 21
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 3006
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/favicon.c88b3cd98b54.ico HTTP/1.1" 200 237
+"GET / HTTP/1.1" 200 3006
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /login/ HTTP/1.1" 200 3893
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /about/ HTTP/1.1" 200 3299
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/users/favicon.c88b3cd98b54.ico HTTP/1.1" 200 237
+"GET /login/ HTTP/1.1" 200 3893
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /about/ HTTP/1.1" 200 3299
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET / HTTP/1.1" 200 3006
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+Not Found: /lobby
+"GET /lobby HTTP/1.1" 404 179
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 179
+Not Found: /1/lobby
+"GET /1/lobby HTTP/1.1" 404 179
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\wordle_gato365\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /1/lobby
+"GET /1/lobby HTTP/1.1" 404 179
+"GET /tournament/ HTTP/1.1" 302 0
+"GET /login/?next=/tournament/ HTTP/1.1" 200 3893
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"POST /login/?next=/tournament/ HTTP/1.1" 200 4083
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"POST /login/?next=/tournament/ HTTP/1.1" 200 4082
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /register/ HTTP/1.1" 200 7010
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /register/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4019
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /login/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4566
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /tournament/ HTTP/1.1" 200 3259
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /tournament/ HTTP/1.1" 200 3259
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"POST /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 3979
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /tournament/ HTTP/1.1" 302 0
+"GET /login/?next=/tournament/ HTTP/1.1" 200 3893
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /login/?next=/tournament/ HTTP/1.1" 302 0
+"GET /tournament/ HTTP/1.1" 200 3259
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"POST /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 3979
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET / HTTP/1.1" 200 3006
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET / HTTP/1.1" 200 3006
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/users/favicon.c88b3cd98b54.ico HTTP/1.1" 200 237
+"GET /login/ HTTP/1.1" 200 3893
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /login/ HTTP/1.1" 302 0
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'tournament' not found. 'tournament' is not a valid view function or pattern name.
+"GET /login/ HTTP/1.1" 500 145
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'tournament_list' not found. 'tournament_list' is not a valid view function or pattern name.
+"GET /login/ HTTP/1.1" 500 145
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\views.py", line 73, in home
+    return render(request, 'users/home.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'tournament_list' not found. 'tournament_list' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 145
+"GET / HTTP/1.1" 200 3605
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /tournament/ HTTP/1.1" 200 3751
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /tournament/4/join/ HTTP/1.1" 200 5183
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\tournament\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\tournament\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\tournament\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\tournament\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /tournament/4/join/ HTTP/1.1" 200 5183
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/users/favicon.c88b3cd98b54.ico HTTP/1.1" 200 237
+"POST /tournament/4/join/ HTTP/1.1" 200 5727
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"POST /tournament/4/join/ HTTP/1.1" 200 5489
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"POST /tournament/4/join/ HTTP/1.1" 200 5772
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"POST /tournament/4/join/ HTTP/1.1" 200 5521
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"POST /tournament/4/join/ HTTP/1.1" 302 0
+Internal Server Error: /tournament/4/lobby/
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: tournament/tournament_lobby.html
+"GET /tournament/4/lobby/ HTTP/1.1" 500 145
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\tournament\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 3605
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/users/favicon.c88b3cd98b54.ico HTTP/1.1" 200 237
+"GET /tournament/ HTTP/1.1" 200 3751
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /tournament/4/join/ HTTP/1.1" 200 5183
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"POST /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4054
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /register/ HTTP/1.1" 200 6992
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"POST /register/ HTTP/1.1" 200 7182
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /register/ HTTP/1.1" 200 7186
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/users/favicon.c88b3cd98b54.ico HTTP/1.1" 200 237
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 3006
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/users/favicon.c88b3cd98b54.ico HTTP/1.1" 200 237
+"GET /register/ HTTP/1.1" 200 6951
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\users\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /register/ HTTP/1.1" 200 6758
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/users/favicon.c88b3cd98b54.ico HTTP/1.1" 200 237
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /register/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4019
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /login/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4644
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /tournament/ HTTP/1.1" 200 3751
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /tournament/4/join/ HTTP/1.1" 200 5183
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"POST /tournament/4/join/ HTTP/1.1" 302 0
+Internal Server Error: /tournament/4/lobby/
+Traceback (most recent call last):
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\james\AppData\Roaming\Python\Python311\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: tournament/tournament_lobby.html
+"GET /tournament/4/lobby/ HTTP/1.1" 500 145
+"GET /tournament/4/lobby/ HTTP/1.1" 200 7500
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\tournament\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /tournament/4/lobby/
+"GET /tournament/4/lobby/ HTTP/1.1" 404 179
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\tournament\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /tournament/4/lobby/ HTTP/1.1" 200 7500
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/users/favicon.c88b3cd98b54.ico HTTP/1.1" 200 237
+"POST /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4047
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+STREAM b'IHDR' 16 13
+STREAM b'eXIf' 41 68
+STREAM b'IDAT' 121 65536
+"POST /login/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 4644
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /tournament/ HTTP/1.1" 200 4513
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /tournament/5/lobby/ HTTP/1.1" 200 6584
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /tournament/ HTTP/1.1" 200 4513
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /tournament/5/join/ HTTP/1.1" 200 5183
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"POST /tournament/5/join/ HTTP/1.1" 302 0
+"GET /tournament/ HTTP/1.1" 200 4513
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /tournament/5/join/ HTTP/1.1" 200 5183
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /tournament/ HTTP/1.1" 200 4513
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /tournament/5/join/ HTTP/1.1" 200 5183
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\tournament\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /tournament/5/join/ HTTP/1.1" 302 0
+"GET /tournament/ HTTP/1.1" 200 4513
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\tournament\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /tournament/5/join/ HTTP/1.1" 200 5183
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"POST /tournament/5/join/ HTTP/1.1" 302 0
+"GET /tournament/ HTTP/1.1" 200 4513
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"POST /tournament/5/join/ HTTP/1.1" 302 0
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\tournament\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\tournament\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\tournament\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\tournament\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\tournament\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\tournament\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\tournament\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\tournament\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\tournament\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\tournament\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\tournament\views.py changed, reloading.
+Watching for file changes with StatReloader
+tournament: The 2nd Dragon - 2024-11-03
+"POST /tournament/5/join/ HTTP/1.1" 302 0
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\tournament\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\tournament\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\tournament\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\tournament\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\tournament\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /tournament/ HTTP/1.1" 200 4513
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/users/favicon.c88b3cd98b54.ico HTTP/1.1" 200 237
+"GET /tournament/5/join/ HTTP/1.1" 200 5183
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"POST /tournament/5/join/ HTTP/1.1" 302 0
+"GET /tournament/5/lobby/ HTTP/1.1" 200 6858
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\tournament\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\tournament\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\james\Bootcamp\projects\project-75-emans-wordle\wordle_gato365\tournament\views.py changed, reloading.
+Watching for file changes with StatReloader
+User team: 23 - The 2nd Dragon
+"GET /tournament/5/lobby/ HTTP/1.1" 200 6858
+"GET /static/users/main.fd891fa58cd9.css HTTP/1.1" 200 455
+"GET /static/users/images/power_logo.6c79ab5b2274.png HTTP/1.1" 200 36796
+"GET /static/users/favicon.c88b3cd98b54.ico HTTP/1.1" 200 237

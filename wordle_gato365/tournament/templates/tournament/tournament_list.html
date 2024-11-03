@@ -14,8 +14,10 @@
                         Starts: {{ tournament.start_time|date:"F j, Y, g:i a" }}<br>
                         Teams: {{ tournament.tournamentteam_set.count }}
                     </p>
-                    <a href="{% url 'tournament:tournament_join' tournament.pk %}" 
+                    <a href="{% url 'tournament:tournament_join' tournament.pk  %}" 
                        class="btn btn-primary">Join Tournament</a>
+                       <a href="{% url 'tournament:tournament_lobby' tournament.pk  %}" 
+                       class="btn btn-primary">View Tournament</a>
                 </div>
             </div>
         </div>

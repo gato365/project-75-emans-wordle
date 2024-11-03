@@ -1,7 +1,7 @@
 from django import forms
 from django.core.exceptions import ValidationError
 from django.contrib.auth.models import User
-from .models import Tournament, TournamentTeam, TeamMember, TournamentWord, TeamWordAttempt
+from .models import Tournament, TournamentTeam, TournamentWord, TeamWordAttempt
 
 class TournamentForm(forms.ModelForm):
     class Meta:
@@ -38,7 +38,7 @@ class TeamRegistrationForm(forms.ModelForm):
     access_code = forms.CharField(max_length=20, widget=forms.PasswordInput)
     member_emails = forms.CharField(
         widget=forms.Textarea(attrs={'rows': 4}),
-        help_text="Enter Cal Poly emails (one per line, between 2-4 members)"
+        help_text="Specify username (one per line, between 2-4 members, make it up...)"
     )
 
     class Meta:
@@ -65,19 +65,9 @@ class TeamRegistrationForm(forms.ModelForm):
         if len(emails) > self.tournament.max_team_size:
             raise ValidationError(f"Maximum {self.tournament.max_team_size} team members allowed.")
 
-        # Validate Cal Poly emails
-        for email in emails:
-            if not email.endswith('@calpoly.edu'):
-                raise ValidationError(f"{email} is not a valid Cal Poly email address.")
+     
 
-        # Check if users are already in other teams
-        existing_members = TeamMember.objects.filter(
-            team__tournament=self.tournament,
-            user__email__in=emails
-        ).exists()
-        if existing_members:
-            raise ValidationError("One or more members are already registered in another team.")
-
+   
         return emails
 
 class TournamentWordForm(forms.ModelForm):
@@ -112,14 +102,7 @@ class TeamWordAttemptForm(forms.ModelForm):
             raise ValidationError("Guess must be exactly 5 letters.")
         return guess
 
-class TeamMemberUpdateForm(forms.ModelForm):
-    class Meta:
-        model = TeamMember
-        fields = ['score', 'completed']
-        widgets = {
-            'score': forms.NumberInput(attrs={'readonly': 'readonly'}),
-            'completed': forms.CheckboxInput(attrs={'disabled': 'disabled'}),
-        }
+
 
 # Quick join form for testing/development
 class QuickJoinTournamentForm(forms.Form):

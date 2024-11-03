@@ -1,5 +1,4 @@
 from django.db import models
-from django.contrib.auth.models import User
 from django.utils import timezone
 from django.core.validators import MinValueValidator, MaxValueValidator
 
@@ -34,20 +33,7 @@ class TournamentTeam(models.Model):
     def __str__(self):
         return f"{self.name} - {self.tournament.name}"
 
-class TeamMember(models.Model):
-    team = models.ForeignKey(TournamentTeam, on_delete=models.CASCADE)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    joined_at = models.DateTimeField(auto_now_add=True)
-    score = models.IntegerField(default=0)
-    completed = models.BooleanField(default=False)
-    start_time = models.DateTimeField(null=True)
-    end_time = models.DateTimeField(null=True)
 
-    class Meta:
-        unique_together = ['team', 'user']
-
-    def __str__(self):
-        return f"{self.user.username} - {self.team.name}"
 
 class TournamentWord(models.Model):
     DIFFICULTY_CHOICES = [

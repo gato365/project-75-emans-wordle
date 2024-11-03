@@ -8,8 +8,11 @@ from django.http import JsonResponse
 from django.contrib import messages
 from django.db.models import Q
 from django.views import View
+import logging
+logger = logging.getLogger(__name__)
 
-from .models import Tournament, TournamentTeam, TeamMember, TournamentWord, TeamWordAttempt
+
+from .models import Tournament, TournamentTeam, TournamentWord, TeamWordAttempt
 from .forms import (
     TeamRegistrationForm, 
     TournamentWordForm, 
@@ -18,28 +21,24 @@ from .forms import (
 )
 
 
-def register_team(request, tournament_id):
-    tournament = get_object_or_404(Tournament, id=tournament_id)
+# def register_team(request, tournament_id):
+#     tournament = get_object_or_404(Tournament, id=tournament_id)
     
-    if request.method == 'POST':
-        form = TeamRegistrationForm(request.POST, tournament=tournament)
-        if form.is_valid():
-            team = form.save(commit=False)
-            team.tournament = tournament
-            team.save()
+#     if request.method == 'POST':
+#         form = TeamRegistrationForm(request.POST, tournament=tournament)
+#         if form.is_valid():
+#             team = form.save(commit=False)
+#             team.tournament = tournament
+#             team.save()
             
-            # Process team members
-            emails = form.cleaned_data['member_emails']
-            for email in emails:
-                user = User.objects.get(email=email)
-                TeamMember.objects.create(team=team, user=user)
+         
                 
-            messages.success(request, "Team registered successfully!")
-            return redirect('tournament:lobby', pk=tournament.pk)
-    else:
-        form = TeamRegistrationForm(tournament=tournament)
+#             messages.success(request, "Team registered successfully!")
+#             return redirect('tournament:lobby', pk=tournament.pk)
+#     else:
+#         form = TeamRegistrationForm(tournament=tournament)
     
-    return render(request, 'tournament/register_team.html', {'form': form})
+#     return render(request, 'tournament/register_team.html', {'form': form})
 
 
 
@@ -66,8 +65,7 @@ class TournamentLobbyView(LoginRequiredMixin, DetailView):
         context = super().get_context_data(**kwargs)
         tournament = self.get_object()
         user_team = TournamentTeam.objects.filter(
-            tournament=tournament,
-            teammember__user=self.request.user
+            tournament=tournament
         ).first()
         
         context.update({
@@ -77,6 +75,7 @@ class TournamentLobbyView(LoginRequiredMixin, DetailView):
             'is_ended': tournament.end_time <= timezone.now(),
             'time_to_start': (tournament.start_time - timezone.now()).total_seconds() if tournament.start_time > timezone.now() else 0
         })
+        logger.error(f"User team: {user_team}")
         return context
 
 class TeamRegistrationView(LoginRequiredMixin, CreateView):
@@ -92,22 +91,22 @@ class TeamRegistrationView(LoginRequiredMixin, CreateView):
     
     def form_valid(self, form):
         tournament = get_object_or_404(Tournament, pk=self.kwargs['tournament_pk'])
+        ## error log
         
+
         # Check if tournament registration is still open
-        if tournament.start_time <= timezone.now():
-            messages.error(self.request, "Tournament registration is closed.")
-            return redirect('tournament:tournament_list')
+        # if tournament.start_time <= timezone.now():
+        #     messages.error(self.request, "Tournament registration is closed.")
+        #     return redirect('tournament:tournament_list')
         
         # Create team
         team = form.save(commit=False)
         team.tournament = tournament
         team.save()
+
         
-        # Add team members
-        emails = form.cleaned_data['member_emails']
-        for email in emails:
-            user = User.objects.get(email=email)
-            TeamMember.objects.create(team=team, user=user)
+        
+ 
         
         messages.success(self.request, f"Team {team.name} successfully registered!")
         return redirect('tournament:tournament_lobby', pk=tournament.pk)
@@ -121,8 +120,7 @@ class TournamentGameView(LoginRequiredMixin, DetailView):
         tournament = get_object_or_404(Tournament, pk=self.kwargs['tournament_pk'])
         return get_object_or_404(
             TournamentTeam,
-            tournament=tournament,
-            teammember__user=self.request.user
+            tournament=tournament
         )
     
     def get_context_data(self, **kwargs):
@@ -159,8 +157,7 @@ def submit_guess(request, tournament_pk):
     
     team = get_object_or_404(
         TournamentTeam,
-        tournament_id=tournament_pk,
-        teammember__user=request.user
+        tournament_id=tournament_pk
     )
     tournament = team.tournament
     
@@ -230,8 +227,7 @@ def end_tournament(request, tournament_pk):
     """Handle early tournament completion"""
     team = get_object_or_404(
         TournamentTeam,
-        tournament_id=tournament_pk,
-        teammember__user=request.user
+        tournament_id=tournament_pk
     )
     
     if not team.is_completed:
