@@ -30,7 +30,7 @@
                         </ul>
                     {% else %}
                         <p>You're not part of any team yet.</p>
-                        <a href="{% url 'tournament:tournament_join' tournament.pk %}" class="btn btn-primary">
+                        <a href="{% url 'tournament:tournament_registeration' tournament.pk %}" class="btn btn-primary">
                             Join a Team
                         </a>
                     {% endif %}
